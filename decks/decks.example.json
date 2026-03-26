@@ -1,0 +1,16 @@
+{
+  "decks": [
+    {
+      "slug": "_example",
+      "title": "Beispiel-Präsentation: Feature-Übersicht",
+      "description": "Ein kurzes Demo-Deck zum Testen der Präsentations-Engine",
+      "tags": ["Demo", "Beispiel"],
+      "customer": null,
+      "type": "sales-pitch",
+      "cover": null,
+      "order": 1,
+      "contentFile": "content.md",
+      "updatedAt": "2026-03-26"
+    }
+  ]
+}

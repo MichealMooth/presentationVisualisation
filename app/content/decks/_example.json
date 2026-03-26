@@ -1,0 +1,62 @@
+{
+  "title": "Beispiel-Präsentation: Feature-Übersicht",
+  "description": "Ein kurzes Demo-Deck zum Testen der Präsentations-Engine",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Willkommen",
+      "content": {
+        "rawMarkdown": "- Titel: „Willkommen zur Beispiel-Präsentation\"\n- Untertitel: „Ein kurzer Überblick über die Funktionen der Präsentations-Engine\"\n- Datum"
+      },
+      "notes": "Dies ist eine Beispiel-Präsentation, die zeigt, wie das System funktioniert. Sie können sie als Vorlage für eigene Decks verwenden."
+    },
+    {
+      "id": "02-kernfunktionen",
+      "number": 2,
+      "title": "Kernfunktionen",
+      "displayTitle": "Was diese Engine kann",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Funktionen",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Was diese Engine kann\"\n- **Scroll-Navigation** -- Klassische Folien mit Scroll-Snap, Tastatur und Touch\n- **Prezi-Navigation** -- Zoom/Pan auf einem 2D-Canvas mit Topic-Gruppen\n- **Presenter-Modus** -- Sprechernotizen, Timer, Vorschau der nächsten Folie\n- **21 Layout-Typen** -- Von Hero über Timeline bis Matrix und Pricing\n- **Markdown-basiert** -- Inhalte in einfachen Markdown-Dateien pflegen\n- **PDF & PPTX Export** -- Präsentationen als PDF drucken oder PowerPoint exportieren",
+        "deliverables": []
+      },
+      "notes": "Die Bullets werden automatisch als Karten mit Icons gerendert. Das System erkennt das Format „**Titel** -- Beschreibung\" und erstellt daraus strukturierte Aufzählungen."
+    },
+    {
+      "id": "03-naechste-schritte",
+      "number": 3,
+      "title": "Nächste Schritte",
+      "displayTitle": "Nächste Schritte",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Abschluss",
+      "content": {
+        "rawMarkdown": "- Titel: „Bereit zum Loslegen?\"\n- Untertitel: „Erstellen Sie Ihr erstes Deck unter decks/<slug>/content.md\""
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Willkommen",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Funktionen",
+      "startSlide": 2
+    },
+    {
+      "id": "block-2",
+      "title": "Abschluss",
+      "startSlide": 3
+    }
+  ]
+}

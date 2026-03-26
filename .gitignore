@@ -1,0 +1,66 @@
+# ===========================================
+# Deck-Inhalte (kundenspezifisch, nicht öffentlich)
+# ===========================================
+decks/*/content.md
+decks/*/prezi-layout.json
+decks/*/original-vorlage.md
+decks/decks.json
+
+# Beispiel-Deck beibehalten
+!decks/_example/content.md
+
+# Quelldokumente im Root (kundenspezifisch)
+/*.md
+!README.md
+!CLAUDE.md
+!ANLEITUNG_PREZI_ERSTELLUNG.md
+/*.html
+
+# Corporate Design Quelldateien
+Corporate_Design/
+
+# Generierte Inhalte (werden durch parseContent.js erzeugt)
+app/content/decks/*.json
+# hub.json wird durch parseContent.js neu erzeugt.
+# Die committete Version enthält nur das Beispiel-Deck.
+# Nach eigenem Parsen: git update-index --assume-unchanged app/content/hub.json
+!app/content/decks/.gitkeep
+# Beispiel-Deck JSON beibehalten (damit die App out-of-the-box baut)
+!app/content/decks/_example.json
+
+# ===========================================
+# Node / Next.js
+# ===========================================
+node_modules/
+app/node_modules/
+app/.next/
+app/out/
+app/build/
+app/dist/
+
+# Environment
+.env
+.env*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Backup-Dateien
+*.bak
+
+# Claude memory (projektspezifisch)
+.claude/

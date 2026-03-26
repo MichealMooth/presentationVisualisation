@@ -1,0 +1,470 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/tokens.css';
+@import '../styles/typography.css';
+
+/* Corporate Design Fonts */
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('/fonts/TTFirsNeue-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('/fonts/TTFirsNeue-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll Container */
+.slide-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Individual Slide */
+.slide {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide Content Area */
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--slide-padding);
+  max-width: var(--slide-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .slide-content {
+    padding: var(--slide-padding-mobile);
+  }
+}
+
+/* Theme Variants */
+.slide-light {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+.slide-dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-on-dark);
+}
+
+/* Slide with Background Image */
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.slide-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 57, 0.7), rgba(0, 0, 57, 0.9));
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background-color: var(--base-blue);
+  color: var(--color-text-on-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--base-blue-dark);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--base-blue-dark);
+}
+
+.btn-accent:hover {
+  filter: brightness(0.9);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--base-blue);
+  color: var(--base-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--base-blue);
+  color: var(--color-text-on-dark);
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.card-elevated {
+  box-shadow: var(--shadow-xl);
+}
+
+/* Callout - Premium styling */
+.callout {
+  background: linear-gradient(135deg, var(--base-blue) 0%, var(--base-blue-dark) 100%);
+  color: var(--color-text-on-dark);
+  padding: var(--space-6) var(--space-8);
+  border-radius: var(--radius-xl);
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.callout::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  border-radius: var(--radius-full) 0 0 var(--radius-full);
+}
+
+.callout::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, var(--accent-glow), transparent 50%);
+  pointer-events: none;
+}
+
+/* Progress Bar (for navigation) */
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-border);
+  z-index: var(--z-fixed);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #00d4d4);
+  transition: width var(--transition-base);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Navigation Controls */
+.nav-controls {
+  position: fixed;
+  bottom: var(--space-8);
+  right: var(--space-8);
+  display: flex;
+  gap: var(--space-2);
+  z-index: var(--z-fixed);
+}
+
+.nav-button {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: white;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-md);
+}
+
+.nav-button:hover {
+  background: var(--base-grey);
+  border-color: var(--base-blue);
+  transform: scale(1.05);
+}
+
+.nav-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Logo in Header (top-right) */
+.slide-logo {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-8);
+  height: 32px;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+  z-index: 20;
+}
+
+.slide-logo:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .slide-logo {
+    top: var(--space-4);
+    right: var(--space-4);
+    height: 24px;
+  }
+}
+
+/* Utility Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Custom font utilities for Tailwind */
+.font-headline {
+  font-family: var(--font-headline), 'TT Firs Neue', 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Tailwind custom color classes */
+.text-base-blue {
+  color: var(--base-blue);
+}
+
+.text-base-blue-dark {
+  color: var(--base-blue-dark);
+}
+
+.bg-base-blue {
+  background-color: var(--base-blue);
+}
+
+.bg-base-blue-dark {
+  background-color: var(--base-blue-dark);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--accent);
+  color: var(--base-blue-dark);
+}
+
+/* ===== PDF Export Styles ===== */
+
+/* Screen layout for export slides */
+.export-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: #e5e7eb;
+}
+
+.export-slide {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.export-slide-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Print styles */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .export-slides {
+    display: block;
+    padding: 0;
+    gap: 0;
+    background: transparent;
+  }
+
+  .export-slide {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    aspect-ratio: auto;
+    border-radius: 0;
+    box-shadow: none;
+    page-break-after: always;
+    break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .export-slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Force background colors to print */
+  .export-slide,
+  .export-slide * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Disable animations in print */
+  *, *::before, *::after {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+
+  /* Hide non-print elements */
+  .progress-bar,
+  .nav-controls {
+    display: none !important;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--base-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--base-blue);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--base-blue-dark);
+}

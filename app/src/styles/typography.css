@@ -1,0 +1,242 @@
+/* Typography Styles - Premium Corporate Design */
+
+/* Headings - Using headline font */
+h1, .h1 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--base-blue-dark);
+  letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--base-blue-dark);
+  letter-spacing: -0.01em;
+}
+
+h3, .h3 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  color: var(--base-blue-dark);
+}
+
+h4, .h4 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  color: var(--base-blue-dark);
+}
+
+h5, .h5 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--base-blue-dark);
+}
+
+h6, .h6 {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--base-blue-dark);
+}
+
+/* Body Text - Using body font */
+.text-body {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+.text-body-lg {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+.text-body-sm {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+}
+
+/* Labels & Captions */
+.text-label {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.text-caption {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
+}
+
+/* KPI / Large Numbers - Premium style */
+.text-kpi {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-7xl);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--base-blue) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-kpi-label {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-secondary);
+}
+
+/* Quote / Callout */
+.text-quote {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+  font-style: italic;
+  color: var(--base-blue);
+}
+
+/* Slide Title (Hero) - Premium display style */
+.slide-title {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  color: var(--base-blue-dark);
+  letter-spacing: -0.02em;
+}
+
+/* Slide Subtitle */
+.slide-subtitle {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-snug);
+  color: var(--color-text-secondary);
+}
+
+/* Section headers */
+.section-header {
+  font-family: var(--font-headline), 'Space Grotesk', 'TT Firs', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--base-blue-dark);
+  position: relative;
+  padding-bottom: var(--space-3);
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: var(--radius-full);
+}
+
+/* Light Theme (on dark backgrounds) */
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6,
+.theme-dark .slide-title {
+  color: var(--color-text-on-dark);
+}
+
+.theme-dark .text-body,
+.theme-dark .text-body-lg {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.theme-dark .slide-subtitle,
+.theme-dark .text-body-sm,
+.theme-dark .text-label,
+.theme-dark .text-caption {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-dark .text-kpi {
+  background: linear-gradient(135deg, var(--accent) 0%, #00d4d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Interactive text */
+.text-link {
+  color: var(--base-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.text-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-base);
+}
+
+.text-link:hover {
+  color: var(--accent);
+}
+
+.text-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Badge text */
+.text-badge {
+  font-family: var(--font-body), 'Work Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--base-blue-dark);
+}
