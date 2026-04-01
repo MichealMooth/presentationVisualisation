@@ -9,25 +9,22 @@ import hubData from '../../content/hub.json'
 import { exportToPptx } from '@/lib/exportPptx'
 import type { DeckData } from '@/lib/content/schema'
 
-// ---------------------------------------------------------------------------
-// Deck-Daten importieren
-// Importiere hier die generierten JSON-Dateien für jedes Deck.
-// Nach `node scripts/parseContent.js` liegen diese unter content/decks/<slug>.json
-//
-// Beispiel:
-//   import myDeckData from '../../content/decks/my-deck.json'
-// ---------------------------------------------------------------------------
-import exampleData from '../../content/decks/_example.json'
+import kiBeratungData from '../../content/decks/ki-beratung.json'
+import triceptAgData from '../../content/decks/tricept-ag.json'
+import angebotM1Data from '../../content/decks/angebotspraesentation-m1.json'
+import steuerungskreisData from '../../content/decks/steuerungskreis-cos-ki.json'
+import ergebnisM1Data from '../../content/decks/ergebnispraesentation-m1.json'
+import m1KompaktData from '../../content/decks/m1-kompakt.json'
+import kiChancenRisikenData from '../../content/decks/ki-chancen-risiken.json'
 
-// ---------------------------------------------------------------------------
-// Deck-Registry für PPTX-Export
-// Trage hier alle importierten Decks ein:
-//
-// Beispiel:
-//   'my-deck': myDeckData as DeckData,
-// ---------------------------------------------------------------------------
 const deckDataRegistry: Record<string, DeckData> = {
-  '_example': exampleData as DeckData,
+  'ki-beratung': kiBeratungData as DeckData,
+  'tricept-ag': triceptAgData as DeckData,
+  'angebotspraesentation-m1': angebotM1Data as DeckData,
+  'steuerungskreis-cos-ki': steuerungskreisData as DeckData,
+  'ergebnispraesentation-m1': ergebnisM1Data as DeckData,
+  'm1-kompakt': m1KompaktData as DeckData,
+  'ki-chancen-risiken': kiChancenRisikenData as DeckData,
 }
 
 function PptxButton({ slug }: { slug: string }) {
@@ -87,7 +84,7 @@ export default function DeckHub() {
           <div className="flex items-center gap-4">
             <Image
               src="/assets/Bildmarke.png"
-              alt="Logo"
+              alt="Tricept Logo"
               width={40}
               height={40}
               className="object-contain"
@@ -95,10 +92,10 @@ export default function DeckHub() {
             />
             <div>
               <h1 className="text-xl font-bold text-base-blue-dark font-headline">
-                Presentations
+                Präsentationen
               </h1>
               <p className="text-sm text-base-blue-dark/60">
-                Corporate Slide Deck Engine
+                IT Consulting by Tricept
               </p>
             </div>
           </div>
@@ -115,10 +112,10 @@ export default function DeckHub() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-base-blue-dark font-headline mb-4">
-            Select a Presentation
+            Wählen Sie eine Präsentation
           </h2>
           <p className="text-lg text-base-blue-dark/60 max-w-2xl mx-auto">
-            All available presentations at a glance. Click a card to start.
+            Alle verfügbaren Präsentationen auf einen Blick. Klicken Sie auf eine Karte, um zu starten.
           </p>
         </motion.div>
 
@@ -157,7 +154,7 @@ export default function DeckHub() {
                   )}
                   {/* Slide count badge */}
                   <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-medium text-base-blue-dark">
-                    {deck.slideCount} Slides
+                    {deck.slideCount} Folien
                   </div>
                 </div>
 
@@ -194,7 +191,7 @@ export default function DeckHub() {
                           router.push(`/deck/${deck.slug}/export`)
                         }}
                         className="p-1.5 text-base-blue-dark/40 hover:text-base-blue hover:bg-base-grey rounded-md transition-colors"
-                        title="Export as PDF"
+                        title="Als PDF exportieren"
                       >
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                       </button>
@@ -204,13 +201,13 @@ export default function DeckHub() {
                           router.push(`/deck/${deck.slug}/presenter`)
                         }}
                         className="p-1.5 text-base-blue-dark/40 hover:text-base-blue hover:bg-base-grey rounded-md transition-colors"
-                        title="Presenter Mode"
+                        title="Presenter-Modus"
                       >
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                       </button>
                     </div>
                     <span className="px-4 py-1.5 bg-accent text-base-blue-dark text-xs font-bold rounded-lg group-hover:bg-accent/80 transition-colors">
-                      Start
+                      Starten →
                     </span>
                   </div>
                 </div>
@@ -222,11 +219,12 @@ export default function DeckHub() {
         {/* Empty State */}
         {decks.length === 0 && (
           <div className="text-center py-20">
+            <div className="text-6xl mb-4">📭</div>
             <h3 className="text-xl font-bold text-base-blue-dark mb-2">
-              No presentations found
+              Keine Präsentationen gefunden
             </h3>
             <p className="text-gray-600">
-              Add presentations in the <code className="bg-gray-100 px-2 py-1 rounded">decks/</code> folder and run <code className="bg-gray-100 px-2 py-1 rounded">node scripts/parseContent.js</code>.
+              Fügen Sie Präsentationen im <code className="bg-gray-100 px-2 py-1 rounded">/decks</code> Ordner hinzu.
             </p>
           </div>
         )}
@@ -235,7 +233,7 @@ export default function DeckHub() {
       {/* Footer */}
       <footer className="border-t border-base-grey-dark bg-white mt-auto">
         <div className="max-w-6xl mx-auto px-6 py-6 text-center text-sm text-gray-500">
-          Corporate Slide Deck Engine
+          © {new Date().getFullYear()} IT Consulting by Tricept
         </div>
       </footer>
     </div>

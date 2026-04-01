@@ -10,16 +10,13 @@ import { useNavigation } from '@/lib/hooks/useNavigation'
 import { LayoutRenderer } from '@/components/layouts/LayoutRenderer'
 import { DeckData } from '@/lib/content/schema'
 
-// ---------------------------------------------------------------------------
-// Import deck data for presenter mode.
-// Add your own decks here:
-//
-//   import myDeckData from '../../../../../content/decks/my-deck.json'
-// ---------------------------------------------------------------------------
-import exampleData from '../../../../../content/decks/_example.json'
+// Import all available decks statically
+import kiBeratungData from '../../../../../content/decks/ki-beratung.json'
+import triceptAgData from '../../../../../content/decks/tricept-ag.json'
 
 const deckRegistry: Record<string, DeckData> = {
-  '_example': exampleData as DeckData,
+  'ki-beratung': kiBeratungData as DeckData,
+  'tricept-ag': triceptAgData as DeckData,
 }
 
 export default function PresenterPage() {
@@ -65,7 +62,7 @@ export default function PresenterPage() {
       setDeckData(deckData)
       setLoading(false)
     } else {
-      setError(`Presentation "${slug}" not found.`)
+      setError(`Präsentation "${slug}" nicht gefunden.`)
       setLoading(false)
     }
   }, [slug, setDeckData, reset])
@@ -91,7 +88,7 @@ export default function PresenterPage() {
       <div className="h-screen flex items-center justify-center bg-base-blue-dark">
         <div className="text-center text-white">
           <div className="w-16 h-16 border-4 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-white/60">Presenter Mode loading...</p>
+          <p className="text-white/60">Presenter Mode wird geladen...</p>
         </div>
       </div>
     )
@@ -102,13 +99,14 @@ export default function PresenterPage() {
     return (
       <div className="h-screen flex items-center justify-center bg-base-blue-dark">
         <div className="text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Not Found</h2>
+          <div className="text-6xl mb-4">😕</div>
+          <h2 className="text-2xl font-bold mb-2">Nicht gefunden</h2>
           <p className="text-gray-400 mb-6">{error}</p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-base-blue-dark rounded-xl font-medium hover:brightness-90 transition-all"
           >
-            Back to Overview
+            ← Zurück zur Übersicht
           </Link>
         </div>
       </div>
@@ -120,7 +118,7 @@ export default function PresenterPage() {
       <div className="h-screen flex items-center justify-center bg-base-blue-dark">
         <div className="text-center text-white">
           <div className="w-16 h-16 border-4 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-white/60">Presenter Mode loading...</p>
+          <p className="text-white/60">Presenter Mode wird geladen...</p>
         </div>
       </div>
     )
@@ -140,7 +138,7 @@ export default function PresenterPage() {
           />
           <span className="font-semibold text-lg">Presenter Mode</span>
           <span className="text-gray-400 text-sm ml-2">
-            Slide {currentSlideIndex + 1} / {slides.length}
+            Folie {currentSlideIndex + 1} / {slides.length}
           </span>
         </div>
 
@@ -287,7 +285,7 @@ export default function PresenterPage() {
                 </div>
               ) : (
                 <p className="text-gray-500 italic">
-                  No notes for this slide.
+                  Keine Notizen für diese Folie.
                 </p>
               )}
             </div>

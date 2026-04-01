@@ -1,0 +1,62 @@
+{
+  "title": "KI-Standortbestimmung – Kompakt",
+  "description": "Kompaktes Verkaufsformat für M1 – als Quick-Pitch oder Leave-Behind nach Erstgespräch",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "content": {
+        "rawMarkdown": "- Titel: „KI-Standortbestimmung für den Mittelstand\"\n- Untertitel: „Wissen, wo Sie stehen. Verstehen, was zu tun ist.\"\n- IT Consulting by Tricept\n- Michael Muth"
+      }
+    },
+    {
+      "id": "02-ki-standortbestimmung-wissen-wo-sie-stehen",
+      "number": 2,
+      "title": "KI-Standortbestimmung – Wissen, wo Sie stehen",
+      "displayTitle": "KI-Standortbestimmung – Wissen, wo Sie stehen",
+      "layout": "content-page",
+      "theme": "light",
+      "content": {
+        "rawMarkdown": "**Wer wir sind:**\nTricept Consulting verbindet langjährige Projekt- und Beratungserfahrung mit fundierter KI-Kompetenz. Wir begleiten kleine und mittlere Unternehmen bei der strukturierten Einführung von KI – von der Standortbestimmung bis zur dauerhaften Steuerung. Unser Ansatz ist management-orientiert, technologieunabhängig und auf die Realität von KMU zugeschnitten.\n\n**Was eine KI-Standortbestimmung ist:**\nEine strukturierte Bestandsaufnahme: Wie wird KI in Ihrem Unternehmen tatsächlich genutzt? Wo liegen Potenziale, wo Risiken? Und wie gut sind Sie auf die regulatorischen Anforderungen vorbereitet?\n\n**Was wir gemeinsam tun:**\n- **Interviews mit Schlüsselpersonen** – 4–5 strukturierte Gespräche mit Geschäftsführung, IT, Fachbereichen und Compliance\n- **Mitarbeitenden-Umfrage** – Anonyme Kurzumfrage (5 Min/Person), deckt die tatsächliche KI-Nutzung auf\n- **Reifegrad-Analyse** – Einordnung in 6 Dimensionen: Strategie, Organisation, Kompetenz, Technologie, Daten, Governance\n- **Erhebung unkontrollierter KI-Nutzung** – Wo fließen Geschäftsdaten in externe Dienste ohne Wissen der Führung?\n- **Regulatorische Ersteinordnung** – DSGVO, EU AI Act und branchenspezifische Anforderungen\n- **Ergebnispräsentation mit Empfehlung** – Stärken, Handlungsfelder und eine klare Empfehlung für die nächsten Schritte\n\nAlle Erhebungen werden vertraulich behandelt. Das Ergebnisdokument geht ausschließlich an die Geschäftsführung."
+      }
+    },
+    {
+      "id": "03-was-sie-am-ende-haben-und-warum-das-jetzt-wichtig-ist",
+      "number": 3,
+      "title": "Was Sie am Ende haben – und warum das jetzt wichtig ist",
+      "displayTitle": "Was Sie am Ende haben – und warum das jetzt wichtig ist",
+      "layout": "content-page",
+      "theme": "light",
+      "content": {
+        "rawMarkdown": "**Ihr Ergebnis:**\nEin belastbares Ergebnisdokument mit Reifegradeinordnung, Befund zur unkontrollierten KI-Nutzung, regulatorischer Ausgangslage und konkreter Handlungsempfehlung – als Grundlage für Ihre Entscheidung, ob und wie Sie KI strukturiert einführen.\n\n**Was Ihnen das konkret bringt:**\n- **Klarheit statt Vermutung** – Sie wissen, was in Ihrem Unternehmen mit KI tatsächlich passiert. Nicht was Sie annehmen, sondern was die Interviews und Daten zeigen.\n- **Risiken sichtbar machen** – Unkontrollierte KI-Nutzung, Datenabfluss in externe Dienste und fehlende Regeln sind in den meisten KMU Realität. Besser jetzt identifizieren als nach einem Vorfall.\n- **Regulatorische Orientierung** – EU AI Act, DSGVO, branchenspezifische Anforderungen: Sie wissen, wo Sie stehen und was auf Sie zukommt.\n- **Entscheidungsgrundlage** – Weiter investieren, gezielt starten oder bewusst pausieren. Die Standortbestimmung gibt Ihnen die Basis für eine informierte Entscheidung.\n\n**Warum jetzt?**\n- KI-Nutzung passiert bereits – in den meisten KMU nutzen 60–90% der Belegschaft KI-Werkzeuge, oft über private Accounts\n- Das regulatorische Fenster schließt sich: KI-Kompetenzpflicht gilt seit Februar 2025, Hochrisiko-Pflichten ab August 2026\n- Jeder Monat ohne Steuerung ist ein Monat, in dem Risiken wachsen und Chancen ungenutzt bleiben"
+      }
+    },
+    {
+      "id": "04-ihr-einstieg-ueberschaubar-und-unverbindlich",
+      "number": 4,
+      "title": "Ihr Einstieg – überschaubar und unverbindlich",
+      "displayTitle": "Ihr Einstieg – überschaubar und unverbindlich",
+      "layout": "content-page",
+      "theme": "light",
+      "content": {
+        "rawMarkdown": "**Auf einen Blick:**\n- **Dauer:** 1–2 Wochen\n- **Aufwand für Sie:** ca. 7–8 Stunden, verteilt auf 4–6 Personen\n- **Umfang:** 3–5 Beratertage\n- **Festpreis:** 5.000 €\n- **Ergebnis:** Ergebnisdokument + Ergebnispräsentation mit Empfehlung\n\n**Was danach passiert:**\nDie Standortbestimmung ist der Ausgangspunkt. Je nach Ergebnis empfehlen wir den passenden nächsten Schritt – von der KI-Strategie über Governance bis zur konkreten Einführung. Die Entscheidung liegt bei Ihnen. Es gibt keine Verpflichtung über die Standortbestimmung hinaus.\n\n**Nächster Schritt:**\nEin kurzes Gespräch genügt. Wir klären gemeinsam den Betrachtungsrahmen, identifizieren die Interviewpartner und starten innerhalb von 1–2 Wochen."
+      }
+    },
+    {
+      "id": "05-schlussfolie",
+      "number": 5,
+      "title": "Schlussfolie",
+      "displayTitle": "Schlussfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "content": {
+        "rawMarkdown": "- Titel: „KI-Standortbestimmung\"\n- Untertitel: „Wissen, wo Sie stehen. Verstehen, was zu tun ist.\"\n- IT Consulting by Tricept | Michael Muth\n- m.muth@tricept.de"
+      }
+    }
+  ],
+  "chapters": []
+}

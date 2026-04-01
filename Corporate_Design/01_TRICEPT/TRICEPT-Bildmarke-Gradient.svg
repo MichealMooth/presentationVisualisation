@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layout" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226.772 202.277">
+  <defs>
+    <linearGradient id="c" data-name="Unbenannter Verlauf 63" x1="133.675" y1="58.594" x2="213.298" y2="202.593" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16efef"/>
+      <stop offset="1" stop-color="#11ef94"/>
+    </linearGradient>
+    <linearGradient id="d" data-name="Unbenannter Verlauf 68" x1="43.884" y1="141.198" x2="124.354" y2="10.751" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078fe"/>
+      <stop offset="1" stop-color="#16efef"/>
+    </linearGradient>
+    <linearGradient id="e" data-name="Unbenannter Verlauf 66" x1="0" y1="181.614" x2="166.316" y2="181.614" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078fe"/>
+      <stop offset="1" stop-color="#7e78fe"/>
+    </linearGradient>
+  </defs>
+  <path d="M224.603,177.967L149.657,46.963l-12.706,22.009c-7.253,12.564-7.253,28.044.001,40.608l53.026,92.696h20.528c12.475,0,20.293-13.481,14.098-24.309Z" fill="url(#c)"/>
+  <path d="M83.625,119.965l54.044-94.001-10.182-17.789c-6.24-10.902-21.963-10.898-28.198.006L23.764,140.259h24.699c14.505,0,27.908-7.736,35.162-20.295Z" fill="url(#d)"/>
+  <path d="M119.024,160.952H12.141l-9.887,16.868c-6.347,10.828,1.462,24.457,14.014,24.457h150.048l-12.117-21.007c-7.251-12.572-20.663-20.318-35.176-20.318Z" fill="url(#e)"/>
+</svg>

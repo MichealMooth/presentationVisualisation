@@ -7,16 +7,23 @@ import { LayoutRenderer } from '@/components/layouts/LayoutRenderer'
 import { DeckData, Slide } from '@/lib/content/schema'
 import { exportToPptx } from '@/lib/exportPptx'
 
-// ---------------------------------------------------------------------------
-// Import deck data for export.
-// Add your own decks here:
-//
-//   import myDeckData from '../../../../../content/decks/my-deck.json'
-// ---------------------------------------------------------------------------
-import exampleData from '../../../../../content/decks/_example.json'
+// Import all available decks statically
+import kiBeratungData from '../../../../../content/decks/ki-beratung.json'
+import triceptAgData from '../../../../../content/decks/tricept-ag.json'
+import angebotM1Data from '../../../../../content/decks/angebotspraesentation-m1.json'
+import steuerungskreisData from '../../../../../content/decks/steuerungskreis-cos-ki.json'
+import ergebnisM1Data from '../../../../../content/decks/ergebnispraesentation-m1.json'
+import m1KompaktData from '../../../../../content/decks/m1-kompakt.json'
+import kiChancenRisikenData from '../../../../../content/decks/ki-chancen-risiken.json'
 
 const deckRegistry: Record<string, DeckData> = {
-  '_example': exampleData as DeckData,
+  'ki-beratung': kiBeratungData as DeckData,
+  'tricept-ag': triceptAgData as DeckData,
+  'angebotspraesentation-m1': angebotM1Data as DeckData,
+  'steuerungskreis-cos-ki': steuerungskreisData as DeckData,
+  'ergebnispraesentation-m1': ergebnisM1Data as DeckData,
+  'm1-kompakt': m1KompaktData as DeckData,
+  'ki-chancen-risiken': kiChancenRisikenData as DeckData,
 }
 
 const VIRTUAL_W = 1920
@@ -112,16 +119,16 @@ export default function ExportPage() {
       <div className="h-screen flex items-center justify-center bg-base-grey">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-base-blue-dark mb-2">
-            Not Found
+            Nicht gefunden
           </h2>
           <p className="text-gray-600 mb-6">
-            Presentation &quot;{slug}&quot; not found.
+            Präsentation &quot;{slug}&quot; nicht gefunden.
           </p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-base-blue text-white rounded-xl font-medium hover:bg-base-blue-dark transition-colors"
           >
-            Back to Overview
+            Zurück zur Übersicht
           </Link>
         </div>
       </div>
@@ -130,33 +137,33 @@ export default function ExportPage() {
 
   return (
     <>
-      {/* Print toolbar */}
+      {/* Print toolbar — hidden when printing */}
       <div className="print:hidden fixed top-0 left-0 right-0 z-50 bg-gray-900 text-white px-6 py-3 flex items-center justify-between shadow-lg">
         <div className="flex items-center gap-4">
           <Link
             href={`/deck/${slug}`}
             className="text-white/70 hover:text-white text-sm transition-colors"
           >
-            Back
+            Zurück
           </Link>
           <span className="text-white/40">|</span>
           <h1 className="text-sm font-medium">{deckData.title}</h1>
-          <span className="text-white/40 text-sm">{deckData.slides.length} Slides</span>
+          <span className="text-white/40 text-sm">{deckData.slides.length} Folien</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-white/50 text-xs">Tip: Disable headers/footers in print dialog</span>
+          <span className="text-white/50 text-xs">Tipp: Im Druckdialog &quot;Kopf- und Fußzeilen&quot; deaktivieren</span>
           <button
             onClick={handlePptxExport}
             disabled={pptxLoading}
             className="px-5 py-2 bg-white/15 text-white rounded-lg text-sm font-bold hover:bg-white/25 transition-all disabled:opacity-50"
           >
-            {pptxLoading ? 'Creating...' : 'PPTX Export'}
+            {pptxLoading ? 'Wird erstellt…' : 'PPTX Export'}
           </button>
           <button
             onClick={() => window.print()}
             className="px-5 py-2 bg-accent text-gray-900 rounded-lg text-sm font-bold hover:brightness-90 transition-all"
           >
-            Print as PDF (Ctrl+P)
+            Als PDF drucken (Ctrl+P)
           </button>
         </div>
       </div>
@@ -164,7 +171,7 @@ export default function ExportPage() {
       {/* Spacer for toolbar */}
       <div className="print:hidden h-14" />
 
-      {/* Slides */}
+      {/* Slides — each one is a print page */}
       <div className="export-slides">
         {deckData.slides.map((slide: Slide, index: number) => (
           <AutoScaleSlide

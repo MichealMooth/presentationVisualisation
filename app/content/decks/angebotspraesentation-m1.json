@@ -1,0 +1,495 @@
+{
+  "title": "Angebotspräsentation KI-Standortbestimmung",
+  "description": "Angebotspräsentation für die Tricept AG - KI-Standortbestimmung (Modul 1)",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Willkommen & Agenda",
+      "content": {
+        "rawMarkdown": "KI-Beratung Tricept AG\nAngebotspräsentation KI-Standortbestimmung\n\nTricept Consulting\n6. März 2026"
+      },
+      "notes": "Begrüßung, kurzer Smalltalk. Überleitung: Schön, dass wir heute anknüpfen können."
+    },
+    {
+      "id": "02-agenda",
+      "number": 2,
+      "title": "Agenda",
+      "displayTitle": "Agenda",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Willkommen & Agenda",
+      "content": {
+        "rawMarkdown": "Schön, dass wir heute anknüpfen können. Drei Punkte stehen an:\n\n- **Unser Beratungsansatz** -- Was hat sich seit dem Ersttermin verändert und wie sieht unser Vorgehensmodell mit allen Modulen aus.\n- **Kostenrahmen** -- Standortbestimmung als Festpreis, Orientierung für mögliche Folgeschritte.\n- **Konkreter nächster Schritt** -- Wer nimmt an den Interviews teil, wie geht es weiter?",
+        "timeline": []
+      },
+      "notes": "Kurz die drei Punkte vorstellen, dann direkt in den Beratungsansatz einsteigen."
+    },
+    {
+      "id": "03-rueckblick-ersttermin",
+      "number": 3,
+      "title": "Rückblick Ersttermin",
+      "displayTitle": "Rückblick Ersttermin",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "Am 20. Februar haben wir gemeinsam eure KI-Situation besprochen. Die Kernerkenntnisse:\n\n- Ihr habt bereits produktive KI-Anwendungen (Chat-Assistent, Vertragserfassungsassistent)\n- Gleichzeitig fehlen Struktur, Governance und strategische Steuerung\n- Die Spannbreite im Team reicht von stark KI-affin bis vorsichtig\n- Shadow-AI ist wahrscheinlich vorhanden, aber nicht systematisch erfasst\n- Euer Wunsch: Pragmatisch, konkret, kein Overhead",
+        "deliverables": []
+      },
+      "notes": "Kurze Zusammenfassung, nicht alles wiederholen. Zeigt, dass wir zugehört haben."
+    },
+    {
+      "id": "04-was-hat-sich-geaendert",
+      "number": 4,
+      "title": "Was hat sich geändert",
+      "displayTitle": "Was hat sich geändert",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Vorher:**\n- Im Ersttermin hatten wir einen Gap-Check als schnellen Einstieg vorgeschlagen\n- Gedacht für Unternehmen mit bestehender KI-Nutzung\n- Fokus auf Lückenanalyse\n\n**Jetzt:**\n- Die KI-Standortbestimmung ist immer der erste Schritt\n- Unabhängig davon, wo ein Unternehmen steht\n- Reifegradeinordnung und Standortbestimmung als stabile Grundlage\n- Bevor Strategie, Governance oder Einführung angegangen werden",
+        "comparison": [
+          {
+            "title": "Vorher:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Im Ersttermin hatten wir einen Gap-Check als schnellen Einstieg vorgeschlagen",
+              "Gedacht für Unternehmen mit bestehender KI-Nutzung",
+              "Fokus auf Lückenanalyse"
+            ]
+          },
+          {
+            "title": "Jetzt:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Die KI-Standortbestimmung ist immer der erste Schritt",
+              "Unabhängig davon, wo ein Unternehmen steht",
+              "Reifegradeinordnung und Standortbestimmung als stabile Grundlage",
+              "Bevor Strategie, Governance oder Einführung angegangen werden"
+            ]
+          }
+        ]
+      },
+      "notes": "Transparent kommunizieren: Wir haben unser Vorgehen weiterentwickelt. Das ist kein Rückzieher, sondern eine Qualitätsentscheidung."
+    },
+    {
+      "id": "05-ihr-weg-zur-strukturierten-ki-fuehrung",
+      "number": 5,
+      "title": "Ihr Weg zur strukturierten KI-Führung",
+      "displayTitle": "Ihr Weg zur strukturierten KI-Führung",
+      "layout": "process-flow",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "Beratungsmodule, Phasen und Bausteine im Überblick"
+      },
+      "notes": "Jedes Modul kurz benennen, nicht vertiefen. Vertiefen in den Moduldetails. Hinweis: Jedes Modul ist anklickbar und führt in die Detailansicht."
+    },
+    {
+      "id": "06-ki-standortbestimmung",
+      "number": 6,
+      "title": "KI-Standortbestimmung",
+      "displayTitle": "KI-Standortbestimmung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Badge:** Einstiegsmodul | Festpreis | 3-5 Beratertage | 1-2 Wochen\n\n**Bausteine:**\n- **B1 Reifegrad** (Kern) | Erhebung über 6 Dimensionen (Strategie, Organisation, Kompetenz, Technologie, Governance, Daten), strukturierte Interviews, Shadow-AI-Identifikation | ca. 2,5 BT\n- **B6 Regulatorik** (Baseline) | Regulatorische Ersteinordnung (EU AI Act, DSGVO), Basis-Compliance-Check der bestehenden KI-Nutzung | ca. 0,5 BT\n- **B9 Dokumentation** (Einfach) | Ergebnisbericht mit Reifegradprofil, Handlungsempfehlungen, Management-Summary | ca. 1 BT\n\n**Ergebnisse:**\n- Reifegradprofil über 6 Dimensionen mit Stärken und Handlungsfeldern\n- KI-Nutzungsübersicht inkl. Shadow-AI-Befund\n- Regulatorische Basiseinordnung\n- Priorisierte Handlungsempfehlungen mit klarer Empfehlung für den nächsten Schritt\n\n**Aufwand:** Gesamt 3-5 BT | Kundenaufwand ca. 5-6 Stunden",
+        "moduleDetail": {
+          "badge": "Einstiegsmodul | Festpreis | 3-5 Beratertage | 1-2 Wochen",
+          "bausteine": [
+            {
+              "name": "B1 Reifegrad",
+              "role": "Kern",
+              "description": "Erhebung über 6 Dimensionen (Strategie, Organisation, Kompetenz, Technologie, Governance, Daten), strukturierte Interviews, Shadow-AI-Identifikation",
+              "effort": "ca. 2,5 BT"
+            },
+            {
+              "name": "B6 Regulatorik",
+              "role": "Baseline",
+              "description": "Regulatorische Ersteinordnung (EU AI Act, DSGVO), Basis-Compliance-Check der bestehenden KI-Nutzung",
+              "effort": "ca. 0,5 BT"
+            },
+            {
+              "name": "B9 Dokumentation",
+              "role": "Einfach",
+              "description": "Ergebnisbericht mit Reifegradprofil, Handlungsempfehlungen, Management-Summary",
+              "effort": "ca. 1 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Reifegradprofil über 6 Dimensionen mit Stärken und Handlungsfeldern",
+            "KI-Nutzungsübersicht inkl. Shadow-AI-Befund",
+            "Regulatorische Basiseinordnung",
+            "Priorisierte Handlungsempfehlungen mit klarer Empfehlung für den nächsten Schritt"
+          ],
+          "aufwand": "Gesamt 3-5 BT | Kundenaufwand ca. 5-6 Stunden"
+        }
+      }
+    },
+    {
+      "id": "07-ki-strategie-und-use-cases",
+      "number": 7,
+      "title": "KI-Strategie und Use-Cases",
+      "displayTitle": "KI-Strategie und Use-Cases",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 6-10 Beratertage | 3-5 Wochen\n\n**Bausteine:**\n- **B2 Strategie** (Kern) | Strategie-Workshop mit Management, KI-Zielbild entwickeln, Leitplanken und Nicht-Ziele definieren, Vendor-/Sourcing-Strategie | ca. 3 BT\n- **B3 Use-Cases** (Kern) | Use-Case-Workshops mit Fachbereichen, Bewertung (Nutzen, Aufwand, Risiko, Strategiefit), Priorisierung, Management-Entscheidungsworkshop | ca. 4 BT\n- **B6 Regulatorik** (Filter) | Regulatorisches Ampel-Rating je Use-Case (EU AI Act Risikoklasse, DSGVO, Drittlandtransfer) | ca. 1 BT\n- **B9 Dokumentation** (Aufbau) | KI-Strategie-Dokument, Use-Case-Bewertungsmatrix, dokumentierte Management-Entscheidungen | ca. 1,5 BT\n\n**Ergebnisse:**\n- KI-Strategie und Zielbild (Ambition, Leitplanken, Nicht-Ziele, Vendor-Strategie)\n- Use-Case-Bewertung und Priorisierung mit regulatorischer Einordnung\n- Dokumentierte Management-Entscheidung: Welche Use-Cases starten, welche nicht\n\n**Aufwand:** Gesamt 6-10 BT | Kundenaufwand ca. 15-20 Stunden",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 6-10 Beratertage | 3-5 Wochen",
+          "bausteine": [
+            {
+              "name": "B2 Strategie",
+              "role": "Kern",
+              "description": "Strategie-Workshop mit Management, KI-Zielbild entwickeln, Leitplanken und Nicht-Ziele definieren, Vendor-/Sourcing-Strategie",
+              "effort": "ca. 3 BT"
+            },
+            {
+              "name": "B3 Use-Cases",
+              "role": "Kern",
+              "description": "Use-Case-Workshops mit Fachbereichen, Bewertung (Nutzen, Aufwand, Risiko, Strategiefit), Priorisierung, Management-Entscheidungsworkshop",
+              "effort": "ca. 4 BT"
+            },
+            {
+              "name": "B6 Regulatorik",
+              "role": "Filter",
+              "description": "Regulatorisches Ampel-Rating je Use-Case (EU AI Act Risikoklasse, DSGVO, Drittlandtransfer)",
+              "effort": "ca. 1 BT"
+            },
+            {
+              "name": "B9 Dokumentation",
+              "role": "Aufbau",
+              "description": "KI-Strategie-Dokument, Use-Case-Bewertungsmatrix, dokumentierte Management-Entscheidungen",
+              "effort": "ca. 1,5 BT"
+            }
+          ],
+          "ergebnisse": [
+            "KI-Strategie und Zielbild (Ambition, Leitplanken, Nicht-Ziele, Vendor-Strategie)",
+            "Use-Case-Bewertung und Priorisierung mit regulatorischer Einordnung",
+            "Dokumentierte Management-Entscheidung: Welche Use-Cases starten, welche nicht"
+          ],
+          "aufwand": "Gesamt 6-10 BT | Kundenaufwand ca. 15-20 Stunden"
+        }
+      }
+    },
+    {
+      "id": "08-governance-und-umsetzungsvorbereitung",
+      "number": 8,
+      "title": "Governance und Umsetzungsvorbereitung",
+      "displayTitle": "Governance und Umsetzungsvorbereitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 5-8 Beratertage | 3-5 Wochen\n\n**Bausteine:**\n- **B4 Organisation** (Kern) | Rollen- und Verantwortungsstruktur definieren, Befähigungsbedarf identifizieren, Integration in bestehende Strukturen | ca. 2 BT\n- **B5 Governance** (Kern) | Entscheidungs- und Steuerungslogik aufbauen, Review-Formate definieren, Eskalationswege festlegen | ca. 2 BT\n- **B6 Regulatorik** (Kern) | Vertiefte regulatorische Einordnung, DSGVO-Vertiefung, Risikomanagement, Vendor-Steuerung (AVV, Drittlandtransfer) | ca. 1,5 BT\n- **B9 Dokumentation** (Struktur) | Governance-Dokument, Umsetzungssteckbriefe je Start-UC, Risiko-Log | ca. 1,5 BT\n\n**Ergebnisse:**\n- Governance-Struktur (Rollen, Entscheidungswege, Review-Formate, Regulatorik-Maßnahmen)\n- Umsetzungssteckbriefe je Use-Case (Owner, Governance-Zuordnung, Meilensteine, Erfolgskriterien)\n- Management-Freigabe für die Umsetzung\n\n**Aufwand:** Gesamt 5-8 BT | Kundenaufwand ca. 15-20 Stunden",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 5-8 Beratertage | 3-5 Wochen",
+          "bausteine": [
+            {
+              "name": "B4 Organisation",
+              "role": "Kern",
+              "description": "Rollen- und Verantwortungsstruktur definieren, Befähigungsbedarf identifizieren, Integration in bestehende Strukturen",
+              "effort": "ca. 2 BT"
+            },
+            {
+              "name": "B5 Governance",
+              "role": "Kern",
+              "description": "Entscheidungs- und Steuerungslogik aufbauen, Review-Formate definieren, Eskalationswege festlegen",
+              "effort": "ca. 2 BT"
+            },
+            {
+              "name": "B6 Regulatorik",
+              "role": "Kern",
+              "description": "Vertiefte regulatorische Einordnung, DSGVO-Vertiefung, Risikomanagement, Vendor-Steuerung (AVV, Drittlandtransfer)",
+              "effort": "ca. 1,5 BT"
+            },
+            {
+              "name": "B9 Dokumentation",
+              "role": "Struktur",
+              "description": "Governance-Dokument, Umsetzungssteckbriefe je Start-UC, Risiko-Log",
+              "effort": "ca. 1,5 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Governance-Struktur (Rollen, Entscheidungswege, Review-Formate, Regulatorik-Maßnahmen)",
+            "Umsetzungssteckbriefe je Use-Case (Owner, Governance-Zuordnung, Meilensteine, Erfolgskriterien)",
+            "Management-Freigabe für die Umsetzung"
+          ],
+          "aufwand": "Gesamt 5-8 BT | Kundenaufwand ca. 15-20 Stunden"
+        }
+      }
+    },
+    {
+      "id": "09-einfuehrungsbegleitung",
+      "number": 9,
+      "title": "Einführungsbegleitung",
+      "displayTitle": "Einführungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 4-8 Beratertage je UC | 4-8 Wochen\n\n**Bausteine:**\n- **B7 Einführung** (Kern) | UC-Kick-off, Einführungssteuerung, Testphase begleiten, Go-Live-Entscheidung, Übergabe in Regelbetrieb | ca. 2-4 BT\n- **B8 Transformation** (Kern) | Change-Kommunikation, Enablement der Mitarbeitenden, Feedback-Schleifen, Management-Vorbildnutzung | ca. 1-2 BT\n- **B6 Regulatorik** (Prüfung) | Go-Live-Checkliste (10 Punkte: DSGVO, AI Act, AVV, Transparenz, Human Oversight) | ca. 0,5 BT\n- **B9 Dokumentation** (Nutzung) | Einführungsprotokoll, Betriebsregeln, Monitoring-Setup, Lessons Learned | ca. 0,5-1 BT\n\n**Ergebnisse:**\n- Einführungsprotokoll je Use-Case (Planung, Steuerung, Go-Live-Entscheidung, Betriebsregeln)\n- Dokumentierte Go-Live-Freigabe\n- Lessons Learned und Empfehlungen für weitere Use-Cases\n\n**Aufwand:** Gesamt 4-8 BT je UC | Kundenaufwand ca. 15-25 Stunden je UC",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 4-8 Beratertage je UC | 4-8 Wochen",
+          "bausteine": [
+            {
+              "name": "B7 Einführung",
+              "role": "Kern",
+              "description": "UC-Kick-off, Einführungssteuerung, Testphase begleiten, Go-Live-Entscheidung, Übergabe in Regelbetrieb",
+              "effort": "ca. 2-4 BT"
+            },
+            {
+              "name": "B8 Transformation",
+              "role": "Kern",
+              "description": "Change-Kommunikation, Enablement der Mitarbeitenden, Feedback-Schleifen, Management-Vorbildnutzung",
+              "effort": "ca. 1-2 BT"
+            },
+            {
+              "name": "B6 Regulatorik",
+              "role": "Prüfung",
+              "description": "Go-Live-Checkliste (10 Punkte: DSGVO, AI Act, AVV, Transparenz, Human Oversight)",
+              "effort": "ca. 0,5 BT"
+            },
+            {
+              "name": "B9 Dokumentation",
+              "role": "Nutzung",
+              "description": "Einführungsprotokoll, Betriebsregeln, Monitoring-Setup, Lessons Learned",
+              "effort": "ca. 0,5-1 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Einführungsprotokoll je Use-Case (Planung, Steuerung, Go-Live-Entscheidung, Betriebsregeln)",
+            "Dokumentierte Go-Live-Freigabe",
+            "Lessons Learned und Empfehlungen für weitere Use-Cases"
+          ],
+          "aufwand": "Gesamt 4-8 BT je UC | Kundenaufwand ca. 15-25 Stunden je UC"
+        }
+      },
+      "notes": "Rahmenmodul -- wird für jeden Use-Case oder UC-Gruppe wiederholt."
+    },
+    {
+      "id": "10-ki-fuehrungsbegleitung",
+      "number": 10,
+      "title": "KI-Führungsbegleitung",
+      "displayTitle": "KI-Führungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Beratungsansatz",
+      "content": {
+        "rawMarkdown": "**Badge:** Retainer | 1-2 Beratertage pro Quartal | Dauerhaft\n\n**Bausteine:**\n- **B5 Governance** (Kern) | Quartals-Reviews (Nutzung, Risiken, Compliance, Betrieb, Weiterentwicklung), Governance-Nachschärfung, Entscheidungsvorbereitung | ca. 0,75 BT\n- **B9 Dokumentation** (Pflege) | Review-Protokolle, KI-Anwendungsverzeichnis aktualisieren, Sparring-Empfehlungen dokumentieren | ca. 0,25 BT\n- **B1 Reifegrad** (Review) | Jährliches Reifegrad-Update, Fortschrittsmessung | anteilig\n- **B2 Strategie** (Review) | Jährlicher Strategie-Abgleich, Zielbild-Überprüfung | anteilig\n\n**Ergebnisse:**\n- Review-Protokoll je Quartal (Status, Risiken, Entscheidungen, Maßnahmen)\n- Aktualisierte KI-Anwendungsübersicht\n- Ad-hoc-Sparring bei Entscheidungsbedarf zwischen Reviews\n\n**Aufwand:** Gesamt 1-2 BT/Quartal | Kundenaufwand ca. 4-6 Stunden/Quartal",
+        "moduleDetail": {
+          "badge": "Retainer | 1-2 Beratertage pro Quartal | Dauerhaft",
+          "bausteine": [
+            {
+              "name": "B5 Governance",
+              "role": "Kern",
+              "description": "Quartals-Reviews (Nutzung, Risiken, Compliance, Betrieb, Weiterentwicklung), Governance-Nachschärfung, Entscheidungsvorbereitung",
+              "effort": "ca. 0,75 BT"
+            },
+            {
+              "name": "B9 Dokumentation",
+              "role": "Pflege",
+              "description": "Review-Protokolle, KI-Anwendungsverzeichnis aktualisieren, Sparring-Empfehlungen dokumentieren",
+              "effort": "ca. 0,25 BT"
+            },
+            {
+              "name": "B1 Reifegrad",
+              "role": "Review",
+              "description": "Jährliches Reifegrad-Update, Fortschrittsmessung",
+              "effort": "anteilig"
+            },
+            {
+              "name": "B2 Strategie",
+              "role": "Review",
+              "description": "Jährlicher Strategie-Abgleich, Zielbild-Überprüfung",
+              "effort": "anteilig"
+            }
+          ],
+          "ergebnisse": [
+            "Review-Protokoll je Quartal (Status, Risiken, Entscheidungen, Maßnahmen)",
+            "Aktualisierte KI-Anwendungsübersicht",
+            "Ad-hoc-Sparring bei Entscheidungsbedarf zwischen Reviews"
+          ],
+          "aufwand": "Gesamt 1-2 BT/Quartal | Kundenaufwand ca. 4-6 Stunden/Quartal"
+        }
+      },
+      "notes": "Ad-hoc-Sparring-Kontingent im Retainer enthalten. Jährliche Vertiefung optional."
+    },
+    {
+      "id": "11-ablauf-der-standortbestimmung",
+      "number": 11,
+      "title": "Ablauf der Standortbestimmung",
+      "displayTitle": "Ablauf der Standortbestimmung",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Die Standortbestimmung im Detail",
+      "content": {
+        "rawMarkdown": "Die Standortbestimmung gliedert sich in vier Phasen:\n\n| Phase | Beschreibung | Euer Aufwand |\n|-------|-------------|-------------|\n| Vorbereitung | Wir sichten vorab bereitgestellte Unterlagen und bereiten die Erhebung vor | kein Aufwand |\n| Erhebung | Strukturierte Interviews mit verschiedenen Perspektiven | ca. 4-5 Stunden |\n| Auswertung | Bewertung über das Reifegradmodell, Konsolidierung, Erstellung des Berichts | kein Aufwand |\n| Ergebnispräsentation | Vorstellung der Ergebnisse bei der Geschäftsführung, Diskussion | ca. 60-90 Minuten |",
+        "timeline": [
+          {
+            "id": "Vorbereitung",
+            "title": "Wir sichten vorab bereitgestellte Unterlagen und bereiten die Erhebung vor",
+            "description": "kein Aufwand",
+            "result": ""
+          },
+          {
+            "id": "Erhebung",
+            "title": "Strukturierte Interviews mit verschiedenen Perspektiven",
+            "description": "ca. 4-5 Stunden",
+            "result": ""
+          },
+          {
+            "id": "Auswertung",
+            "title": "Bewertung über das Reifegradmodell, Konsolidierung, Erstellung des Berichts",
+            "description": "kein Aufwand",
+            "result": ""
+          },
+          {
+            "id": "Ergebnispräsentation",
+            "title": "Vorstellung der Ergebnisse bei der Geschäftsführung, Diskussion",
+            "description": "ca. 60-90 Minuten",
+            "result": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "12-was-ihr-bekommt",
+      "number": 12,
+      "title": "Was ihr bekommt",
+      "displayTitle": "Was ihr bekommt",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Die Standortbestimmung im Detail",
+      "content": {
+        "rawMarkdown": "- **Initiales Reifegradprofil** -- Einordnung über 6 Dimensionen mit konkreten Stärken und Handlungsfeldern. Keine abstrakten Scores, sondern nachvollziehbare Bewertungen.\n- **KI-Nutzungsübersicht** -- Vollständiges Bild: autorisierte Anwendungen, identifizierte Shadow-AI, technische Abhängigkeiten.\n- **Regulatorische Basiseinordnung** -- Erste Einordnung eurer KI-Nutzung hinsichtlich EU AI Act und DSGVO. Besonders relevant für euer Finanzumfeld.\n- **Priorisierte Handlungsfelder** -- Welche 2-3 Themen den größten Hebel haben.\n- **Klares Angebot und Empfehlung** -- Für das weitere gemeinsame Vorgehen, basierend auf eurer tatsächlichen Situation.",
+        "deliverables": []
+      }
+    },
+    {
+      "id": "13-standortbestimmung-festpreis",
+      "number": 13,
+      "title": "Standortbestimmung Festpreis",
+      "displayTitle": "Standortbestimmung Festpreis",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Kostenrahmen",
+      "content": {
+        "rawMarkdown": "- **Umfang:** 3-5 Beratertage\n- **Preismodell:** Festpreis\n- **Investition:** ~~4.500 EUR~~ Sonderpreis: 0 EUR zzgl. MwSt.\n- **Reisekosten:** nach Aufwand\n- **Euer Aufwand:** ca. 5-6 Stunden, verteilt auf 4-6 Personen",
+        "deliverables": []
+      }
+    },
+    {
+      "id": "14-vier-perspektiven",
+      "number": 14,
+      "title": "Vier Perspektiven",
+      "displayTitle": "Vier Perspektiven",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Interviewpartner abstimmen",
+      "content": {
+        "rawMarkdown": "Für die Standortbestimmung brauchen wir Gesprächspartner aus vier Bereichen. Die Interviews sind strukturiert, aber dialogisch -- keine Prüfungssituation.\n\n- **Geschäftsführung / Vorstand** -- Strategische Einordnung, Erwartungen, Entscheidungsstrukturen | ca. 60-90 Min.\n- **IT-Verantwortung** -- KI-Dienste, Infrastruktur, Datenlandschaft, IT-Sicherheit | ca. 60 Min.\n- **Fachbereich / Key User** -- Tatsächliche KI-Nutzung, Akzeptanz, Shadow AI, Schmerzpunkte | ca. 45 Min.\n- **Compliance / Datenschutz** -- Bestehende Richtlinien, regulatorische Anforderungen, Risikobewertung | ca. 30-45 Min.",
+        "matrix": []
+      }
+    },
+    {
+      "id": "15-so-geht-es-weiter",
+      "number": 15,
+      "title": "So geht es weiter",
+      "displayTitle": "So geht es weiter",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Nächste Schritte",
+      "content": {
+        "rawMarkdown": "| Schritt | Beschreibung |\n|---------|-------------|\n| 1 | Durchführung Standortbestimmung (Interviews + Auswertung) |\n| 2 | Ergebnispräsentation bei der Geschäftsführung |\n| 3 | Präzisiertes Angebot mit konkreten Modulvorschlägen auf Basis der Ergebnisse |",
+        "timeline": [
+          {
+            "id": "1",
+            "title": "Durchführung Standortbestimmung (Interviews + Auswertung)",
+            "description": "",
+            "result": ""
+          },
+          {
+            "id": "2",
+            "title": "Ergebnispräsentation bei der Geschäftsführung",
+            "description": "",
+            "result": ""
+          },
+          {
+            "id": "3",
+            "title": "Präzisiertes Angebot mit konkreten Modulvorschlägen auf Basis der Ergebnisse",
+            "description": "",
+            "result": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "16-aufwandsrahmen-fuer-folgemodule",
+      "number": 16,
+      "title": "Aufwandsrahmen für Folgemodule",
+      "displayTitle": "Aufwandsrahmen für Folgemodule",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Nächste Schritte",
+      "content": {
+        "rawMarkdown": "Nach der Standortbestimmung entscheidet ihr frei, ob und wie es weitergeht. Welche Module sinnvoll sind, ergibt sich aus den Ergebnissen.\n\n- **KI-Strategie & Use-Cases** | Wenn Zielbild und Priorisierung fehlen | 6-10 BT | Aufwandsbasiert\n- **Governance & Umsetzungsvorbereitung** | Wenn Rollen, Regeln und Entscheidungswege fehlen | 5-8 BT | Aufwandsbasiert\n- **Einführungsbegleitung** | Wenn konkrete KI-Anwendungen eingeführt werden sollen | 4-8 BT je UC | Aufwandsbasiert\n- **KI-Führungsbegleitung** | Für die dauerhafte Steuerung im laufenden Betrieb | 1-2 BT/Quartal | Retainer\n\nOptional: **Technisches Sparring** -- zuschaltbar ab Governance-Phase.",
+        "deliverables": []
+      },
+      "notes": "Jede Modulzeile verlinkt auf die Moduldetailansicht aus Thema 2."
+    },
+    {
+      "id": "17-abschluss",
+      "number": 17,
+      "title": "Abschluss",
+      "displayTitle": "Abschluss",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Nächste Schritte",
+      "content": {
+        "rawMarkdown": "Die Standortbestimmung gibt euch ein klares Bild:\nWo steht die Tricept AG beim Thema KI -- und was ist der nächste sinnvolle Schritt?\n\nEin abgeschlossenes Modul. Ein konkretes Ergebnis. Eure Entscheidung."
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Willkommen & Agenda",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Unser Beratungsansatz",
+      "startSlide": 3
+    },
+    {
+      "id": "block-2",
+      "title": "Die Standortbestimmung im Detail",
+      "startSlide": 11
+    },
+    {
+      "id": "block-3",
+      "title": "Kostenrahmen",
+      "startSlide": 13
+    },
+    {
+      "id": "block-4",
+      "title": "Interviewpartner abstimmen",
+      "startSlide": 14
+    },
+    {
+      "id": "block-5",
+      "title": "Nächste Schritte",
+      "startSlide": 15
+    }
+  ]
+}

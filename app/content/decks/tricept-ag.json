@@ -1,0 +1,551 @@
+{
+  "title": "KI-Einführung für die Tricept AG",
+  "description": "Strukturierte KI-Strategie für IT-Beratungen im deutschen Mittelstand",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "- Titel: \"Strukturierte KI-Einführung für die Tricept AG\"\n- Untertitel: \"IT-Beratung neu gedacht. KI-Potenziale erkennen. Strukturiert umsetzen.\"\n- IT Consulting by Tricept -- Ihr Partner für KI im Mittelstand\n- Datum: Februar 2026\n- Berater: IT Consulting by Tricept"
+      }
+    },
+    {
+      "id": "02-agenda-ziel-des-termins",
+      "number": 2,
+      "title": "Agenda & Ziel des Termins",
+      "displayTitle": "Unser gemeinsames Ziel heute",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Unser gemeinsames Ziel heute\"\n- Zielformulierung (prominent): \"Gemeinsam herausfinden, wie die Tricept AG mit einer strukturierten KI-Strategie ihre IT-Beratung auf das nächste Level hebt.\"\n- Agenda als 4 Blöcke:\n  1. Ihre Ausgangslage -- Wo steht die Tricept AG beim Thema KI?\n  2. KI-Chancen für IT-Beratungen -- Was verändert sich in der Branche?\n  3. Unser Ansatz -- Wie wir Sie bei der KI-Einführung begleiten\n  4. Konkreter Einstieg -- Wo starten wir, was sind die nächsten Schritte?\n- Hinweis (kleiner, kursiv): \"Dies ist ein Dialog, kein Vortrag. Fragen und Einwürfe sind jederzeit willkommen.\"",
+        "timeline": [
+          {
+            "id": "1",
+            "title": "Ihre Ausgangslage",
+            "description": "Wo steht die Tricept AG beim Thema KI?"
+          },
+          {
+            "id": "2",
+            "title": "KI-Chancen für IT-Beratungen",
+            "description": "Was verändert sich in der Branche?"
+          },
+          {
+            "id": "3",
+            "title": "Unser Ansatz",
+            "description": "Wie wir Sie bei der KI-Einführung begleiten"
+          },
+          {
+            "id": "4",
+            "title": "Konkreter Einstieg",
+            "description": "Wo starten wir, was sind die nächsten Schritte?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-ihre-ausgangslage-dialog",
+      "number": 3,
+      "title": "Ihre Ausgangslage -- Dialog",
+      "displayTitle": "Bevor wir über KI sprechen -- sprechen wir über die Tricept AG.",
+      "layout": "dialog",
+      "theme": "light",
+      "chapter": "Ihre Ausgangslage",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Bevor wir über KI sprechen -- sprechen wir über die Tricept AG.\"\n- 5 Leitfragen für den Dialog:\n  1. \"Welche IT-Beratungsleistungen bietet die Tricept AG heute an und was macht Sie besonders?\"\n  2. \"Was war der Anlass, sich jetzt strukturiert mit KI zu beschäftigen?\"\n  3. \"Welche Erfahrungen haben Ihre Berater und Kunden bereits mit KI gemacht?\"\n  4. \"Wo sehen Sie das größte Potenzial für KI -- intern in Ihren Prozessen oder im Angebot an Ihre Kunden?\"\n  5. \"Was erwarten Sie von uns und von diesem Termin?\""
+      },
+      "notes": "- Besonders auf die Doppelrolle achten: Tricept nutzt KI intern UND berät Kunden dazu\n- Erfahrungsniveau der Berater erfassen\n- Klären ob Tricept KI als neues Beratungsfeld positionieren will\n- Max. 15-20 Minuten, dann aktiv überleiten"
+    },
+    {
+      "id": "04-was-ki-fuer-it-beratungen-konkret-leisten-kann",
+      "number": 4,
+      "title": "Was KI für IT-Beratungen konkret leisten kann",
+      "displayTitle": "KI in der IT-Beratung -- doppelter Hebel, doppelte Chance",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "KI-Chancen für IT-Beratungen",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"KI in der IT-Beratung -- doppelter Hebel, doppelte Chance\"\n- 4 Nutzenkategorien:\n\n  **Interne Effizienz der Beratung**\n  - Angebotserstellung und Projektdokumentation beschleunigen\n  - Wissensmanagement über Projekte hinweg automatisieren\n  - Rechercheaufwand für Technologiebewertungen reduzieren\n\n  **Qualität der Beratungsleistung**\n  - Datenbasierte Analysen als Grundlage für Kundenempfehlungen\n  - Konsistentere Ergebnisse bei wiederkehrenden Beratungsmodulen\n  - KI-gestützte Prüfung von IT-Architekturen und Sicherheitskonzepten\n\n  **Neues Beratungsangebot**\n  - KI-Strategieberatung als eigenes Leistungsmodul\n  - KI-Readiness-Assessments für KMU-Kunden anbieten\n  - Begleitung bei KI-Einführung als Wachstumsfeld\n\n  **Wettbewerbsvorteil im Markt**\n  - Differenzierung gegenüber klassischen IT-Dienstleistern\n  - Positionierung als zukunftsfähiger Beratungspartner\n  - Attraktivität für Fachkräfte durch moderne Arbeitsweisen\n\n- Kernbotschaft (unten, hervorgehoben): \"KI ist für IT-Beratungen nicht nur ein Thema für Kunden -- sondern der Schlüssel zur eigenen Zukunftsfähigkeit.\"",
+        "callout": {
+          "text": "KI ist für IT-Beratungen nicht nur ein Thema für Kunden -- sondern der Schlüssel zur eigenen Zukunftsfähigkeit."
+        },
+        "matrix": [
+          {
+            "title": "Interne Effizienz der Beratung",
+            "items": [
+              "Angebotserstellung und Projektdokumentation beschleunigen",
+              "Wissensmanagement über Projekte hinweg automatisieren",
+              "Rechercheaufwand für Technologiebewertungen reduzieren"
+            ]
+          },
+          {
+            "title": "Qualität der Beratungsleistung",
+            "items": [
+              "Datenbasierte Analysen als Grundlage für Kundenempfehlungen",
+              "Konsistentere Ergebnisse bei wiederkehrenden Beratungsmodulen",
+              "KI-gestützte Prüfung von IT-Architekturen und Sicherheitskonzepten"
+            ]
+          },
+          {
+            "title": "Neues Beratungsangebot",
+            "items": [
+              "KI-Strategieberatung als eigenes Leistungsmodul",
+              "KI-Readiness-Assessments für KMU-Kunden anbieten",
+              "Begleitung bei KI-Einführung als Wachstumsfeld"
+            ]
+          },
+          {
+            "title": "Wettbewerbsvorteil im Markt",
+            "items": [
+              "Differenzierung gegenüber klassischen IT-Dienstleistern",
+              "Positionierung als zukunftsfähiger Beratungspartner",
+              "Attraktivität für Fachkräfte durch moderne Arbeitsweisen"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "05-der-it-beratungsmarkt-im-wandel",
+      "number": 5,
+      "title": "Der IT-Beratungsmarkt im Wandel",
+      "displayTitle": "Der Markt verändert sich -- wer nicht mitzieht, verliert Relevanz",
+      "layout": "infographic",
+      "theme": "light",
+      "chapter": "KI-Chancen für IT-Beratungen",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Der Markt verändert sich -- wer nicht mitzieht, verliert Relevanz\"\n- 4 Treiber, die IT-Beratungen unter Druck setzen:\n\n  **Kunden erwarten KI-Kompetenz**\n  - KMU suchen Beratungspartner, die KI verstehen und begleiten können\n  - Wer KI nicht im Portfolio hat, wird bei Ausschreibungen übergangen\n\n  **Wettbewerb intensiviert sich**\n  - Neue Player positionieren sich als KI-Spezialisten\n  - Große Beratungen drängen mit KI-Angeboten in den Mittelstand\n\n  **Fachkräfte erwarten moderne Tools**\n  - IT-Berater wollen mit aktuellen Technologien arbeiten\n  - Unternehmen ohne KI-Strategie verlieren Talente an innovativere Arbeitgeber\n\n  **Regulatorik betrifft auch Berater**\n  - EU AI Act schafft Beratungsbedarf -- aber nur für kompetente Partner\n  - Kunden erwarten, dass ihr IT-Berater die Regulatorik kennt und einordnen kann\n\n- Kernbotschaft (hervorgehoben): \"IT-Beratungen stehen vor der Wahl: KI aktiv gestalten oder vom Markt verdrängt werden.\"",
+        "callout": {
+          "text": "IT-Beratungen stehen vor der Wahl: KI aktiv gestalten oder vom Markt verdrängt werden."
+        },
+        "pressurePoints": [
+          {
+            "title": "Kunden erwarten KI-Kompetenz",
+            "items": [
+              "KMU suchen Beratungspartner, die KI verstehen und begleiten können",
+              "Wer KI nicht im Portfolio hat, wird bei Ausschreibungen übergangen"
+            ]
+          },
+          {
+            "title": "Wettbewerb intensiviert sich",
+            "items": [
+              "Neue Player positionieren sich als KI-Spezialisten",
+              "Große Beratungen drängen mit KI-Angeboten in den Mittelstand"
+            ]
+          },
+          {
+            "title": "Fachkräfte erwarten moderne Tools",
+            "items": [
+              "IT-Berater wollen mit aktuellen Technologien arbeiten",
+              "Unternehmen ohne KI-Strategie verlieren Talente an innovativere Arbeitgeber"
+            ]
+          },
+          {
+            "title": "Regulatorik betrifft auch Berater",
+            "items": [
+              "EU AI Act schafft Beratungsbedarf -- aber nur für kompetente Partner",
+              "Kunden erwarten, dass ihr IT-Berater die Regulatorik kennt und einordnen kann"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "06-wo-it-beratungen-wirklich-stehen",
+      "number": 6,
+      "title": "Wo IT-Beratungen wirklich stehen",
+      "displayTitle": "Die Realität in vielen IT-Beratungen -- ehrlich betrachtet",
+      "layout": "iceberg",
+      "theme": "light",
+      "chapter": "KI-Chancen für IT-Beratungen",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Die Realität in vielen IT-Beratungen -- ehrlich betrachtet\"\n- Drei typische Muster:\n\n  **Berater nutzen KI, das Unternehmen nicht**\n  - Einzelne Berater nutzen ChatGPT, Copilot und andere Tools produktiv\n  - Aber: kein einheitlicher Standard, keine Qualitätssicherung, kein Wissenstransfer\n  - Risiko: Inkonsistente Ergebnisse, Datenschutzprobleme, verpasste Skaleneffekte\n\n  **KI als Gesprächsthema, nicht als Geschäftsfeld**\n  - Jeder redet über KI, aber es gibt kein strukturiertes Angebot\n  - Kunden fragen nach KI-Beratung, aber es fehlen Methodik und Referenzen\n  - Verpasste Umsatzchancen und Positionierungslücke\n\n  **Operative Hektik statt strategische Klarheit**\n  - Tagesgeschäft dominiert, für KI-Strategie fehlt die Zeit\n  - Keine klare Vision, wo KI die Beratung in 2-3 Jahren hinbringen soll\n  - Reaktiv statt proaktiv -- Chancen werden anderen überlassen\n\n- Kernbotschaft: \"Das ist kein Defizit -- das ist der typische Startpunkt. Entscheidend ist, jetzt Struktur zu schaffen.\"",
+        "callout": {
+          "text": "Das ist kein Defizit -- das ist der typische Startpunkt. Entscheidend ist, jetzt Struktur zu schaffen."
+        },
+        "iceberg": [
+          {
+            "title": "Berater nutzen KI, das Unternehmen nicht",
+            "position": "above",
+            "items": [
+              "Einzelne Berater nutzen ChatGPT, Copilot und andere Tools produktiv",
+              "Aber: kein einheitlicher Standard, keine Qualitätssicherung, kein Wissenstransfer",
+              "Risiko: Inkonsistente Ergebnisse, Datenschutzprobleme, verpasste Skaleneffekte"
+            ]
+          },
+          {
+            "title": "KI als Gesprächsthema, nicht als Geschäftsfeld",
+            "position": "above",
+            "items": [
+              "Jeder redet über KI, aber es gibt kein strukturiertes Angebot",
+              "Kunden fragen nach KI-Beratung, aber es fehlen Methodik und Referenzen",
+              "Verpasste Umsatzchancen und Positionierungslücke"
+            ]
+          },
+          {
+            "title": "Operative Hektik statt strategische Klarheit",
+            "position": "above",
+            "items": [
+              "Tagesgeschäft dominiert, für KI-Strategie fehlt die Zeit",
+              "Keine klare Vision, wo KI die Beratung in 2-3 Jahren hinbringen soll",
+              "Reaktiv statt proaktiv -- Chancen werden anderen überlassen"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "07-typische-fehlstarts-und-was-sie-kosten",
+      "number": 7,
+      "title": "Typische Fehlstarts -- und was sie kosten",
+      "displayTitle": "Vier Wege, wie KI-Einführung in IT-Beratungen schiefgeht",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "KI-Chancen für IT-Beratungen",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Vier Wege, wie KI-Einführung in IT-Beratungen schiefgeht\"\n- 4 Anti-Patterns:\n\n  **\"Wir kaufen ein KI-Tool und sind dabei\"**\n  - Tool im Fokus statt Strategie. Ergebnis: Lizenzkosten ohne Nutzung, kein messbarer Mehrwert.\n\n  **\"Unsere Berater machen das nebenbei\"**\n  - KI als Zusatzaufgabe ohne Ressourcen. Ergebnis: Halbherzige Umsetzung, frustrierte Mitarbeiter.\n\n  **\"Wir bieten KI-Beratung an, sobald wir es selbst verstehen\"**\n  - Ewiges Warten auf den perfekten Zeitpunkt. Ergebnis: Der Markt zieht vorbei.\n\n  **\"Das regeln wir später mit Governance\"**\n  - Compliance und Richtlinien aufgeschoben. Ergebnis: Risiken bei Kundenprojekten, Haftungsfragen ungeklärt.\n\n- Kernbotschaft: \"Jeder dieser Wege kostet Zeit, Geld und Marktposition. Struktur von Anfang an verhindert das.\"",
+        "callout": {
+          "text": "Jeder dieser Wege kostet Zeit, Geld und Marktposition. Struktur von Anfang an verhindert das."
+        },
+        "matrix": [
+          {
+            "title": "\"Wir kaufen ein KI-Tool und sind dabei\"",
+            "items": [
+              "Tool im Fokus statt Strategie. Ergebnis: Lizenzkosten ohne Nutzung, kein messbarer Mehrwert."
+            ]
+          },
+          {
+            "title": "\"Unsere Berater machen das nebenbei\"",
+            "items": [
+              "KI als Zusatzaufgabe ohne Ressourcen. Ergebnis: Halbherzige Umsetzung, frustrierte Mitarbeiter."
+            ]
+          },
+          {
+            "title": "\"Wir bieten KI-Beratung an, sobald wir es selbst verstehen\"",
+            "items": [
+              "Ewiges Warten auf den perfekten Zeitpunkt. Ergebnis: Der Markt zieht vorbei."
+            ]
+          },
+          {
+            "title": "\"Das regeln wir später mit Governance\"",
+            "items": [
+              "Compliance und Richtlinien aufgeschoben. Ergebnis: Risiken bei Kundenprojekten, Haftungsfragen ungeklärt."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "08-was-erfolgreiche-it-beratungen-richtig-machen",
+      "number": 8,
+      "title": "Was erfolgreiche IT-Beratungen richtig machen",
+      "displayTitle": "Was IT-Beratungen richtig machen, die KI erfolgreich einführen",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "KI-Chancen für IT-Beratungen",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Was IT-Beratungen richtig machen, die KI erfolgreich einführen\"\n- 4 Erfolgsprinzipien:\n\n  **Erst intern, dann extern**\n  KI zuerst in eigenen Prozessen einsetzen und verstehen -- dann als Beratungsleistung anbieten. Glaubwürdigkeit kommt aus eigener Erfahrung.\n\n  **KI ist Chefsache, nicht Berater-Hobby**\n  Die Geschäftsführung definiert die KI-Strategie. Berater setzen um, aber die Richtung kommt von oben.\n\n  **Fokus auf 2-3 klare Use Cases**\n  Wenige, gut gewählte Anwendungsfälle mit klarem Nutzen -- intern wie im Kundenangebot.\n\n  **Struktur schafft Skalierung**\n  Einheitliche Methodik, dokumentierte Prozesse, wiederverwendbare Bausteine -- so wird aus einem Piloten ein Geschäftsfeld.\n\n- Überleitung (unten): \"Genau dafür haben wir ein Vorgehensmodell entwickelt, das wir Ihnen jetzt vorstellen.\"",
+        "timeline": [
+          {
+            "title": "Erst intern, dann extern",
+            "description": "KI zuerst in eigenen Prozessen einsetzen und verstehen -- dann als Beratungsleistung anbieten. Glaubwürdigkeit kommt aus eigener Erfahrung.",
+            "items": []
+          },
+          {
+            "title": "KI ist Chefsache, nicht Berater-Hobby",
+            "description": "Die Geschäftsführung definiert die KI-Strategie. Berater setzen um, aber die Richtung kommt von oben.",
+            "items": []
+          },
+          {
+            "title": "Fokus auf 2-3 klare Use Cases",
+            "description": "Wenige, gut gewählte Anwendungsfälle mit klarem Nutzen -- intern wie im Kundenangebot.",
+            "items": []
+          },
+          {
+            "title": "Struktur schafft Skalierung",
+            "description": "Einheitliche Methodik, dokumentierte Prozesse, wiederverwendbare Bausteine -- so wird aus einem Piloten ein Geschäftsfeld.",
+            "items": [
+              "Überleitung (unten): \"Genau dafür haben wir ein Vorgehensmodell entwickelt, das wir Ihnen jetzt vorstellen.\""
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "09-unser-vorgehensmodell-im-ueberblick",
+      "number": 9,
+      "title": "Unser Vorgehensmodell im Überblick",
+      "displayTitle": "Von der Orientierung zur dauerhaften KI-Führung",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Von der Orientierung zur dauerhaften KI-Führung\"\n- 5-Phasen-Modell als zentrales Schaubild:\n\n  | Phase | Name | Charakter | Kernergebnis |\n  |-------|------|-----------|-------------|\n  | Phase 1 | Orientierung & Einordnung | Einmalig, 1-3 Wochen | Klarheit über Ausgangslage und KI-Reifegrad |\n  | Phase 2 | Zielbild & Fokussetzung | Einmalig, 3-5 Wochen | KI-Strategie für interne Nutzung und Kundenangebot |\n  | Phase 3 | Vorbereitung & Befähigung | Einmalig, 3-5 Wochen | Governance, Rollen, Entscheidungsrahmen |\n  | Phase 4 | Einführung & Nutzung | Pro Anwendungsfall, 4-8 Wochen | KI produktiv im Einsatz -- intern und im Kundengeschäft |\n  | Phase 5 | Dauerhafte Führung | Zyklisch, permanent | KI als fester Bestandteil der Unternehmenssteuerung |\n\n- Kernbotschaft: \"Die Phasen 1-4 bauen Ihre KI-Fähigkeit auf. Phase 5 stellt sicher, dass sie bleibt.\"",
+        "callout": {
+          "text": "Die Phasen 1-4 bauen Ihre KI-Fähigkeit auf. Phase 5 stellt sicher, dass sie bleibt."
+        },
+        "timeline": [
+          {
+            "id": "Phase 1",
+            "title": "Orientierung & Einordnung",
+            "description": "Einmalig, 1-3 Wochen",
+            "result": "Klarheit über Ausgangslage und KI-Reifegrad"
+          },
+          {
+            "id": "Phase 2",
+            "title": "Zielbild & Fokussetzung",
+            "description": "Einmalig, 3-5 Wochen",
+            "result": "KI-Strategie für interne Nutzung und Kundenangebot"
+          },
+          {
+            "id": "Phase 3",
+            "title": "Vorbereitung & Befähigung",
+            "description": "Einmalig, 3-5 Wochen",
+            "result": "Governance, Rollen, Entscheidungsrahmen"
+          },
+          {
+            "id": "Phase 4",
+            "title": "Einführung & Nutzung",
+            "description": "Pro Anwendungsfall, 4-8 Wochen",
+            "result": "KI produktiv im Einsatz -- intern und im Kundengeschäft"
+          },
+          {
+            "id": "Phase 5",
+            "title": "Dauerhafte Führung",
+            "description": "Zyklisch, permanent",
+            "result": "KI als fester Bestandteil der Unternehmenssteuerung"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10-was-uns-unterscheidet",
+      "number": 10,
+      "title": "Was uns unterscheidet",
+      "displayTitle": "Unser Beratungsansatz -- und warum er für IT-Beratungen besonders gut funktioniert",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Unser Beratungsansatz -- und warum er für IT-Beratungen besonders gut funktioniert\"\n- 4 Differenzierungsmerkmale:\n\n  **Management-Beratung, keine IT-Implementierung**\n  Wir helfen Ihnen, die richtigen Entscheidungen zu treffen und KI steuerbar zu machen -- nicht die Technik einzubauen. Das können Sie selbst.\n\n  **Wir verstehen IT-Beratungen von innen**\n  Wir kennen die Herausforderungen: Auslastungssteuerung, Wissenssicherung, Angebotsentwicklung. Unsere Empfehlungen passen zu Ihrem Geschäftsmodell.\n\n  **Dual-Fokus: Intern und Extern**\n  Wir optimieren nicht nur Ihre internen Prozesse, sondern helfen Ihnen auch, KI als Beratungsangebot zu strukturieren und zu vermarkten.\n\n  **Struktur statt Abhängigkeit**\n  Unser Ziel ist, dass die Tricept AG KI eigenständig steuern kann. Wir bauen Fähigkeiten auf, nicht dauerhafte Beratungsbedarfe.",
+        "matrix": [
+          {
+            "title": "Management-Beratung, keine IT-Implementierung",
+            "items": [
+              "Wir helfen Ihnen, die richtigen Entscheidungen zu treffen und KI steuerbar zu machen -- nicht die Technik einzubauen. Das können Sie selbst."
+            ]
+          },
+          {
+            "title": "Wir verstehen IT-Beratungen von innen",
+            "items": [
+              "Wir kennen die Herausforderungen: Auslastungssteuerung, Wissenssicherung, Angebotsentwicklung. Unsere Empfehlungen passen zu Ihrem Geschäftsmodell."
+            ]
+          },
+          {
+            "title": "Dual-Fokus: Intern und Extern",
+            "items": [
+              "Wir optimieren nicht nur Ihre internen Prozesse, sondern helfen Ihnen auch, KI als Beratungsangebot zu strukturieren und zu vermarkten."
+            ]
+          },
+          {
+            "title": "Struktur statt Abhängigkeit",
+            "items": [
+              "Unser Ziel ist, dass die Tricept AG KI eigenständig steuern kann. Wir bauen Fähigkeiten auf, nicht dauerhafte Beratungsbedarfe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "11-die-beratungsmodule-ihr-weg",
+      "number": 11,
+      "title": "Die Beratungsmodule -- Ihr Weg",
+      "displayTitle": "Unsere Leistungsmodule -- Schritt für Schritt zur KI-fähigen IT-Beratung",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Unsere Leistungsmodule -- Schritt für Schritt zur KI-fähigen IT-Beratung\"\n- Module als sequenzieller Pfad:\n\n  | Modul | Bezeichnung | Was Sie bekommen |\n  |-------|------------|-----------------|\n  | KI-Standortbestimmung | Wo steht die Tricept AG wirklich? | Reifegrad, Stärken, Lücken, Shadow-AI-Überblick, Potenzial im Kundengeschäft |\n  | KI-Strategie & Use-Cases | Wohin soll es gehen -- intern und im Markt? | KI-Strategie mit Leitplanken, priorisierte Use Cases für interne Effizienz und Kundenangebot |\n  | Governance & Umsetzungsvorbereitung | Wer entscheidet was? Welche Regeln gelten? | Rollen, Entscheidungswege, Regulatorik-Einordnung, Richtlinien für KI in Kundenprojekten |\n  | Einführungsbegleitung | Wie kommen wir sicher in die Nutzung? | Gesteuerter Go-Live, Change-Begleitung, Betriebsübergabe |\n  | KI-Führungsbegleitung | Wie bleibt die Tricept AG dauerhaft handlungsfähig? | Quartalsreviews, KPI-Monitoring, kontinuierliche Weiterentwicklung |\n\n- Hinweis (unten): \"Nicht jedes Unternehmen startet bei Schritt 1. Wo die Tricept AG einsteigt, klären wir gemeinsam.\"",
+        "timeline": [
+          {
+            "id": "KI-Standortbestimmung",
+            "title": "Wo steht die Tricept AG wirklich?",
+            "description": "Reifegrad, Stärken, Lücken, Shadow-AI-Überblick, Potenzial im Kundengeschäft",
+            "result": ""
+          },
+          {
+            "id": "KI-Strategie & Use-Cases",
+            "title": "Wohin soll es gehen -- intern und im Markt?",
+            "description": "KI-Strategie mit Leitplanken, priorisierte Use Cases für interne Effizienz und Kundenangebot",
+            "result": ""
+          },
+          {
+            "id": "Governance & Umsetzungsvorbereitung",
+            "title": "Wer entscheidet was? Welche Regeln gelten?",
+            "description": "Rollen, Entscheidungswege, Regulatorik-Einordnung, Richtlinien für KI in Kundenprojekten",
+            "result": ""
+          },
+          {
+            "id": "Einführungsbegleitung",
+            "title": "Wie kommen wir sicher in die Nutzung?",
+            "description": "Gesteuerter Go-Live, Change-Begleitung, Betriebsübergabe",
+            "result": ""
+          },
+          {
+            "id": "KI-Führungsbegleitung",
+            "title": "Wie bleibt die Tricept AG dauerhaft handlungsfähig?",
+            "description": "Quartalsreviews, KPI-Monitoring, kontinuierliche Weiterentwicklung",
+            "result": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "12-was-sie-konkret-in-die-hand-bekommen",
+      "number": 12,
+      "title": "Was Sie konkret in die Hand bekommen",
+      "displayTitle": "Keine Folienfriedhöfe -- sondern Dokumente, mit denen Sie arbeiten können",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Keine Folienfriedhöfe -- sondern Dokumente, mit denen Sie arbeiten können\"\n- Ergebnistypen entlang der Module:\n\n  **KI-Standortbestimmung**\n  - Reifegrad-Profil mit Stärken, Lücken und konkreten Handlungsempfehlungen für die Tricept AG\n\n  **KI-Strategie & Use-Cases**\n  - Dokumentierte KI-Strategie mit Leitplanken, Nicht-Zielen und priorisierten Anwendungsfällen -- getrennt nach interner Nutzung und Kundenangebot\n\n  **Governance & Umsetzungsvorbereitung**\n  - Governance-Struktur mit Rollen, Entscheidungswegen und Richtlinien für KI-Einsatz in Kundenprojekten\n\n  **Einführungsbegleitung**\n  - Einführungsprotokoll pro Anwendungsfall: Testphase, Go-Live-Checkliste, Betriebsregeln\n\n  **KI-Führungsbegleitung**\n  - Quartals-Review-Protokolle mit Ampelbewertung, lebendes KI-Anwendungsverzeichnis\n\n- Kernbotschaft: \"Jedes Dokument gehört Ihnen und funktioniert auch ohne uns.\"",
+        "callout": {
+          "text": "Jedes Dokument gehört Ihnen und funktioniert auch ohne uns."
+        },
+        "deliverables": [
+          {
+            "title": "KI-Standortbestimmung",
+            "description": "Reifegrad-Profil mit Stärken, Lücken und konkreten Handlungsempfehlungen für die Tricept AG"
+          },
+          {
+            "title": "KI-Strategie & Use-Cases",
+            "description": "Dokumentierte KI-Strategie mit Leitplanken, Nicht-Zielen und priorisierten Anwendungsfällen -- getrennt nach interner Nutzung und Kundenangebot"
+          },
+          {
+            "title": "Governance & Umsetzungsvorbereitung",
+            "description": "Governance-Struktur mit Rollen, Entscheidungswegen und Richtlinien für KI-Einsatz in Kundenprojekten"
+          },
+          {
+            "title": "Einführungsbegleitung",
+            "description": "Einführungsprotokoll pro Anwendungsfall: Testphase, Go-Live-Checkliste, Betriebsregeln"
+          },
+          {
+            "title": "KI-Führungsbegleitung",
+            "description": "Quartals-Review-Protokolle mit Ampelbewertung, lebendes KI-Anwendungsverzeichnis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "13-wo-steht-die-tricept-ag-gemeinsame-einordnung",
+      "number": 13,
+      "title": "Wo steht die Tricept AG? -- Gemeinsame Einordnung",
+      "displayTitle": "Wo sehen Sie die Tricept AG -- und wo setzen wir an?",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Wo sehen Sie die Tricept AG -- und wo setzen wir an?\"\n- Einleitungssatz: \"Wir haben vorhin über Ihre Situation gesprochen. Lassen Sie uns das kurz gemeinsam einordnen -- nicht als Bewertung, sondern als Orientierung.\"\n\n  | Dimension | Stufe 1: Am Anfang | Stufe 2: Erste Schritte | Stufe 3: Strukturiert unterwegs |\n  |-----------|-------------------|------------------------|-------------------------------|\n  | **Strategie** | KI ist kein explizites Thema in der Unternehmensführung | Interesse und erste Ideen vorhanden, aber kein klares Zielbild | Klare Vorstellung, was KI für das Unternehmen leisten soll |\n  | **Interne Nutzung** | Keine bekannte KI-Nutzung oder nur vereinzelt durch einzelne Berater | Einzelne Tools im Einsatz, aber kein einheitlicher Standard | Mehrere KI-Anwendungen bewusst eingeführt und gesteuert |\n  | **Kundenangebot** | KI ist kein Bestandteil des Beratungsportfolios | Erste Gespräche oder Pilotprojekte mit Kunden zu KI-Themen | KI-Beratung als strukturiertes Leistungsmodul im Angebot |\n  | **Organisation** | Keine Zuständigkeiten oder Regeln für KI definiert | Einzelne Personen kümmern sich, aber keine festen Rollen | Klare Verantwortlichkeiten und Entscheidungswege vorhanden |\n\n- Moderationsanleitung: \"Wo würden Sie die Tricept AG in diesen vier Bereichen einordnen? Es gibt keine falsche Antwort -- jeder Startpunkt ist ein guter Startpunkt.\"",
+        "matrix": []
+      },
+      "notes": "- Besonders die Dimension \"Kundenangebot\" vertiefen -- das ist der Differenzierungsfaktor für IT-Beratungen\n- Falls Tricept sich bei Stufe 1 einordnet: \"Dann können Sie von Anfang an sauber aufbauen.\"\n- Falls Stufe 2-3: \"Dann macht es Sinn, das Vorhandene strukturiert zu sichten.\""
+    },
+    {
+      "id": "14-empfohlener-einstieg-naechste-schritte",
+      "number": 14,
+      "title": "Empfohlener Einstieg & Nächste Schritte",
+      "displayTitle": "Zwei Wege zum gleichen Ziel -- je nachdem, wo die Tricept AG startet",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Zwei Wege zum gleichen Ziel -- je nachdem, wo die Tricept AG startet\"\n- Zwei Einstiegspfade:\n\n  **Pfad A: KI-Standortbestimmung**\n  *Für den strukturierten Einstieg*\n  - Was passiert: Strukturierte Bestandsaufnahme in ca. 1-2 Wochen\n  - Wie: Gespräche mit Geschäftsführung, Teamleitern und Schlüsselberatern\n  - Ergebnis: Reifegrad-Profil, Stärken/Lücken, klare Empfehlung für interne und externe KI-Strategie\n  - Umfang: ca. 3-5 Beratertage\n  - Danach: Fundierte Entscheidung, ob und wie es weitergeht\n\n  **Pfad B: Gap-Check**\n  *Für IT-Beratungen, die KI bereits nutzen*\n  - Was passiert: Systematische Lückenanalyse in ca. 1 Woche\n  - Wie: Abgleich der aktuellen KI-Praxis mit den zentralen Erfolgsfaktoren\n  - Ergebnis: Transparenz über Vorhandenes, identifizierte Lücken im internen Einsatz und Kundenangebot\n  - Umfang: ca. 2-3 Beratertage\n  - So können Sie direkt in die passende Phase einsteigen\n\n- Gemeinsame Botschaft (unten, hervorgehoben): \"Beide Wege liefern der Tricept AG innerhalb von 1-2 Wochen ein konkretes Ergebnis und eine fundierte Entscheidungsgrundlage -- ohne langfristige Verpflichtung.\"\n- Nächster konkreter Schritt: \"Auf Basis unseres heutigen Gesprächs erarbeiten wir ein konkretes Beratungsangebot. Sie erhalten es innerhalb einer Woche.\"",
+        "callout": {
+          "text": "Beide Wege liefern der Tricept AG innerhalb von 1-2 Wochen ein konkretes Ergebnis und eine fundierte Entscheidungsgrundlage -- ohne langfristige Verpflichtung."
+        },
+        "timeline": [
+          {
+            "title": "Pfad A: KI-Standortbestimmung",
+            "description": "Was passiert: Strukturierte Bestandsaufnahme in ca. 1-2 Wochen",
+            "items": [
+              "Wie: Gespräche mit Geschäftsführung, Teamleitern und Schlüsselberatern",
+              "Ergebnis: Reifegrad-Profil, Stärken/Lücken, klare Empfehlung für interne und externe KI-Strategie",
+              "Umfang: ca. 3-5 Beratertage",
+              "Danach: Fundierte Entscheidung, ob und wie es weitergeht"
+            ]
+          },
+          {
+            "title": "Pfad B: Gap-Check",
+            "description": "Was passiert: Systematische Lückenanalyse in ca. 1 Woche",
+            "items": [
+              "Wie: Abgleich der aktuellen KI-Praxis mit den zentralen Erfolgsfaktoren",
+              "Ergebnis: Transparenz über Vorhandenes, identifizierte Lücken im internen Einsatz und Kundenangebot",
+              "Umfang: ca. 2-3 Beratertage",
+              "So können Sie direkt in die passende Phase einsteigen",
+              "Gemeinsame Botschaft (unten, hervorgehoben): \"Beide Wege liefern der Tricept AG innerhalb von 1-2 Wochen ein konkretes Ergebnis und eine fundierte Entscheidungsgrundlage -- ohne langfristige Verpflichtung.\"",
+              "Nächster konkreter Schritt: \"Auf Basis unseres heutigen Gesprächs erarbeiten wir ein konkretes Beratungsangebot. Sie erhalten es innerhalb einer Woche.\""
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "15-ihre-offenen-fragen",
+      "number": 15,
+      "title": "Ihre offenen Fragen",
+      "displayTitle": "Was ist noch offen? -- Ihre Fragen",
+      "layout": "dialog",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Was ist noch offen? -- Ihre Fragen\"\n- Raum für echte Kundenfragen"
+      },
+      "notes": "- Aktiv Fragen einladen: \"Was beschäftigt Sie am meisten, wenn Sie an die nächsten Schritte denken?\"\n- Bei IT-Beratungen oft: \"Wie schnell können wir KI auch unseren Kunden anbieten?\"\n- Kosten-Fragen nicht ausweichen"
+    },
+    {
+      "id": "16-kontakt-abschluss",
+      "number": 16,
+      "title": "Kontakt & Abschluss",
+      "displayTitle": "Wir freuen uns auf den gemeinsamen Weg mit der Tricept AG.",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: \"Wir freuen uns auf den gemeinsamen Weg mit der Tricept AG.\"\n- Zusammenfassung der vereinbarten nächsten Schritte:\n  - \"Wir senden Ihnen ein Angebot für die KI-Standortbestimmung / den Gap-Check innerhalb einer Woche.\"\n  - \"Sie prüfen intern und stimmen die Teilnehmer für das erste Modul ab.\"\n  - \"Geplanter Start: März 2026.\"\n- Kontaktdaten:\n  - IT Consulting by Tricept\n  - E-Mail: kontakt@tricept.de\n  - Telefon: auf Anfrage\n  - Web: www.tricept.de"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Einstieg",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Ihre Ausgangslage",
+      "startSlide": 3
+    },
+    {
+      "id": "block-2",
+      "title": "KI-Chancen für IT-Beratungen",
+      "startSlide": 4
+    },
+    {
+      "id": "block-3",
+      "title": "Unser Ansatz",
+      "startSlide": 9
+    },
+    {
+      "id": "block-4",
+      "title": "Einstieg & Nächste Schritte",
+      "startSlide": 13
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KI-Reifegradmodell – Tricept AG</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+
+  .container {
+    width: 1400px;
+    max-width: 100%;
+  }
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .overall-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #c5d5e8;
+    color: #2d3e50;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .overall-badge .badge-stufe {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: #6b7280;
+    margin-bottom: 36px;
+  }
+
+  .matrix {
+    display: grid;
+    grid-template-columns: 160px repeat(5, 1fr);
+    gap: 3px;
+    margin-bottom: 32px;
+  }
+
+  /* Header row */
+  .header-empty {
+    background: transparent;
+  }
+
+  .header-cell {
+    text-align: center;
+    padding: 18px 10px 14px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .header-cell .stufe-nr {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+  }
+
+  .header-cell .stufe-name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .header-cell .stufe-sub {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 3px;
+    line-height: 1.3;
+  }
+
+  /* Stufe colors */
+  .stufe-1 { background: #e8edf2; color: #4a5568; }
+  .stufe-2 { background: #c5d5e8; color: #2d3e50; }
+  .stufe-3 { background: #5b8db8; color: #ffffff; }
+  .stufe-4 { background: #2e5f8a; color: #ffffff; }
+  .stufe-5 { background: #1a365d; color: #ffffff; }
+
+  /* Dimension labels */
+  .dim-label {
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+
+  .dim-label .dim-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .dim-label.tragend .dim-icon { background: #2e5f8a; color: white; }
+  .dim-label.unterstuetzend .dim-icon { background: #7ba3c4; color: white; }
+
+  /* Data cells */
+  .cell {
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #374151;
+    background: #f8f9fb;
+    position: relative;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    transition: background 0.15s;
+  }
+
+  .cell:hover {
+    background: #eef1f5;
+  }
+
+  /* Highlight current state */
+  .cell.current {
+    background: #dbeafe;
+    outline: 2.5px solid #5b8db8;
+    outline-offset: -2.5px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #1a365d;
+  }
+
+  /* Range indicator: lower bound of a 1-2 or 2-3 range */
+  .cell.current-range-low {
+    background: #e8f0f8;
+    outline: 2px dashed #8babc7;
+    outline-offset: -2px;
+    border-radius: 4px;
+    color: #3d5a72;
+  }
+
+  /* Category divider */
+  .category-row {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    padding: 8px 0 3px;
+    margin-top: 6px;
+  }
+
+  .category-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #9ca3af;
+  }
+
+  .category-line {
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+    margin-left: 12px;
+  }
+
+  /* Change indicator */
+  .change-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .change-down {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .change-same {
+    background: #e8edf2;
+    color: #6b7280;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+
+  .legend-swatch {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  .legend-current {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #dbeafe;
+    outline: 2.5px solid #5b8db8;
+    outline-offset: -2.5px;
+  }
+
+  .legend-range {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #e8f0f8;
+    outline: 2px dashed #8babc7;
+    outline-offset: -2px;
+  }
+
+  .footer-note {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+
+  .findings {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: #f8f9fb;
+    border-radius: 8px;
+    border-left: 4px solid #5b8db8;
+  }
+
+  .findings h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+  }
+
+  .findings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+  }
+
+  .finding-item {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #374151;
+  }
+
+  .finding-item strong {
+    color: #1a365d;
+  }
+
+  .finding-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9ca3af;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="title-row">
+    <div class="title">KI-Reifegradmodell</div>
+    <div class="overall-badge">
+      Gesamteinordnung: <span class="badge-stufe">Stufe 2 &ndash; Bewusst</span>
+    </div>
+  </div>
+  <div class="subtitle">Tricept AG &ndash; Konsolidierte Einsch&auml;tzung auf Basis von 10 Interviews und MA-Umfrage (n=59) (M1 Standortbestimmung, M&auml;rz 2026)</div>
+
+  <div class="matrix">
+    <!-- Header row -->
+    <div class="header-empty"></div>
+    <div class="header-cell stufe-1">
+      <div class="stufe-nr">Stufe 1</div>
+      <div class="stufe-name">Einstieg</div>
+      <div class="stufe-sub">Kein bewusstes Thema</div>
+    </div>
+    <div class="header-cell stufe-2">
+      <div class="stufe-nr">Stufe 2</div>
+      <div class="stufe-name">Bewusst</div>
+      <div class="stufe-sub">Erkannt, nicht strukturiert</div>
+    </div>
+    <div class="header-cell stufe-3">
+      <div class="stufe-nr">Stufe 3</div>
+      <div class="stufe-name">Strukturiert</div>
+      <div class="stufe-sub">Erste Ans&auml;tze &amp; Regeln</div>
+    </div>
+    <div class="header-cell stufe-4">
+      <div class="stufe-nr">Stufe 4</div>
+      <div class="stufe-name">Gesteuert</div>
+      <div class="stufe-sub">Aktiv gef&uuml;hrt &amp; gemessen</div>
+    </div>
+    <div class="header-cell stufe-5">
+      <div class="stufe-nr">Stufe 5</div>
+      <div class="stufe-name">Optimierend</div>
+      <div class="stufe-sub">Integraler Bestandteil</div>
+    </div>
+
+    <!-- Category: Tragende Dimensionen -->
+    <div class="category-row">
+      <span class="category-label">Tragende Dimensionen</span>
+      <span class="category-line"></span>
+    </div>
+
+    <!-- Strategie → Stufe 2 -->
+    <div class="dim-label tragend">
+      <span class="dim-icon">S</span>
+      Strategie
+    </div>
+    <div class="cell">Kein Bezug zu Gesch&auml;ftszielen</div>
+    <div class="cell current">Interesse, aber keine Richtung</div>
+    <div class="cell">Definierte Ziele und Leitplanken</div>
+    <div class="cell">Formuliert, kommuniziert, &uuml;berpr&uuml;ft</div>
+    <div class="cell">KI pr&auml;gt das Gesch&auml;ftsmodell</div>
+
+    <!-- Governance → Stufe 1-2 -->
+    <div class="dim-label tragend">
+      <span class="dim-icon">G</span>
+      Governance <span class="change-badge change-down">&darr; 2&rarr;1-2</span>
+    </div>
+    <div class="cell current-range-low">KI nicht adressiert</div>
+    <div class="cell current">Bewusstsein, informelle Absprachen</div>
+    <div class="cell">Dokumentierte Grundregeln</div>
+    <div class="cell">Entscheidungsprozesse &amp; Kontrollen</div>
+    <div class="cell">Kontinuierliche Weiterentwicklung</div>
+
+    <!-- Kompetenz → Stufe 2 -->
+    <div class="dim-label tragend">
+      <span class="dim-icon">K</span>
+      Kompetenz
+    </div>
+    <div class="cell">Kein systematisches Verst&auml;ndnis</div>
+    <div class="cell current">Einzelne mit Grundwissen</div>
+    <div class="cell">Entscheider verstehen Grundprinzipien</div>
+    <div class="cell">Systematischer Kompetenzaufbau</div>
+    <div class="cell">Breite KI-Literacy</div>
+
+    <!-- Category: Unterstuetzende Dimensionen -->
+    <div class="category-row">
+      <span class="category-label">Unterst&uuml;tzende Dimensionen</span>
+      <span class="category-line"></span>
+    </div>
+
+    <!-- Organisation → Stufe 1-2 -->
+    <div class="dim-label unterstuetzend">
+      <span class="dim-icon">O</span>
+      Organisation <span class="change-badge change-down">&darr; 2&rarr;1-2</span>
+    </div>
+    <div class="cell current-range-low">Keine Zust&auml;ndigkeiten</div>
+    <div class="cell current">Eine Person &bdquo;nebenbei&ldquo;</div>
+    <div class="cell">Benannte Verantwortlichkeit</div>
+    <div class="cell">In Linienorganisation eingebettet</div>
+    <div class="cell">Verteilte KI-Kompetenz</div>
+
+    <!-- Technologie → Stufe 3 -->
+    <div class="dim-label unterstuetzend">
+      <span class="dim-icon">T</span>
+      Technologie <span class="change-badge change-down">&darr; 3&rarr;2-3</span>
+    </div>
+    <div class="cell">Standard-IT, keine KI-Infra</div>
+    <div class="cell current-range-low">Punktuelle Nutzung, Inseln</div>
+    <div class="cell current">Bewusste Auswahl, erste Integration</div>
+    <div class="cell">In IT-Architektur integriert</div>
+    <div class="cell">Teil der IT-Strategie</div>
+
+    <!-- Daten → Stufe 2 -->
+    <div class="dim-label unterstuetzend">
+      <span class="dim-icon">D</span>
+      Daten
+    </div>
+    <div class="cell">Nicht als KI-Ressource betrachtet</div>
+    <div class="cell current">Punktuelle Kenntnis</div>
+    <div class="cell">Quellen identifiziert &amp; bewertet</div>
+    <div class="cell">Datenmanagement etabliert</div>
+    <div class="cell">Strategische Ressource</div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-swatch" style="background: #2e5f8a;"></div>
+      Tragende Dimensionen (begrenzen Gesamtreifegrad)
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background: #7ba3c4;"></div>
+      Unterst&uuml;tzende Dimensionen (st&uuml;tzen, heben aber nicht allein)
+    </div>
+    <div class="legend-item">
+      <div class="legend-current"></div>
+      Einordnung Tricept AG
+    </div>
+    <div class="legend-item">
+      <div class="legend-range"></div>
+      Untere Grenze (Spreizung 1&ndash;2)
+    </div>
+  </div>
+
+  <!-- Key findings -->
+  <div class="findings">
+    <h3>Zentrale Befunde aus der Interviewphase</h3>
+    <div class="findings-grid">
+      <div class="finding-item">
+        <div class="finding-label">Shadow AI</div>
+        <strong>91,5% nutzen KI &ndash; 59% &uuml;ber private Accounts</strong> &ndash; 33% geben interne Daten ein, bei nur 24% Regelkenntnis. Tricept AI: 1 von 59 Nennungen. Kundendaten-Fast-Vorfall und Container-L&ouml;schung durch KI-Code bereits eingetreten.
+      </div>
+      <div class="finding-item">
+        <div class="finding-label">Governance</div>
+        <strong>KI-Richtlinie de facto wirkungslos</strong> &ndash; 5/5 FB-Mitarbeiter kennen Inhalt nicht, 76% der Belegschaft ohne klare Orientierung. Kein Freigabeprozess, Compliance nicht einbezogen. Kein ISMS in Betriebsform.
+      </div>
+      <div class="finding-item">
+        <div class="finding-label">Organisation</div>
+        <strong>10 verschiedene Antworten auf &bdquo;Wer treibt KI?&ldquo;</strong> &ndash; Keine formale KI-Verantwortung. Hohe Personenabh&auml;ngigkeit. IT wird nicht einbezogen. Fachbereiche agieren eigenst&auml;ndig.
+      </div>
+      <div class="finding-item">
+        <div class="finding-label">St&auml;rken</div>
+        <strong>68% wollen mehr KI bei klarem Rahmen</strong> &ndash; Hohe Ver&auml;nderungsbereitschaft, Bottom-up-Workshops ohne Managementauftrag, technische Infrastruktur tr&auml;gt &gt;5 KI-Dienste. KI als Produktdifferenzierung erkannt.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Konsolidierte Einsch&auml;tzung auf Basis von 10 Interviews: 2&times; Vorstand, 1&times; KI-Projektleitung (Ralf Geyer, Mark V&ouml;sgen, Marc Hagener), 1&times; IT (Vito), 5&times; Fachbereich (Matthias, Felix, Sebastian, Severios, Sven), 1&times; Compliance (Dominik Oettle DSB + Burkhard Seck ISB) + anonyme MA-Umfrage (n=59, ~74% R&uuml;cklauf).<br>
+    <strong>&Auml;nderungen gegen&uuml;ber Erstgespr&auml;ch (20.02.2026):</strong> Governance 2&rarr;1-2, Organisation 2&rarr;1-2, Technologie 3&rarr;2-3, Gesamt 2 best&auml;tigt. Umfrage-Daten best&auml;tigen und quantifizieren alle Interview-Befunde.<br>
+    Der Gesamtreifegrad ist eine qualitative Einsch&auml;tzung, keine arithmetische Berechnung. Bei starker Spreizung orientiert sich die Bewertung an den schw&auml;chsten tragenden Dimensionen (Strategie, Governance, Kompetenz).<br>
+    Stufe 5 ist f&uuml;r die meisten KMU kein realistisches kurzfristiges Ziel. Stufen 1&ndash;2 sind der typische Startpunkt.
+  </div>
+</div>
+
+</body>
+</html>

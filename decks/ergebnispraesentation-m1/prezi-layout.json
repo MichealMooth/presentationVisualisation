@@ -1,0 +1,111 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    {
+      "id": "eroeffnung",
+      "title": "Eröffnung",
+      "color": "#001777",
+      "x": 1200,
+      "y": 800
+    },
+    {
+      "id": "befund",
+      "title": "Wo stehen wir?",
+      "color": "#0078FE",
+      "x": 5000,
+      "y": 4500
+    },
+    {
+      "id": "staerken-risiken",
+      "title": "Stärken & Handlungsfelder",
+      "color": "#059669",
+      "x": -2500,
+      "y": 8500
+    },
+    {
+      "id": "shadow-ai",
+      "title": "Shadow AI & Regulatorik",
+      "color": "#DC2626",
+      "x": 2500,
+      "y": 13000
+    },
+    {
+      "id": "empfehlung",
+      "title": "Was empfehlen wir?",
+      "color": "#e97316",
+      "x": -2000,
+      "y": 18000
+    },
+    {
+      "id": "angebot",
+      "title": "Angebot & Investition",
+      "color": "#001777",
+      "x": 5500,
+      "y": 23000
+    },
+    {
+      "id": "abschluss",
+      "title": "Abschluss",
+      "color": "#001777",
+      "x": 1200,
+      "y": 28500
+    }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,      "scale": 1,    "topic": "eroeffnung" },
+    { "slideIndex": 1,  "x": 2500,  "y": 300,     "scale": 1,    "topic": "eroeffnung" },
+    { "slideIndex": 2,  "x": 1200,  "y": 1800,    "scale": 1,    "topic": "eroeffnung" },
+
+    { "slideIndex": 3,  "x": 4000,  "y": 3200,    "scale": 1,    "topic": "befund" },
+    { "slideIndex": 4,  "x": 6200,  "y": 3800,    "scale": 1,    "topic": "befund" },
+    { "slideIndex": 5,  "x": 4000,  "y": 5200,    "scale": 1,    "topic": "befund" },
+    { "slideIndex": 6,  "x": 6200,  "y": 5800,    "scale": 1,    "topic": "befund" },
+
+    { "slideIndex": 7,  "x": -3500, "y": 7800,    "scale": 1,    "topic": "staerken-risiken" },
+    { "slideIndex": 8,  "x": -1200, "y": 8400,    "scale": 1,    "topic": "staerken-risiken" },
+
+    { "slideIndex": 9,  "x": 1500,  "y": 11000,   "scale": 1.1,  "topic": "shadow-ai" },
+    { "slideIndex": 10, "x": 3800,  "y": 11600,   "scale": 1,    "topic": "shadow-ai" },
+    { "slideIndex": 11, "x": 1500,  "y": 13200,   "scale": 1,    "topic": "shadow-ai" },
+    { "slideIndex": 12, "x": 3800,  "y": 13800,   "scale": 1,    "topic": "shadow-ai" },
+
+    { "slideIndex": 13, "x": -3000, "y": 16500,   "scale": 1,    "topic": "empfehlung" },
+    { "slideIndex": 14, "x": -800,  "y": 17200,   "scale": 1,    "topic": "empfehlung" },
+    { "slideIndex": 15, "x": -1800, "y": 19000,   "scale": 1.1,  "topic": "empfehlung" },
+
+    { "slideIndex": 16, "x": -4500, "y": 17500,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+    { "slideIndex": 17, "x": -4500, "y": 18700,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+    { "slideIndex": 18, "x": -4500, "y": 19900,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+    { "slideIndex": 19, "x": -4500, "y": 21100,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+    { "slideIndex": 20, "x": -4500, "y": 22300,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+    { "slideIndex": 21, "x": -4500, "y": 23500,   "scale": 0.85, "topic": "empfehlung", "hidden": true },
+
+    { "slideIndex": 22, "x": 5500,  "y": 21500,   "scale": 1.15, "topic": "angebot" },
+    { "slideIndex": 23, "x": 3000,  "y": 21000,   "scale": 0.85, "topic": "angebot", "hidden": true },
+    { "slideIndex": 24, "x": 3000,  "y": 22700,   "scale": 0.85, "topic": "angebot", "hidden": true },
+    { "slideIndex": 25, "x": 3000,  "y": 24400,   "scale": 0.85, "topic": "angebot", "hidden": true },
+    { "slideIndex": 26, "x": 5500,  "y": 24200,   "scale": 1,    "topic": "angebot" },
+
+    { "slideIndex": 27, "x": 0,     "y": 27000,   "scale": 1,    "topic": "abschluss" },
+    { "slideIndex": 28, "x": 2500,  "y": 27700,   "scale": 1,    "topic": "abschluss" },
+    { "slideIndex": 29, "x": 1200,  "y": 29200,   "scale": 1,    "topic": "abschluss" }
+  ],
+  "links": [
+    { "from": 15, "to": 16 },
+    { "from": 15, "to": 17 },
+    { "from": 15, "to": 18 },
+    { "from": 15, "to": 19 },
+    { "from": 15, "to": 20 },
+    { "from": 15, "to": 21 },
+    { "from": 22, "to": 23 },
+    { "from": 22, "to": 24 },
+    { "from": 22, "to": 25 }
+  ],
+  "overview": {
+    "x": 2000,
+    "y": 14500,
+    "scale": 18
+  }
+}

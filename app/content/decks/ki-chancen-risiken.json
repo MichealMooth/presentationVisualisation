@@ -1,0 +1,453 @@
+{
+  "title": "KI im Mittelstand: Chancen, Risiken und strukturierte Einführung",
+  "description": "Faktenbasierte Vertriebspräsentation -- Chancen, Risiken und Vorgehensmodell für KMU-Führungsebene",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "KI im Mittelstand\nChancen, Risiken und der Weg zur strukturierten Einführung\n\nTricept Consulting"
+      },
+      "notes": "Begrüßung. Einstieg: Wir sprechen heute über drei Perspektiven auf KI im Mittelstand -- Chancen, Risiken und den Weg zur strukturierten Einführung. Faktenbasiert, mit aktuellen Zahlen."
+    },
+    {
+      "id": "02-agenda",
+      "number": 2,
+      "title": "Agenda",
+      "displayTitle": "Agenda",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "Drei Perspektiven auf ein Thema:\n\n- **Chancen** -- Was KI für den Mittelstand konkret bedeutet -- belegt mit aktuellen Zahlen.\n- **Risiken** -- Was passiert, wenn KI ohne Struktur eingeführt wird -- oder gar nicht gesteuert wird.\n- **Unser Ansatz** -- Wie eine strukturierte KI-Einführung aussieht -- und warum der Einstieg einfacher ist, als viele denken.\n\nQuellenanhang mit allen referenzierten Studien am Ende.",
+        "deliverables": []
+      },
+      "notes": "Überblick geben, dann direkt in die Chancen einsteigen. Optional: Fragen, welche der drei Perspektiven für die Teilnehmenden am relevantesten ist."
+    },
+    {
+      "id": "03-die-ausgangslage",
+      "number": 3,
+      "title": "Die Ausgangslage",
+      "displayTitle": "Die Ausgangslage",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Chancen: KI als Wettbewerbsfaktor",
+      "content": {
+        "rawMarkdown": "KI ist keine Zukunftstechnologie mehr -- sie ist betriebliche Realität.\n\n- **36 %** -- Deutsche Unternehmen mit produktivem KI-Einsatz (Vorjahr: 20 %) | Bitkom 2025\n- **47 %** -- Unternehmen, die KI planen oder diskutieren | Bitkom 2025\n- **81 %** -- Sehen KI als wichtigste Zukunftstechnologie | Bitkom 2025\n- **57 % vs. 23 %** -- KI-Nutzung Großunternehmen vs. kleine Unternehmen | Destatis 2025\n\nDie Adoptionsrate hat sich in einem Jahr verdoppelt. Gleichzeitig wächst die Kluft: Großunternehmen ziehen davon, KMU drohen den Anschluss zu verlieren.",
+        "matrix": []
+      },
+      "notes": "Kernpunkt: Die Verdopplung der Adoptionsrate zeigt die Dynamik. Die Kluft zwischen groß und klein wächst. Frage an die Runde: Wo ordnen Sie sich ein?"
+    },
+    {
+      "id": "04-produktivitaet-und-effizienz",
+      "number": 4,
+      "title": "Produktivität und Effizienz",
+      "displayTitle": "Produktivität und Effizienz",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Chancen: KI als Wettbewerbsfaktor",
+      "content": {
+        "rawMarkdown": "Unternehmen mit KI-gestützten Prozessen erzielen ein 2,5-fach höheres Umsatzwachstum und eine 2,4-fach höhere Produktivität.\n\n- **18--35 %** -- Produktivitätssteigerung mit klarer KI-Strategie | IW Köln 2025\n- **> 30 Min/Tag** -- Zeitersparnis bei KI-Power-Usern | Microsoft 2024\n- **90 %** -- Mitarbeitende sagen: KI reduziert Arbeitslast | Microsoft 2024\n- **0,9--1,2 %/Jahr** -- Zusätzliches Produktivitätswachstum DE durch KI (bisher: 0,4 %) | IW Köln 2025",
+        "matrix": []
+      },
+      "notes": "Quellen: Accenture 2024 (2,5x/2,4x), IW Köln Gutachten 2025, Microsoft Work Trend Index 2024. Die 18-35 % gelten nur bei klarer Strategie -- ohne Strategie deutlich weniger."
+    },
+    {
+      "id": "05-wettbewerb-und-wachstum",
+      "number": 5,
+      "title": "Wettbewerb und Wachstum",
+      "displayTitle": "Wettbewerb und Wachstum",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Chancen: KI als Wettbewerbsfaktor",
+      "content": {
+        "rawMarkdown": "Wer KI strukturiert einsetzt, baut einen messbaren Vorsprung auf:\n\n- **3,3x** -- Erfolgsrate bei Skalierung (Vorreiter vs. Nachzügler) | Accenture 2024\n- **25 %** -- Führungskräfte mit transformativer KI-Wirkung (Vorjahr: 12 %) | Deloitte 2025\n- **3,70 €** -- Return on Investment pro investiertem Euro | Branchenaggregation 2025\n- **2,6--4,4 Bio. €** -- Weltweiter Mehrwert durch Generative KI jährlich | McKinsey 2023",
+        "matrix": []
+      },
+      "notes": "Die 3,70 € ROI sind ein Branchendurchschnitt -- einzelne Projekte variieren stark. Der McKinsey-Wert zeigt die Gesamtdimension, nicht den individuellen Business Case."
+    },
+    {
+      "id": "06-kernbotschaft-chancen",
+      "number": 6,
+      "title": "Kernbotschaft Chancen",
+      "displayTitle": "Kernbotschaft Chancen",
+      "layout": "hero",
+      "theme": "light",
+      "chapter": "Chancen: KI als Wettbewerbsfaktor",
+      "content": {
+        "rawMarkdown": "KI ist kein IT-Projekt\nSie ist ein Führungsthema mit messbarem wirtschaftlichem Hebel -- gerade für den Mittelstand, wo Effizienzgewinne direkt auf das Ergebnis durchschlagen."
+      },
+      "notes": "Überleitung zu den Risiken: Die Zahlen zeigen das Potenzial. Aber was passiert, wenn KI ohne Struktur eingeführt wird? Genau darum geht es jetzt."
+    },
+    {
+      "id": "07-das-strategieproblem",
+      "number": 7,
+      "title": "Das Strategieproblem",
+      "displayTitle": "Das Strategieproblem",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Risiken: Was ohne Struktur passiert",
+      "content": {
+        "rawMarkdown": "Die Technologie ist nicht das Problem -- die fehlende Struktur ist es.\n\n- **95 %** -- GenAI-Pilotprojekte ohne messbare wirtschaftliche Wirkung | MIT 2025\n- **> 80 %** -- KI-Projekte, die scheitern (2x Fehlerrate normaler IT-Projekte) | RAND 2024\n- **42 %** -- Unternehmen, die Mehrheit ihrer KI-Initiativen eingestellt haben (Vorjahr: 17 %) | S&P Global 2025\n- **70--85 %** -- GenAI-Deployments ohne erwarteten ROI | NTT DATA 2024\n\nDie häufigsten Ursachen: fehlende Strategie, unklare Verantwortlichkeiten, keine Erfolgsmessung.",
+        "matrix": []
+      },
+      "notes": "Nicht als Panikmache, sondern nüchtern: Diese Zahlen betreffen vor allem Unternehmen ohne klare Steuerung. Die Technologie funktioniert -- die Einführung ist das Problem."
+    },
+    {
+      "id": "08-shadow-ai-die-unsichtbare-gefahr",
+      "number": 8,
+      "title": "Shadow AI: Die unsichtbare Gefahr",
+      "displayTitle": "Shadow AI: Die unsichtbare Gefahr",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Risiken: Was ohne Struktur passiert",
+      "content": {
+        "rawMarkdown": "Während Führungsebenen noch über Strategie diskutieren, nutzen Mitarbeitende längst KI -- oft an der IT vorbei:\n\n- **54 %** -- Wissensarbeiter in DE nutzen KI ohne Genehmigung | Software AG 2025\n- **10 %** -- Beschäftigte mit KI-Nutzung ohne Wissen des Arbeitgebers (Vorjahr: 5 %) | Bitkom 2025\n- **269** -- Nicht genehmigte KI-Tools pro 1.000 Mitarbeitende in kleinen Unternehmen | Reco 2025\n- **+ 670.000 €** -- Mehrkosten bei Datenschutzverletzung durch Shadow AI | IBM 2025\n\nGeschäftsdaten fließen in externe Dienste. Compliance-Anforderungen werden unterlaufen. Die Geschäftsführung erfährt es oft erst nach einem Vorfall.",
+        "matrix": []
+      },
+      "notes": "Shadow AI ist kein Vorwurf an die Mitarbeitenden -- sie nutzen, was verfügbar ist. Das Problem ist die fehlende Steuerung. Frage: Wissen Sie, welche KI-Tools in Ihrem Unternehmen genutzt werden?"
+    },
+    {
+      "id": "09-regulatorischer-druck",
+      "number": 9,
+      "title": "Regulatorischer Druck",
+      "displayTitle": "Regulatorischer Druck",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Risiken: Was ohne Struktur passiert",
+      "content": {
+        "rawMarkdown": "- **KI-Kompetenzpflicht** -- EU AI Act Art. 4 -- Gilt seit Februar 2025\n- **Hochrisiko-Pflichten** -- EU AI Act -- Greifen ab August 2026\n- **DSGVO** -- Gilt unverändert -- KI-Nutzung ändert nichts an den Pflichten\n\n53 % der Unternehmen nennen rechtliche Unsicherheit als Haupthemmnis. 49 % haben Bedenken beim Datenschutz. Die regulatorischen Anforderungen verschwinden nicht durch Abwarten -- sie verschärfen sich.",
+        "timeline": []
+      },
+      "notes": "Wichtig: Die KI-Kompetenzpflicht gilt bereits seit Februar 2025 -- viele Unternehmen wissen das nicht. Ab August 2026 kommen die Hochrisiko-Pflichten hinzu. Wer jetzt nicht anfängt, wird unter Zeitdruck regulatorisch nachrüsten müssen."
+    },
+    {
+      "id": "10-die-hemmnisse-im-mittelstand",
+      "number": 10,
+      "title": "Die Hemmnisse im Mittelstand",
+      "displayTitle": "Die Hemmnisse im Mittelstand",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Risiken: Was ohne Struktur passiert",
+      "content": {
+        "rawMarkdown": "Was den Mittelstand bremst:\n\n- **53 %** -- Rechtliche Unsicherheit und Regulatorik | Bitkom 2025\n- **53 %** -- Fehlendes technisches Know-how | Bitkom 2025\n- **51 %** -- Fehlende personelle Ressourcen | Bitkom 2025\n- **48 %** -- Datenschutzanforderungen | Bitkom 2025\n- **70 %** -- Fachkräftemangel extern | Bitkom 2025",
+        "matrix": []
+      },
+      "notes": "Die Hemmnisse sind struktureller Natur -- sie lassen sich nicht durch einzelne Tool-Einführungen lösen. Alle fünf Punkte adressiert unser Vorgehensmodell systematisch."
+    },
+    {
+      "id": "11-kernbotschaft-risiken",
+      "number": 11,
+      "title": "Kernbotschaft Risiken",
+      "displayTitle": "Kernbotschaft Risiken",
+      "layout": "hero",
+      "theme": "light",
+      "chapter": "Risiken: Was ohne Struktur passiert",
+      "content": {
+        "rawMarkdown": "Die Frage ist nicht mehr, ob KI kommt -- sie ist da\nDie Frage ist, ob Ihr Unternehmen die Kontrolle behält oder ob KI unkontrolliert Risiken erzeugt."
+      },
+      "notes": "Überleitung: Die Chancen sind real, die Risiken auch. Die entscheidende Frage ist: Wie bringt man Struktur in das Thema? Genau darum geht es jetzt."
+    },
+    {
+      "id": "12-was-den-unterschied-macht",
+      "number": 12,
+      "title": "Was den Unterschied macht",
+      "displayTitle": "Was den Unterschied macht",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Ohne Struktur:**\n- 80 %+ der KI-Projekte scheitern\n- Piloten bleiben Piloten -- 95 % ohne Wirkung\n- 70--85 % verfehlen den erwarteten ROI\n- Shadow AI wächst unkontrolliert\n- Regulatorik wird reaktiv behandelt\n\n**Mit Struktur:**\n- 18--35 % Produktivitätssteigerung\n- 3,3x erfolgreicher bei der Skalierung\n- 3,70 € Return pro investiertem Euro\n- Shadow AI erkannt, gesteuert, regelkonform\n- Regulatorik durchgängig verankert\n\nDer Unterschied ist nicht die Technologie -- es ist die Steuerung.",
+        "comparison": [
+          {
+            "title": "Ohne Struktur:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "80 %+ der KI-Projekte scheitern",
+              "Piloten bleiben Piloten -- 95 % ohne Wirkung",
+              "70--85 % verfehlen den erwarteten ROI",
+              "Shadow AI wächst unkontrolliert",
+              "Regulatorik wird reaktiv behandelt"
+            ]
+          },
+          {
+            "title": "Mit Struktur:",
+            "description": "Der Unterschied ist nicht die Technologie -- es ist die Steuerung.",
+            "type": "neutral",
+            "items": [
+              "18--35 % Produktivitätssteigerung",
+              "3,3x erfolgreicher bei der Skalierung",
+              "3,70 € Return pro investiertem Euro",
+              "Shadow AI erkannt, gesteuert, regelkonform",
+              "Regulatorik durchgängig verankert",
+              "Der Unterschied ist nicht die Technologie -- es ist die Steuerung."
+            ]
+          }
+        ]
+      },
+      "notes": "Diese Folie fasst Thema 2 und 3 zusammen und bildet die Brücke zum Lösungsansatz. Die Gegenüberstellung macht den Handlungsbedarf greifbar."
+    },
+    {
+      "id": "13-wer-wir-sind",
+      "number": 13,
+      "title": "Wer wir sind",
+      "displayTitle": "Wer wir sind",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "Tricept Consulting begleitet kleine und mittlere Unternehmen bei der strukturierten Einführung, Steuerung und dauerhaften Führung von KI.\n\n- **Management-orientiert** -- Wir adressieren die Führungsebene, nicht die IT-Abteilung.\n- **Technologieunabhängig** -- Keine Produktempfehlungen, keine Herstellerbindung.\n- **KMU-pragmatisch** -- Unser Modell ist für den Mittelstand gebaut, nicht für Konzerne.",
+        "deliverables": []
+      },
+      "notes": "Kurz halten -- die drei Merkmale reichen. Nicht in Unternehmenshistorie abgleiten. Falls Rückfrage nach Referenzen: Auf M1-Erfahrungen verweisen."
+    },
+    {
+      "id": "14-das-vorgehensmodell-5-phasen-5-module",
+      "number": 14,
+      "title": "Das Vorgehensmodell: 5 Phasen, 5 Module",
+      "displayTitle": "Das Vorgehensmodell: 5 Phasen, 5 Module",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "- **Orientierung** -- M1 KI-Standortbestimmung | Wo stehen wir wirklich?\n- **Zielbild** -- M2 KI-Strategie und Use-Cases | Wohin wollen wir -- und womit starten?\n- **Vorbereitung** -- M3 Governance und Umsetzungsvorbereitung | Wer entscheidet was? Welche Regeln gelten?\n- **Einführung** -- M4 Einführungsbegleitung | Wie kommen wir sicher in die Nutzung?\n- **Dauerhafte Führung** -- M5 KI-Führungsbegleitung | Wie bleiben wir dauerhaft handlungsfähig?\n\nOptional: Technisches Sparring -- herstellerunabhängige Orientierung bei konkreten Technologiefragen (zuschaltbar ab M3).",
+        "timeline": [
+          {
+            "id": "- **Vorbereitung** -- M3 Governance und Umsetzungsvorbereitung",
+            "title": "Wer entscheidet was? Welche Regeln gelten?",
+            "description": "",
+            "result": ""
+          },
+          {
+            "id": "- **Einführung** -- M4 Einführungsbegleitung",
+            "title": "Wie kommen wir sicher in die Nutzung?",
+            "description": "",
+            "result": ""
+          },
+          {
+            "id": "- **Dauerhafte Führung** -- M5 KI-Führungsbegleitung",
+            "title": "Wie bleiben wir dauerhaft handlungsfähig?",
+            "description": "",
+            "result": ""
+          }
+        ]
+      },
+      "notes": "Jedes Modul nur kurz benennen, nicht vertiefen. Hinweis: Die Module sind in der Übersicht anklickbar und führen in die Detailansicht. Bei Interesse gezielt in ein Modul reinzoomen."
+    },
+    {
+      "id": "15-m1-ki-standortbestimmung",
+      "number": 15,
+      "title": "M1 -- KI-Standortbestimmung",
+      "displayTitle": "M1 -- KI-Standortbestimmung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Badge:** Einstiegsmodul | Festpreis | 3-5 Beratertage | 1-2 Wochen\n\n**Bausteine:**\n- **Interviews** | Strukturierte Gespräche mit Schlüsselpersonen (GF, IT, Fachbereich, Compliance)\n- **Umfrage** | Optionale anonyme Mitarbeitenden-Kurzumfrage (5 Min/Person)\n- **Reifegrad** | Analyse über 6 Dimensionen (Strategie, Organisation, Kompetenz, Technologie, Governance, Daten)\n- **Shadow AI** | Erhebung unkontrollierter KI-Nutzung\n- **Regulatorik** | Ersteinordnung (EU AI Act, DSGVO)\n- **Ergebnispräsentation** | Konkrete Empfehlung für den nächsten Schritt\n\n**Ergebnisse:**\n- Reifegradprofil mit Stärken und Handlungsfeldern\n- KI-Nutzungsübersicht inkl. Shadow-AI-Befund\n- Regulatorische Basiseinordnung\n- Priorisierte Handlungsempfehlungen\n- Klare Empfehlung für den nächsten Schritt\n\n**Aufwand:** 3-5 Beratertage | Kundenaufwand ca. 7-8 Stunden",
+        "moduleDetail": {
+          "badge": "Einstiegsmodul | Festpreis | 3-5 Beratertage | 1-2 Wochen",
+          "bausteine": [],
+          "ergebnisse": [
+            "Reifegradprofil mit Stärken und Handlungsfeldern",
+            "KI-Nutzungsübersicht inkl. Shadow-AI-Befund",
+            "Regulatorische Basiseinordnung",
+            "Priorisierte Handlungsempfehlungen",
+            "Klare Empfehlung für den nächsten Schritt"
+          ],
+          "aufwand": "3-5 Beratertage | Kundenaufwand ca. 7-8 Stunden"
+        }
+      },
+      "notes": "Dies ist das Einstiegsmodul -- Festpreis, überschaubarer Aufwand. Betonung: Die Entscheidung für weitere Module liegt danach beim Kunden."
+    },
+    {
+      "id": "16-m2-ki-strategie-und-use-cases",
+      "number": 16,
+      "title": "M2 -- KI-Strategie und Use-Cases",
+      "displayTitle": "M2 -- KI-Strategie und Use-Cases",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 6-10 Beratertage | 3-5 Wochen\n\n**Bausteine:**\n- **Strategie-Workshop** | KI-Zielbild mit Management entwickeln, Leitplanken und Nicht-Ziele definieren\n- **Use-Case-Workshops** | Identifikation, Bewertung und Priorisierung mit Fachbereichen\n- **Regulatorisches Rating** | Ampel-Rating je Use-Case (EU AI Act, DSGVO)\n- **Management-Entscheidung** | Workshop: Start, Später oder Nicht verfolgen\n\n**Ergebnisse:**\n- KI-Strategie und Zielbild (Ambition, Leitplanken, Nicht-Ziele)\n- Use-Case-Bewertung mit Nutzen, Aufwand, Risiko und regulatorischer Einordnung\n- Dokumentierte Management-Entscheidung\n\n**Aufwand:** 6-10 Beratertage | Kundenaufwand ca. 15-20 Stunden",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 6-10 Beratertage | 3-5 Wochen",
+          "bausteine": [],
+          "ergebnisse": [
+            "KI-Strategie und Zielbild (Ambition, Leitplanken, Nicht-Ziele)",
+            "Use-Case-Bewertung mit Nutzen, Aufwand, Risiko und regulatorischer Einordnung",
+            "Dokumentierte Management-Entscheidung"
+          ],
+          "aufwand": "6-10 Beratertage | Kundenaufwand ca. 15-20 Stunden"
+        }
+      }
+    },
+    {
+      "id": "17-m3-governance-und-umsetzungsvorbereitung",
+      "number": 17,
+      "title": "M3 -- Governance und Umsetzungsvorbereitung",
+      "displayTitle": "M3 -- Governance und Umsetzungsvorbereitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 5-8 Beratertage | 3-5 Wochen\n\n**Bausteine:**\n- **Rollen und Verantwortung** | Verantwortungsstruktur für KI definieren\n- **Steuerungslogik** | Entscheidungs- und Steuerungslogik aufbauen\n- **Regulatorische Vertiefung** | Vertiefte Einordnung je Start-Use-Case\n- **Umsetzungssteckbriefe** | Je Use-Case mit Owner, Meilensteinen und Erfolgskriterien\n\n**Ergebnisse:**\n- Governance-Struktur (Rollen, Entscheidungswege, Review-Formate)\n- Umsetzungssteckbriefe je Use-Case\n- Management-Freigabe für die Umsetzung\n\n**Aufwand:** 5-8 Beratertage | Kundenaufwand ca. 15-20 Stunden",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 5-8 Beratertage | 3-5 Wochen",
+          "bausteine": [],
+          "ergebnisse": [
+            "Governance-Struktur (Rollen, Entscheidungswege, Review-Formate)",
+            "Umsetzungssteckbriefe je Use-Case",
+            "Management-Freigabe für die Umsetzung"
+          ],
+          "aufwand": "5-8 Beratertage | Kundenaufwand ca. 15-20 Stunden"
+        }
+      }
+    },
+    {
+      "id": "18-m4-einfuehrungsbegleitung",
+      "number": 18,
+      "title": "M4 -- Einführungsbegleitung",
+      "displayTitle": "M4 -- Einführungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Badge:** Aufwandsbasiert | 4-8 Beratertage je UC | 4-8 Wochen\n\n**Bausteine:**\n- **Kick-off** | Use-Case-Kick-off und Einführungssteuerung\n- **Change** | Change-Kommunikation und Mitarbeitenden-Enablement\n- **Testphase** | Testphase begleiten, Go-Live-Entscheidung vorbereiten\n- **Go-Live-Checkliste** | 10 Punkte: DSGVO, AI Act, Transparenz, Human Oversight\n\n**Ergebnisse:**\n- Einführungsprotokoll je Use-Case\n- Dokumentierte Go-Live-Freigabe\n- Lessons Learned für weitere Use-Cases\n\n**Aufwand:** 4-8 Beratertage je UC | Kundenaufwand ca. 15-25 Stunden je UC",
+        "moduleDetail": {
+          "badge": "Aufwandsbasiert | 4-8 Beratertage je UC | 4-8 Wochen",
+          "bausteine": [],
+          "ergebnisse": [
+            "Einführungsprotokoll je Use-Case",
+            "Dokumentierte Go-Live-Freigabe",
+            "Lessons Learned für weitere Use-Cases"
+          ],
+          "aufwand": "4-8 Beratertage je UC | Kundenaufwand ca. 15-25 Stunden je UC"
+        }
+      },
+      "notes": "Rahmenmodul -- wird für jeden Use-Case oder UC-Gruppe wiederholt."
+    },
+    {
+      "id": "19-m5-ki-fuehrungsbegleitung",
+      "number": 19,
+      "title": "M5 -- KI-Führungsbegleitung",
+      "displayTitle": "M5 -- KI-Führungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "**Badge:** Retainer | 1-2 Beratertage pro Quartal | Dauerhaft\n\n**Bausteine:**\n- **Quartals-Reviews** | Nutzung, Risiken, Compliance und Weiterentwicklung prüfen\n- **Governance-Pflege** | Nachschärfung bei Bedarf\n- **Reifegrad-Update** | Jährliches Update und Strategie-Abgleich\n- **Ad-hoc-Sparring** | Sparring zwischen Reviews bei Entscheidungsbedarf\n\n**Ergebnisse:**\n- Review-Protokoll je Quartal\n- Aktualisierte KI-Anwendungsübersicht\n- Sparring bei Entscheidungsbedarf\n\n**Aufwand:** 1-2 Beratertage pro Quartal",
+        "moduleDetail": {
+          "badge": "Retainer | 1-2 Beratertage pro Quartal | Dauerhaft",
+          "bausteine": [],
+          "ergebnisse": [
+            "Review-Protokoll je Quartal",
+            "Aktualisierte KI-Anwendungsübersicht",
+            "Sparring bei Entscheidungsbedarf"
+          ],
+          "aufwand": "1-2 Beratertage pro Quartal"
+        }
+      }
+    },
+    {
+      "id": "20-was-uns-unterscheidet",
+      "number": 20,
+      "title": "Was uns unterscheidet",
+      "displayTitle": "Was uns unterscheidet",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "- **Modular und sequentiell** -- Sie entscheiden nach jedem Modul, ob und wie es weitergeht. Keine Langzeitverträge, keine Verpflichtung über den nächsten Schritt hinaus.\n- **Regulatorik als durchgängiger Faden** -- EU AI Act, DSGVO und branchenspezifische Anforderungen sind in jedem Modul verankert -- nicht als Einmalprüfung, sondern als laufendes Thema.\n- **Ergebnisorientiert** -- Jedes Modul liefert ein konkretes, sofort nutzbares Ergebnis. Kein Overhead, keine Endlosberatung.",
+        "deliverables": []
+      },
+      "notes": "Diese drei Punkte adressieren die häufigsten Bedenken: Bindung, Regulatorik-Unsicherheit und Praxisrelevanz."
+    },
+    {
+      "id": "21-der-einstieg",
+      "number": 21,
+      "title": "Der Einstieg",
+      "displayTitle": "Der Einstieg",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "Die KI-Standortbestimmung (M1) ist der erste Schritt:\n\n- **Dauer** -- 1-2 Wochen\n- **Aufwand für Sie** -- ca. 7-8 Stunden, verteilt auf 4-6 Personen\n- **Umfang** -- 3-5 Beratertage\n- **Preismodell** -- Festpreis\n- **Ergebnis** -- Ergebnisdokument und Ergebnispräsentation mit Empfehlung\n\nDie Entscheidung liegt bei Ihnen. Es gibt keine Verpflichtung über die Standortbestimmung hinaus.",
+        "matrix": []
+      },
+      "notes": "Hier konkret werden: Was kostet es, wie lange dauert es, was bekommt der Kunde. Falls Preisfrage kommt: Festpreis nennen (je nach Kontext). Betonung: Kein Risiko, keine Bindung."
+    },
+    {
+      "id": "22-kernbotschaft-ansatz",
+      "number": 22,
+      "title": "Kernbotschaft Ansatz",
+      "displayTitle": "Kernbotschaft Ansatz",
+      "layout": "hero",
+      "theme": "light",
+      "chapter": "Unser Ansatz: Strukturiert einführen",
+      "content": {
+        "rawMarkdown": "Wir bringen Struktur in Ihr KI-Thema\nSie entscheiden fundiert statt aus dem Bauch -- und behalten die Kontrolle."
+      },
+      "notes": "Abschluss des inhaltlichen Teils. Überleitung: Falls Interesse an den Quellen besteht, sind diese im Anhang hinterlegt. Ansonsten: Welche Fragen haben Sie?"
+    },
+    {
+      "id": "23-primaerquellen",
+      "number": 23,
+      "title": "Primärquellen",
+      "displayTitle": "Primärquellen",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Quellenanhang",
+      "content": {
+        "rawMarkdown": "- **[1] Bitkom 2025** -- Künstliche Intelligenz 2025, n=604 Unternehmen ab 20 Beschäftigte\n- **[2] Destatis 2025** -- IKT-Erhebung 2025 (57 % groß, 36 % mittel, 23 % klein)\n- **[3] Accenture 2024** -- Reinventing Enterprise Operations with Gen AI, n=2.000\n- **[4] Microsoft 2024** -- Work Trend Index 2024/2025\n- **[5] IW Köln 2025** -- Gutachten Produktivität und KI, KI-Studie Mittelstand\n- **[6] Deloitte 2025** -- State of AI in the Enterprise, n=3.235\n- **[7] Branchenaggregation 2025** -- Durchschnittlicher KI-ROI, via Aristek Systems\n- **[8] McKinsey 2023** -- The Economic Potential of Generative AI\n- **[9] MIT 2025** -- The GenAI Divide, 150 Interviews, 300 Deployments\n- **[10] RAND 2024** -- Root Causes of AI Project Failure\n- **[11] S&P Global 2025** -- KI-Projekt-Abbrüche (42 % eingestellt, 46 % PoCs abgebrochen)\n- **[12] Deloitte 2025** -- AI ROI: The Paradox of Rising Investment and Elusive Returns\n- **[13] NTT DATA 2024** -- 70-85 % der GenAI-Deployments verfehlen erwarteten ROI\n- **[14] Software AG 2025** -- Nicht genehmigte KI-Nutzung in DE, 54 % der Wissensarbeiter\n- **[15] Bitkom 2025** -- Beschäftigte nutzen vermehrt Schatten-KI\n- **[16] Reco 2025** -- State of Shadow AI Report, 269 Tools pro 1.000 MA\n- **[17] IBM 2025** -- Cost of a Data Breach Report, Shadow-AI-Mehrkosten\n- **[18] Eurostat 2025** -- IKT-Erhebung (71 % fehlende Expertise, 53 % Rechtsunsicherheit)",
+        "deliverables": []
+      },
+      "notes": "Quellenanhang nur bei Bedarf zeigen. Alle Zahlen in der Präsentation sind mit diesen Quellen belegt. Bei Rückfragen zu einzelnen Studien: Quelle benennen und ggf. nachliefern."
+    },
+    {
+      "id": "24-weiterfuehrende-quellen",
+      "number": 24,
+      "title": "Weiterführende Quellen",
+      "displayTitle": "Weiterführende Quellen",
+      "layout": "bullets",
+      "theme": "dark",
+      "chapter": "Quellenanhang",
+      "content": {
+        "rawMarkdown": "- **McKinsey 2025** -- The State of AI in 2025: 78 % der Unternehmen weltweit nutzen KI (2023: 55 %)\n- **BCG 2025** -- AI at Work, n=10.635: 72 % regelmäßige GenAI-Nutzer; DE bei KI-Investitionen hinter globalem Schnitt\n- **DIHK 2025** -- Digitalisierungsumfrage: 38 % nutzen KI (2022: 14 %), weitere 32 % planen Einsatz\n- **Eurostat 2025** -- 20 % der EU-Unternehmen nutzen KI; Spitzenreiter Dänemark (42 %)\n- **IBM 2025** -- CEO-Umfrage, n=2.000: Nur 25 % der KI-Initiativen lieferten in 3 Jahren den erwarteten ROI\n- **Deloitte 2025** -- State of AI: 91 % planen weitere KI-Investitionserhöhung; 75 % sehen ROI-Erwartungen erfüllt",
+        "deliverables": []
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Einstieg",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Chancen: KI als Wettbewerbsfaktor",
+      "startSlide": 3
+    },
+    {
+      "id": "block-2",
+      "title": "Risiken: Was ohne Struktur passiert",
+      "startSlide": 7
+    },
+    {
+      "id": "block-3",
+      "title": "Unser Ansatz: Strukturiert einführen",
+      "startSlide": 12
+    },
+    {
+      "id": "block-4",
+      "title": "Quellenanhang",
+      "startSlide": 23
+    }
+  ]
+}

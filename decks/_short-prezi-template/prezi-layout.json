@@ -1,0 +1,42 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    { "id": "einstieg",   "title": "Einstieg",   "color": "#001777", "x": 0,    "y": 400 },
+    { "id": "topic-1",    "title": "Thema 1",    "color": "#001777", "x": 0,    "y": 2800 },
+    { "id": "topic-2",    "title": "Thema 2",    "color": "#0078FE", "x": 0,    "y": 5600 },
+    { "id": "topic-3",    "title": "Thema 3",    "color": "#001777", "x": 0,    "y": 8400 },
+    { "id": "abschluss",  "title": "Abschluss",  "color": "#001777", "x": 0,    "y": 11200 }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,     "scale": 1,    "topic": "einstieg" },
+
+    { "slideIndex": 1,  "x": 0,     "y": 2800,  "scale": 1.1,  "topic": "topic-1" },
+    { "slideIndex": 2,  "x": -2800, "y": 2200,  "scale": 0.85, "topic": "topic-1", "hidden": true },
+    { "slideIndex": 3,  "x": -2800, "y": 3400,  "scale": 0.85, "topic": "topic-1", "hidden": true },
+
+    { "slideIndex": 4,  "x": 0,     "y": 5600,  "scale": 1.1,  "topic": "topic-2" },
+    { "slideIndex": 5,  "x": 2800,  "y": 5000,  "scale": 0.85, "topic": "topic-2", "hidden": true },
+    { "slideIndex": 6,  "x": 2800,  "y": 6200,  "scale": 0.85, "topic": "topic-2", "hidden": true },
+
+    { "slideIndex": 7,  "x": 0,     "y": 8400,  "scale": 1.1,  "topic": "topic-3" },
+    { "slideIndex": 8,  "x": -2800, "y": 7800,  "scale": 0.85, "topic": "topic-3", "hidden": true },
+    { "slideIndex": 9,  "x": -2800, "y": 9000,  "scale": 0.85, "topic": "topic-3", "hidden": true },
+
+    { "slideIndex": 10, "x": 0,     "y": 11200, "scale": 1,    "topic": "abschluss" }
+  ],
+  "links": [
+    { "from": 1, "to": 2 },
+    { "from": 1, "to": 3 },
+    { "from": 4, "to": 5 },
+    { "from": 4, "to": 6 },
+    { "from": 7, "to": 8 },
+    { "from": 7, "to": 9 }
+  ],
+  "overview": {
+    "x": 0,
+    "y": 5600,
+    "scale": 8
+  }
+}

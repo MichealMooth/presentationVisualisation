@@ -1,0 +1,93 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    {
+      "id": "willkommen",
+      "title": "Willkommen",
+      "color": "#001777",
+      "x": 1200,
+      "y": 540
+    },
+    {
+      "id": "beratungsansatz",
+      "title": "Vorgehensmodell",
+      "color": "#001777",
+      "x": 2400,
+      "y": 3600
+    },
+    {
+      "id": "module-detail",
+      "title": "Module im Detail",
+      "color": "#0078FE",
+      "x": -4200,
+      "y": 3800
+    },
+    {
+      "id": "standortbestimmung-detail",
+      "title": "Standortbestimmung im Detail",
+      "color": "#0078FE",
+      "x": 6600,
+      "y": 5400
+    },
+    {
+      "id": "kostenrahmen",
+      "title": "Kostenrahmen",
+      "color": "#001777",
+      "x": -1800,
+      "y": 7200
+    },
+    {
+      "id": "interviewpartner",
+      "title": "Interviewpartner",
+      "color": "#0078FE",
+      "x": 2200,
+      "y": 8800
+    },
+    {
+      "id": "naechste-schritte",
+      "title": "Nächste Schritte",
+      "color": "#001777",
+      "x": 6200,
+      "y": 8400
+    }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,     "scale": 1,    "topic": "willkommen" },
+    { "slideIndex": 1,  "x": 2500,  "y": 300,   "scale": 1,    "topic": "willkommen" },
+
+    { "slideIndex": 2,  "x": 400,   "y": 2600,  "scale": 1,    "topic": "beratungsansatz" },
+    { "slideIndex": 3,  "x": 2800,  "y": 2300,  "scale": 1,    "topic": "beratungsansatz" },
+    { "slideIndex": 4,  "x": 1400,  "y": 4200,  "scale": 1.15, "topic": "beratungsansatz" },
+
+    { "slideIndex": 5,  "x": -5400, "y": 2600,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 6,  "x": -3400, "y": 2600,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 7,  "x": -5400, "y": 3800,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 8,  "x": -3400, "y": 3800,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 9,  "x": -4400, "y": 5000,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+
+    { "slideIndex": 10, "x": 5800,  "y": 4600,  "scale": 1,    "topic": "standortbestimmung-detail" },
+    { "slideIndex": 11, "x": 6200,  "y": 6400,  "scale": 1,    "topic": "standortbestimmung-detail" },
+
+    { "slideIndex": 12, "x": -1800, "y": 7200,  "scale": 1,    "topic": "kostenrahmen" },
+
+    { "slideIndex": 13, "x": 2200,  "y": 8800,  "scale": 1.1,  "topic": "interviewpartner" },
+
+    { "slideIndex": 14, "x": 6000,  "y": 7600,  "scale": 1,    "topic": "naechste-schritte" },
+    { "slideIndex": 15, "x": 6200,  "y": 8800,  "scale": 1,    "topic": "naechste-schritte" },
+    { "slideIndex": 16, "x": 6400,  "y": 10200, "scale": 1,    "topic": "naechste-schritte" }
+  ],
+  "links": [
+    { "from": 4, "to": 5 },
+    { "from": 4, "to": 6 },
+    { "from": 4, "to": 7 },
+    { "from": 4, "to": 8 },
+    { "from": 4, "to": 9 }
+  ],
+  "overview": {
+    "x": 2400,
+    "y": 7200,
+    "scale": 8
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    {
+      "id": "agenda",
+      "title": "Agenda",
+      "color": "#001777",
+      "x": 1200,
+      "y": 540
+    },
+    {
+      "id": "gesamtstatus",
+      "title": "Gesamtstatus",
+      "color": "#0078FE",
+      "x": 5000,
+      "y": 1200
+    },
+    {
+      "id": "verprobung",
+      "title": "Verprobung & Erkenntnisse",
+      "color": "#059669",
+      "x": 2500,
+      "y": 3300
+    },
+    {
+      "id": "beratungskonzept",
+      "title": "Beratungskonzept",
+      "color": "#001777",
+      "x": 0,
+      "y": 5200
+    },
+    {
+      "id": "module-detail",
+      "title": "Module im Detail",
+      "color": "#0078FE",
+      "x": -3400,
+      "y": 5200
+    },
+    {
+      "id": "zeitplan",
+      "title": "Zeitplan",
+      "color": "#e97316",
+      "x": 1200,
+      "y": 7200
+    },
+    {
+      "id": "offene-punkte",
+      "title": "Offene Punkte",
+      "color": "#001777",
+      "x": 2500,
+      "y": 9400
+    }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,     "scale": 1,    "topic": "agenda" },
+    { "slideIndex": 1,  "x": 2500,  "y": 300,   "scale": 1,    "topic": "agenda" },
+
+    { "slideIndex": 2,  "x": 5000,  "y": 300,   "scale": 1,    "topic": "gesamtstatus" },
+    { "slideIndex": 3,  "x": 5000,  "y": 2000,  "scale": 1,    "topic": "gesamtstatus" },
+
+    { "slideIndex": 4,  "x": 2500,  "y": 2400,  "scale": 1,    "topic": "verprobung" },
+    { "slideIndex": 5,  "x": 2500,  "y": 4200,  "scale": 1,    "topic": "verprobung" },
+
+    { "slideIndex": 6,  "x": 0,     "y": 5200,  "scale": 1.15, "topic": "beratungskonzept" },
+
+    { "slideIndex": 7,  "x": -4400, "y": 4200,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 8,  "x": -2400, "y": 4200,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 9,  "x": -4400, "y": 5400,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 10, "x": -2400, "y": 5400,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 11, "x": -3400, "y": 6600,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+
+    { "slideIndex": 12, "x": 0,     "y": 7200,  "scale": 1.1,  "topic": "zeitplan" },
+    { "slideIndex": 13, "x": 2500,  "y": 7200,  "scale": 1,    "topic": "zeitplan" },
+
+    { "slideIndex": 14, "x": -500,  "y": 9200,  "scale": 1,    "topic": "offene-punkte" },
+    { "slideIndex": 15, "x": 5500,  "y": 9200,  "scale": 1,    "topic": "offene-punkte" }
+  ],
+  "links": [
+    { "from": 6, "to": 7 },
+    { "from": 6, "to": 8 },
+    { "from": 6, "to": 9 },
+    { "from": 6, "to": 10 },
+    { "from": 6, "to": 11 }
+  ],
+  "overview": {
+    "x": 1500,
+    "y": 4800,
+    "scale": 7
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    {
+      "id": "einstieg",
+      "title": "Einstieg",
+      "color": "#001777",
+      "x": 1200,
+      "y": 400
+    },
+    {
+      "id": "chancen",
+      "title": "Chancen",
+      "color": "#001777",
+      "x": -1800,
+      "y": 3500
+    },
+    {
+      "id": "risiken",
+      "title": "Risiken",
+      "color": "#001777",
+      "x": 6200,
+      "y": 3800
+    },
+    {
+      "id": "ansatz",
+      "title": "Unser Ansatz",
+      "color": "#001777",
+      "x": 1300,
+      "y": 9000
+    },
+    {
+      "id": "module-detail",
+      "title": "Module im Detail",
+      "color": "#0078FE",
+      "x": -3200,
+      "y": 9200
+    },
+    {
+      "id": "quellen",
+      "title": "Quellenanhang",
+      "color": "#0078FE",
+      "x": 7000,
+      "y": 11500
+    }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,     "scale": 1,    "topic": "einstieg" },
+    { "slideIndex": 1,  "x": 2500,  "y": 300,   "scale": 1,    "topic": "einstieg" },
+
+    { "slideIndex": 2,  "x": -3200, "y": 2400,  "scale": 1,    "topic": "chancen" },
+    { "slideIndex": 3,  "x": -800,  "y": 2400,  "scale": 1,    "topic": "chancen" },
+    { "slideIndex": 4,  "x": -3200, "y": 4200,  "scale": 1,    "topic": "chancen" },
+    { "slideIndex": 5,  "x": -800,  "y": 4200,  "scale": 1.15, "topic": "chancen" },
+
+    { "slideIndex": 6,  "x": 5000,  "y": 2400,  "scale": 1,    "topic": "risiken" },
+    { "slideIndex": 7,  "x": 7400,  "y": 2400,  "scale": 1,    "topic": "risiken" },
+    { "slideIndex": 8,  "x": 5000,  "y": 4200,  "scale": 1,    "topic": "risiken" },
+    { "slideIndex": 9,  "x": 7400,  "y": 4200,  "scale": 1,    "topic": "risiken" },
+    { "slideIndex": 10, "x": 6200,  "y": 5800,  "scale": 1.15, "topic": "risiken" },
+
+    { "slideIndex": 11, "x": -200,  "y": 7200,  "scale": 1,    "topic": "ansatz" },
+    { "slideIndex": 12, "x": 2400,  "y": 7200,  "scale": 1,    "topic": "ansatz" },
+    { "slideIndex": 13, "x": 1100,  "y": 9000,  "scale": 1.15, "topic": "ansatz" },
+
+    { "slideIndex": 14, "x": -4400, "y": 8000,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 15, "x": -2400, "y": 8000,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 16, "x": -4400, "y": 9600,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 17, "x": -2400, "y": 9600,  "scale": 0.85, "topic": "module-detail", "hidden": true },
+    { "slideIndex": 18, "x": -3400, "y": 11200, "scale": 0.85, "topic": "module-detail", "hidden": true },
+
+    { "slideIndex": 19, "x": -200,  "y": 10800, "scale": 1,    "topic": "ansatz" },
+    { "slideIndex": 20, "x": 2400,  "y": 10800, "scale": 1,    "topic": "ansatz" },
+    { "slideIndex": 21, "x": 1100,  "y": 12600, "scale": 1.15, "topic": "ansatz" },
+
+    { "slideIndex": 22, "x": 6800,  "y": 10800, "scale": 0.9,  "topic": "quellen" },
+    { "slideIndex": 23, "x": 6800,  "y": 12600, "scale": 0.9,  "topic": "quellen" }
+  ],
+  "links": [
+    { "from": 13, "to": 14 },
+    { "from": 13, "to": 15 },
+    { "from": 13, "to": 16 },
+    { "from": 13, "to": 17 },
+    { "from": 13, "to": 18 }
+  ],
+  "overview": {
+    "x": 1500,
+    "y": 6300,
+    "scale": 10
+  }
+}

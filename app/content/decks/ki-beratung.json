@@ -1,0 +1,601 @@
+{
+  "title": "Strukturierte KI-Einführung für den Mittelstand",
+  "description": "Praxisnahe KI-Strategie für KMU - Von der Vision zur Umsetzung",
+  "slides": [
+    {
+      "id": "01-titelfolie",
+      "number": 1,
+      "title": "Titelfolie",
+      "displayTitle": "Titelfolie",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "- Titel: „Strukturierte KI-Einführung für den Mittelstand\"\n- Untertitel: „Potenziale erkennen. Strukturiert umsetzen. Dauerhaft führen.\"\n- Firmenlogo [Platzhalter]\n- Name Kundenunternehmen (sofern bekannt)\n- Datum\n- Name(n) der Berater"
+      }
+    },
+    {
+      "id": "02-agenda-ziel-des-termins",
+      "number": 2,
+      "title": "Agenda & Ziel des Termins",
+      "displayTitle": "Unser gemeinsames Ziel heute",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Unser gemeinsames Ziel heute\"\n- Zielformulierung (prominent): „Gemeinsam verstehen, wo Sie stehen -- und herausfinden, wie ein strukturierter KI-Weg für Ihr Unternehmen aussehen kann.\"\n- Agenda als 4 Blöcke:\n  1. Ihre Ausgangslage -- Was treibt Sie beim Thema KI um?\n  2. KI-Chancen und -Realität für KMU -- Was ist möglich, was ist typisch?\n  3. Unser Ansatz -- Wie wir KMU bei der KI-Einführung begleiten\n  4. Konkreter Einstieg -- Wo starten wir, was sind die nächsten Schritte?\n- Hinweis (kleiner, kursiv): „Dies ist ein Dialog, kein Vortrag. Fragen und Einwürfe sind jederzeit willkommen.\"",
+        "timeline": [
+          {
+            "id": "1",
+            "title": "Ihre Ausgangslage",
+            "description": "Was treibt Sie beim Thema KI um?"
+          },
+          {
+            "id": "2",
+            "title": "KI-Chancen und -Realität für KMU",
+            "description": "Was ist möglich, was ist typisch?"
+          },
+          {
+            "id": "3",
+            "title": "Unser Ansatz",
+            "description": "Wie wir KMU bei der KI-Einführung begleiten"
+          },
+          {
+            "id": "4",
+            "title": "Konkreter Einstieg",
+            "description": "Wo starten wir, was sind die nächsten Schritte?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-ihre-ausgangslage-dialog",
+      "number": 3,
+      "title": "Ihre Ausgangslage -- Dialog",
+      "displayTitle": "Bevor wir über KI sprechen -- sprechen wir über Sie.",
+      "layout": "dialog",
+      "theme": "light",
+      "chapter": "Ihre Ausgangslage",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Bevor wir über KI sprechen -- sprechen wir über Sie.\"\n- 4-5 Leitfragen für den Dialog (nicht zum Ablesen, sondern als Gesprächsrahmen):\n  1. „Was ist Ihr Geschäftsmodell und was macht Ihr Unternehmen besonders?\"\n  2. „Was war der Anlass, sich jetzt strukturiert mit KI zu beschäftigen?\"\n  3. „Welche Erfahrungen haben Sie bereits mit KI gemacht -- positive wie negative?\"\n  4. „Wo sehen Sie das größte Potenzial für KI in Ihrem Unternehmen?\"\n  5. „Was erwarten Sie von uns und von diesem Termin?\""
+      },
+      "notes": "- Aktiv zuhören, Stichpunkte notieren\n- Auf Shadow-AI-Hinweise achten (\"Mitarbeiter nutzen schon ChatGPT...\")\n- Erwartungshaltung erfassen: operativ vs. strategisch, Zeitdruck, Auslöser\n- Erfahrungsniveau einschätzen für spätere Einordnung (Folie 13/14)\n- Max. 15-20 Minuten, dann aktiv überleiten"
+    },
+    {
+      "id": "04-was-ki-fuer-kmu-konkret-leisten-kann",
+      "number": 4,
+      "title": "Was KI für KMU konkret leisten kann",
+      "displayTitle": "KI im Mittelstand -- konkrete Hebel, keine Zukunftsmusik",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "KI-Chancen und -Realität für KMU",
+      "content": {
+        "rawMarkdown": "- Überschrift: „KI im Mittelstand -- konkrete Hebel, keine Zukunftsmusik\"\n- 4 Nutzenkategorien mit je 2-3 konkreten, branchenübergreifenden Beispielen:\n\n  **Effizienz & Produktivität**\n  - Routineaufgaben automatisieren (Texte, Berichte, Zusammenfassungen)\n  - Informationsrecherche und -aufbereitung beschleunigen\n  - Prozessdurchlaufzeiten verkürzen\n\n  **Qualität & Entscheidung**\n  - Datenbasierte Entscheidungsvorbereitung statt Bauchgefühl\n  - Konsistentere Ergebnisse bei wiederkehrenden Aufgaben\n  - Fehlerreduktion durch KI-gestützte Prüfung\n\n  **Mitarbeiter & Fachkräfte**\n  - Fachkräfte von Routinetätigkeiten entlasten\n  - Wissenstransfer sichern (dokumentieren, zugänglich machen)\n  - Einstiegshürden für komplexe Aufgaben senken\n\n  **Wettbewerbsfähigkeit & Angebot**\n  - Schnellere Reaktion auf Kundenanfragen\n  - Neue Serviceformate und Angebotsbausteine ermöglichen\n  - Innovationsfähigkeit auch ohne große F&E-Abteilung\n\n- Kernbotschaft (unten, hervorgehoben): „KI ersetzt keine Mitarbeiter -- KI macht Ihre Mitarbeiter wirksamer.\"\n\n**Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):**\n- Unternehmen, die KI konsequent einsetzen, berichten von **22-41% Produktivitätssteigerung** und **18-35% Kosteneinsparungen** (KI-Studie 2025, maximal.digital)\n- **34-58% Fehlerreduktion** in Prozessen bei erfolgreichen KI-Projekten (KI-Studie 2025)\n- **39% der KMU** mit generativer KI konnten Fachkräftelücken teilweise kompensieren (OECD 2025)\n- Durch generative KI könnten bis 2030 **3,9 Mrd. Arbeitsstunden** eingespart werden -- ein wesentlicher Beitrag gegen die demografische Lücke (IW Köln 2025)",
+        "callout": {
+          "text": "KI ersetzt keine Mitarbeiter -- KI macht Ihre Mitarbeiter wirksamer."
+        },
+        "matrix": [
+          {
+            "title": "Effizienz & Produktivität",
+            "items": [
+              "Routineaufgaben automatisieren (Texte, Berichte, Zusammenfassungen)",
+              "Informationsrecherche und -aufbereitung beschleunigen",
+              "Prozessdurchlaufzeiten verkürzen"
+            ]
+          },
+          {
+            "title": "Qualität & Entscheidung",
+            "items": [
+              "Datenbasierte Entscheidungsvorbereitung statt Bauchgefühl",
+              "Konsistentere Ergebnisse bei wiederkehrenden Aufgaben",
+              "Fehlerreduktion durch KI-gestützte Prüfung"
+            ]
+          },
+          {
+            "title": "Mitarbeiter & Fachkräfte",
+            "items": [
+              "Fachkräfte von Routinetätigkeiten entlasten",
+              "Wissenstransfer sichern (dokumentieren, zugänglich machen)",
+              "Einstiegshürden für komplexe Aufgaben senken"
+            ]
+          },
+          {
+            "title": "Wettbewerbsfähigkeit & Angebot",
+            "items": [
+              "Schnellere Reaktion auf Kundenanfragen",
+              "Neue Serviceformate und Angebotsbausteine ermöglichen",
+              "Innovationsfähigkeit auch ohne große F&E-Abteilung"
+            ]
+          },
+          {
+            "title": "Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):",
+            "items": [
+              "Unternehmen, die KI konsequent einsetzen, berichten von"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "05-wettbewerbsdruck-marktdynamik",
+      "number": 5,
+      "title": "Wettbewerbsdruck & Marktdynamik",
+      "displayTitle": "Der Markt wartet nicht -- warum Abwarten ein Risiko ist",
+      "layout": "infographic",
+      "theme": "light",
+      "chapter": "KI-Chancen und -Realität für KMU",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Der Markt wartet nicht -- warum Abwarten ein Risiko ist\"\n- 4 Treiber, die KMU unter Druck setzen:\n\n  **Wettbewerber handeln bereits**\n  - Branchenübergreifend setzen KMU auf KI -- nicht nur Konzerne\n  - Wer später startet, muss schneller aufholen -- mit weniger Erfahrung\n\n  **Fachkräftemangel verschärft sich**\n  - Weniger verfügbare Mitarbeiter = höherer Druck auf Produktivität pro Kopf\n  - KI kompensiert keine Mitarbeiter, aber macht vorhandene Teams leistungsfähiger\n\n  **Kundenerwartungen steigen**\n  - Schnellere Antworten, individuellere Angebote, höhere Verfügbarkeit\n  - Was Kunden von Konzernen gewohnt sind, erwarten sie zunehmend auch von KMU\n\n  **Regulatorik kommt -- ob man bereit ist oder nicht**\n  - EU AI Act tritt schrittweise in Kraft\n  - Wer KI bereits nutzt (auch informell), muss Pflichten kennen\n  - Frühzeitige Struktur schützt vor nachträglichem Aufwand\n\n- Kernbotschaft (hervorgehoben): „Die Frage ist nicht mehr ob KI, sondern ob gesteuert oder ungesteuert.\"\n\n**Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):**\n- **86% der KMU** erkennen die Relevanz von KI -- aber nur **23% haben konkrete Projekte erfolgreich umgesetzt** (KI-Studie 2025, maximal.digital)\n- KI-Nutzung im Mittelstand ist von 11% (2023) auf **19% (2024)** gestiegen -- Tendenz weiter steigend (IfM Bonn 2025)\n- **33% der KMU** setzen KI bereits produktiv ein, weitere **24% testen oder pilotieren** (IW Köln 2025)\n- Prognose: Über **60% der mittelständischen Betriebe** werden absehbar KI-Anwendungen nutzen (ZEW 2025)\n- Größte Hindernisse: Mangelndes Wissen über Einsatzbereiche (27%), rechtliche Unsicherheit (21%), Fachkräftemangel (14%) (bidt 2025)",
+        "callout": {
+          "text": "Die Frage ist nicht mehr ob KI, sondern ob gesteuert oder ungesteuert."
+        },
+        "pressurePoints": [
+          {
+            "title": "Wettbewerber handeln bereits",
+            "items": [
+              "Branchenübergreifend setzen KMU auf KI -- nicht nur Konzerne",
+              "Wer später startet, muss schneller aufholen -- mit weniger Erfahrung"
+            ]
+          },
+          {
+            "title": "Fachkräftemangel verschärft sich",
+            "items": [
+              "Weniger verfügbare Mitarbeiter = höherer Druck auf Produktivität pro Kopf",
+              "KI kompensiert keine Mitarbeiter, aber macht vorhandene Teams leistungsfähiger"
+            ]
+          },
+          {
+            "title": "Kundenerwartungen steigen",
+            "items": [
+              "Schnellere Antworten, individuellere Angebote, höhere Verfügbarkeit",
+              "Was Kunden von Konzernen gewohnt sind, erwarten sie zunehmend auch von KMU"
+            ]
+          },
+          {
+            "title": "Regulatorik kommt -- ob man bereit ist oder nicht",
+            "items": [
+              "EU AI Act tritt schrittweise in Kraft",
+              "Wer KI bereits nutzt (auch informell), muss Pflichten kennen",
+              "Frühzeitige Struktur schützt vor nachträglichem Aufwand"
+            ]
+          },
+          {
+            "title": "Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):",
+            "items": [
+              "-"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "06-wo-kmu-wirklich-stehen-der-realitaetscheck",
+      "number": 6,
+      "title": "Wo KMU wirklich stehen -- der Realitätscheck",
+      "displayTitle": "Die Realität in den meisten KMU -- ehrlich betrachtet",
+      "layout": "iceberg",
+      "theme": "light",
+      "chapter": "KI-Chancen und -Realität für KMU",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Die Realität in den meisten KMU -- ehrlich betrachtet\"\n- Drei typische Muster:\n\n  **Shadow-AI: Ihre Mitarbeiter nutzen KI bereits**\n  - ChatGPT, Übersetzungstools, KI-Funktionen in Office -- oft ohne Wissen der Geschäftsführung\n  - Keine böse Absicht, sondern pragmatische Problemlösung\n  - Risiko: Unkontrollierter Datenfluss, keine Qualitätssicherung, keine Compliance\n\n  **Insellösungen statt Gesamtbild**\n  - Einzelne Teams experimentieren, aber Erfahrungen werden nicht geteilt\n  - Kein Überblick, welche KI wo im Einsatz ist\n  - Doppelarbeit, Inkompatibilitäten, verlorenes Wissen\n\n  **Gap zwischen Erwartung und Realität**\n  - Geschäftsführung erwartet schnelle Ergebnisse\n  - Mitarbeiter sehen entweder Bedrohung oder Allheilmittel\n  - Beide Perspektiven führen zu Fehlentscheidungen\n\n- Kernbotschaft: „Das ist kein Defizit -- das ist der typische Startpunkt. Entscheidend ist, jetzt Struktur zu schaffen.\"\n\n**Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):**\n- **57% der Mitarbeiter** nutzen heimlich KI-Tools am Arbeitsplatz (University of Melbourne / KPMG 2025)\n- In **25% der deutschen Unternehmen** ist private KI-Nutzung verbreitet oder als Einzelfall bekannt -- Verdoppelung gegenüber 2024 (Bitkom 10/2025)\n- Weitere **41%** der Unternehmen vermuten oder nehmen Shadow-AI an, ohne sicher zu sein (Bitkom 10/2025)\n- Nur **23% der Unternehmen** haben Regeln für den KI-Einsatz aufgestellt (Bitkom 10/2025)\n- **76% der KMU** haben kein KI-Governance-Framework, **81% keine KI-Nutzungsrichtlinien** (KI-Studie 2025)\n- **68% der KMU** haben keine ausgearbeitete KI-Roadmap (KI-Studie 2025)",
+        "callout": {
+          "text": "Das ist kein Defizit -- das ist der typische Startpunkt. Entscheidend ist, jetzt Struktur zu schaffen."
+        },
+        "iceberg": [
+          {
+            "title": "Shadow-AI: Ihre Mitarbeiter nutzen KI bereits",
+            "position": "below",
+            "items": [
+              "ChatGPT, Übersetzungstools, KI-Funktionen in Office -- oft ohne Wissen der Geschäftsführung",
+              "Keine böse Absicht, sondern pragmatische Problemlösung",
+              "Risiko: Unkontrollierter Datenfluss, keine Qualitätssicherung, keine Compliance"
+            ]
+          },
+          {
+            "title": "Insellösungen statt Gesamtbild",
+            "position": "below",
+            "items": [
+              "Einzelne Teams experimentieren, aber Erfahrungen werden nicht geteilt",
+              "Kein Überblick, welche KI wo im Einsatz ist",
+              "Doppelarbeit, Inkompatibilitäten, verlorenes Wissen"
+            ]
+          },
+          {
+            "title": "Gap zwischen Erwartung und Realität",
+            "position": "below",
+            "items": [
+              "Geschäftsführung erwartet schnelle Ergebnisse",
+              "Mitarbeiter sehen entweder Bedrohung oder Allheilmittel",
+              "Beide Perspektiven führen zu Fehlentscheidungen"
+            ]
+          },
+          {
+            "title": "Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):",
+            "position": "above",
+            "items": [
+              "-"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "07-typische-fehlstarts-und-was-sie-kosten",
+      "number": 7,
+      "title": "Typische Fehlstarts -- und was sie kosten",
+      "displayTitle": "Vier Wege, wie KI-Einführung schiefgeht",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "KI-Chancen und -Realität für KMU",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Vier Wege, wie KI-Einführung schiefgeht\"\n- 4 Anti-Patterns als prägnante Gegenüberstellungen:\n\n  **❌ „Wir brauchen ein KI-Tool\"**\n  → Tool im Fokus statt Problem. Ergebnis: Lösung ohne klares Problem, geringe Nutzung, Frustration.\n\n  **❌ „Einfach mal ausprobieren\"**\n  → Piloten ohne Strategie. Ergebnis: Einzelerfolge, die nicht skalieren und im Sand verlaufen.\n\n  **❌ „Das macht die IT\"**\n  → KI als Technologieprojekt statt Führungsthema. Ergebnis: Technisch funktional, organisatorisch nicht verankert.\n\n  **❌ „Wir regeln das später\"**\n  → Governance und Compliance aufgeschoben. Ergebnis: Risiken wachsen unbemerkt, nachträgliche Korrektur teuer.\n\n- Kernbotschaft: „Jeder dieser Wege kostet Zeit, Geld und Vertrauen. Struktur von Anfang an verhindert das.\"\n\n**Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):**\n- **54% der KMU** wissen nicht, welche KI-Use-Cases für ihr Unternehmen relevant sind (KI-Studie 2025)\n- **63%** berichten von Kostenüberschreitungen bei KI-Projekten -- im Schnitt **34% über Budget** (KI-Studie 2025)\n- **81% messen KI-ROI nicht systematisch** -- Nutzen bleibt unklar, Projekte verlaufen im Sand (KI-Studie 2025)\n- **67% der Mitarbeiter** haben Vorbehalte gegenüber KI, darunter Angst vor Arbeitsplatzverlust (58%) und Überforderung (51%) (KI-Studie 2025)\n- **73% bilden Mitarbeiter nicht systematisch in KI weiter** (KI-Studie 2025)",
+        "callout": {
+          "text": "Jeder dieser Wege kostet Zeit, Geld und Vertrauen. Struktur von Anfang an verhindert das."
+        },
+        "comparison": [
+          {
+            "title": "\"Wir brauchen ein KI-Tool\"",
+            "description": "Tool im Fokus statt Problem. Ergebnis: Lösung ohne klares Problem, geringe Nutzung, Frustration.",
+            "type": "negative",
+            "items": [
+              "Tool im Fokus statt Problem. Ergebnis: Lösung ohne klares Problem, geringe Nutzung, Frustration."
+            ]
+          },
+          {
+            "title": "\"Einfach mal ausprobieren\"",
+            "description": "Piloten ohne Strategie. Ergebnis: Einzelerfolge, die nicht skalieren und im Sand verlaufen.",
+            "type": "negative",
+            "items": [
+              "Piloten ohne Strategie. Ergebnis: Einzelerfolge, die nicht skalieren und im Sand verlaufen."
+            ]
+          },
+          {
+            "title": "\"Das macht die IT\"",
+            "description": "KI als Technologieprojekt statt Führungsthema. Ergebnis: Technisch funktional, organisatorisch nicht verankert.",
+            "type": "negative",
+            "items": [
+              "KI als Technologieprojekt statt Führungsthema. Ergebnis: Technisch funktional, organisatorisch nicht verankert."
+            ]
+          },
+          {
+            "title": "\"Wir regeln das später\"",
+            "description": "Governance und Compliance aufgeschoben. Ergebnis: Risiken wachsen unbemerkt, nachträgliche Korrektur teuer.",
+            "type": "negative",
+            "items": [
+              "Governance und Compliance aufgeschoben. Ergebnis: Risiken wachsen unbemerkt, nachträgliche Korrektur teuer.",
+              "Kernbotschaft: „Jeder dieser Wege kostet Zeit, Geld und Vertrauen. Struktur von Anfang an verhindert das.\""
+            ]
+          },
+          {
+            "title": "Studienbasierte Kennzahlen (Hintergrundinformation für den Berater -- kein Folieninhalt):",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "-"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "08-was-erfolgreiche-ki-einfuehrung-ausmacht",
+      "number": 8,
+      "title": "Was erfolgreiche KI-Einführung ausmacht",
+      "displayTitle": "Was Unternehmen richtig machen, die KI erfolgreich einführen",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "KI-Chancen und -Realität für KMU",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Was Unternehmen richtig machen, die KI erfolgreich einführen\"\n- 4 Erfolgsprinzipien (Überleitung zu Block 3):\n\n  **Struktur vor Tools**\n  Erst verstehen, dann auswählen. Zuerst Ziele und Rahmenbedingungen klären -- dann passende Lösungen suchen.\n\n  **KI ist Führungsthema, kein IT-Projekt**\n  Die Geschäftsführung steuert Richtung, Prioritäten und Grenzen. IT setzt um, aber Führung entscheidet.\n\n  **Fokus statt Breite**\n  Wenige, gut gewählte Anwendungsfälle mit klarem Nutzen -- statt langer Wunschlisten ohne Umsetzungskraft.\n\n  **Kein Projekt, sondern dauerhafte Führungsaufgabe**\n  KI-Einführung hat einen Anfang. KI-Führung nicht. Erfolgreiche Unternehmen bauen ein Steuerungsmodell, das bleibt.\n\n- Überleitung (unten): „Genau dafür haben wir ein Vorgehensmodell entwickelt, das wir Ihnen jetzt vorstellen.\"",
+        "comparison": [
+          {
+            "title": "Struktur vor Tools",
+            "description": "Erst verstehen, dann auswählen. Zuerst Ziele und Rahmenbedingungen klären -- dann passende Lösungen suchen.",
+            "type": "neutral",
+            "items": [
+              "Erst verstehen, dann auswählen. Zuerst Ziele und Rahmenbedingungen klären -- dann passende Lösungen suchen."
+            ]
+          },
+          {
+            "title": "KI ist Führungsthema, kein IT-Projekt",
+            "description": "Die Geschäftsführung steuert Richtung, Prioritäten und Grenzen. IT setzt um, aber Führung entscheidet.",
+            "type": "neutral",
+            "items": [
+              "Die Geschäftsführung steuert Richtung, Prioritäten und Grenzen. IT setzt um, aber Führung entscheidet."
+            ]
+          },
+          {
+            "title": "Fokus statt Breite",
+            "description": "Wenige, gut gewählte Anwendungsfälle mit klarem Nutzen -- statt langer Wunschlisten ohne Umsetzungskraft.",
+            "type": "neutral",
+            "items": [
+              "Wenige, gut gewählte Anwendungsfälle mit klarem Nutzen -- statt langer Wunschlisten ohne Umsetzungskraft."
+            ]
+          },
+          {
+            "title": "Kein Projekt, sondern dauerhafte Führungsaufgabe",
+            "description": "KI-Einführung hat einen Anfang. KI-Führung nicht. Erfolgreiche Unternehmen bauen ein Steuerungsmodell, das bleibt.",
+            "type": "neutral",
+            "items": [
+              "KI-Einführung hat einen Anfang. KI-Führung nicht. Erfolgreiche Unternehmen bauen ein Steuerungsmodell, das bleibt.",
+              "Überleitung (unten): „Genau dafür haben wir ein Vorgehensmodell entwickelt, das wir Ihnen jetzt vorstellen.\""
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "09-unser-vorgehensmodell-im-ueberblick",
+      "number": 9,
+      "title": "Unser Vorgehensmodell im Überblick",
+      "displayTitle": "Von der Orientierung zur dauerhaften KI-Führung",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Von der Orientierung zur dauerhaften KI-Führung\"\n- 5-Phasen-Modell als zentrales Schaubild:\n\n  | Phase | Name | Charakter | Kernergebnis |\n  |-------|------|-----------|-------------|\n  | Phase 1 | Orientierung & Einordnung | Einmalig, 1-3 Wochen | Klarheit über Ausgangslage und KI-Reifegrad |\n  | Phase 2 | Zielbild & Fokussetzung | Einmalig, 3-5 Wochen | KI-Strategie und priorisierte Anwendungsfälle |\n  | Phase 3 | Vorbereitung & Befähigung | Einmalig, 3-5 Wochen | Governance, Rollen, Entscheidungsrahmen |\n  | Phase 4 | Einführung & Nutzung | Pro Anwendungsfall, 4-8 Wochen | KI produktiv im Einsatz |\n  | Phase 5 | Dauerhafte Führung | Zyklisch, permanent | KI als fester Bestandteil der Unternehmenssteuerung |\n\n- Kernbotschaft (unter dem Schaubild): „Die Phasen 1–4 bauen Ihre KI-Fähigkeit auf. Phase 5 stellt sicher, dass sie bleibt.\"",
+        "callout": {
+          "text": "Die Phasen 1–4 bauen Ihre KI-Fähigkeit auf. Phase 5 stellt sicher, dass sie bleibt."
+        },
+        "timeline": [
+          {
+            "id": "Phase 1",
+            "title": "Orientierung & Einordnung",
+            "description": "Einmalig, 1-3 Wochen",
+            "result": "Klarheit über Ausgangslage und KI-Reifegrad"
+          },
+          {
+            "id": "Phase 2",
+            "title": "Zielbild & Fokussetzung",
+            "description": "Einmalig, 3-5 Wochen",
+            "result": "KI-Strategie und priorisierte Anwendungsfälle"
+          },
+          {
+            "id": "Phase 3",
+            "title": "Vorbereitung & Befähigung",
+            "description": "Einmalig, 3-5 Wochen",
+            "result": "Governance, Rollen, Entscheidungsrahmen"
+          },
+          {
+            "id": "Phase 4",
+            "title": "Einführung & Nutzung",
+            "description": "Pro Anwendungsfall, 4-8 Wochen",
+            "result": "KI produktiv im Einsatz"
+          },
+          {
+            "id": "Phase 5",
+            "title": "Dauerhafte Führung",
+            "description": "Zyklisch, permanent",
+            "result": "KI als fester Bestandteil der Unternehmenssteuerung"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10-was-uns-unterscheidet",
+      "number": 10,
+      "title": "Was uns unterscheidet",
+      "displayTitle": "Unser Beratungsansatz -- und warum er für KMU funktioniert",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Unser Beratungsansatz -- und warum er für KMU funktioniert\"\n- 4 Differenzierungsmerkmale:\n\n  **Management-Beratung, keine IT-Implementierung**\n  Wir helfen Ihnen, die richtigen Entscheidungen zu treffen und KI steuerbar zu machen -- nicht die Technik einzubauen. Dafür haben Sie Partner oder eigene IT.\n\n  **Technologieagnostisch und herstellerunabhängig**\n  Wir empfehlen keine Produkte oder Anbieter. Stattdessen schaffen wir die Grundlage, auf der Sie fundiert auswählen können.\n\n  **Für KMU gebaut, nicht von Konzernmodellen heruntergebrochen**\n  Pragmatisch, umsetzbar, angemessen. 3 klare Regeln, die funktionieren -- statt 30-seitiger Richtlinien, die niemand liest.\n\n  **Struktur statt Abhängigkeit**\n  Unser Ziel ist, dass Sie KI eigenständig steuern können. Wir bauen Fähigkeiten auf, nicht dauerhafte Beratungsbedarfe.",
+        "matrix": [
+          {
+            "title": "Management-Beratung, keine IT-Implementierung",
+            "items": [
+              "Wir helfen Ihnen, die richtigen Entscheidungen zu treffen und KI steuerbar zu machen -- nicht die Technik einzubauen. Dafür haben Sie Partner oder eigene IT."
+            ]
+          },
+          {
+            "title": "Technologieagnostisch und herstellerunabhängig",
+            "items": [
+              "Wir empfehlen keine Produkte oder Anbieter. Stattdessen schaffen wir die Grundlage, auf der Sie fundiert auswählen können."
+            ]
+          },
+          {
+            "title": "Für KMU gebaut, nicht von Konzernmodellen heruntergebrochen",
+            "items": [
+              "Pragmatisch, umsetzbar, angemessen. 3 klare Regeln, die funktionieren -- statt 30-seitiger Richtlinien, die niemand liest."
+            ]
+          },
+          {
+            "title": "Struktur statt Abhängigkeit",
+            "items": [
+              "Unser Ziel ist, dass Sie KI eigenständig steuern können. Wir bauen Fähigkeiten auf, nicht dauerhafte Beratungsbedarfe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "11-die-beratungsmodule-ihr-weg",
+      "number": 11,
+      "title": "Die Beratungsmodule -- Ihr Weg",
+      "displayTitle": "Unsere Leistungsmodule -- Schritt für Schritt zu Ihrer KI-Fähigkeit",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Unsere Leistungsmodule -- Schritt für Schritt zu Ihrer KI-Fähigkeit\"\n- Module als sequenzieller Pfad mit Kernergebnis:\n\n  | Modul | Bezeichnung | Was Sie bekommen |\n  |-------|------------|-----------------|\n  | KI-Standortbestimmung | Wo stehen wir wirklich? | Reifegrad, Stärken, Lücken, Shadow-AI-Überblick |\n  | KI-Strategie & Use-Cases | Wohin wollen wir -- und womit starten? | KI-Strategie mit Leitplanken, priorisierte Anwendungsfälle |\n  | Governance & Umsetzungsvorbereitung | Wer entscheidet was? Welche Regeln gelten? | Rollen, Entscheidungswege, Regulatorik-Einordnung |\n  | Einführungsbegleitung | Wie kommen wir sicher in die Nutzung? | Gesteuerter Go-Live, Change-Begleitung, Betriebsübergabe |\n  | KI-Führungsbegleitung | Wie bleiben wir dauerhaft handlungsfähig? | Quartalsreviews, KPI-Monitoring, kontinuierliche Weiterentwicklung |\n\n  Optional: **Technisches Sparring** -- Herstellerunabhängige Orientierung bei Anbieterauswahl, Architektur- oder Sicherheitsfragen.\n\n- Hinweis (unten): „Nicht jedes Unternehmen startet bei Schritt 1. Wo Sie einsteigen, klären wir gemeinsam.\"",
+        "timeline": [
+          {
+            "id": "KI-Standortbestimmung",
+            "title": "Wo stehen wir wirklich?",
+            "description": "Reifegrad, Stärken, Lücken, Shadow-AI-Überblick",
+            "result": ""
+          },
+          {
+            "id": "KI-Strategie & Use-Cases",
+            "title": "Wohin wollen wir -- und womit starten?",
+            "description": "KI-Strategie mit Leitplanken, priorisierte Anwendungsfälle",
+            "result": ""
+          },
+          {
+            "id": "Governance & Umsetzungsvorbereitung",
+            "title": "Wer entscheidet was? Welche Regeln gelten?",
+            "description": "Rollen, Entscheidungswege, Regulatorik-Einordnung",
+            "result": ""
+          },
+          {
+            "id": "Einführungsbegleitung",
+            "title": "Wie kommen wir sicher in die Nutzung?",
+            "description": "Gesteuerter Go-Live, Change-Begleitung, Betriebsübergabe",
+            "result": ""
+          },
+          {
+            "id": "KI-Führungsbegleitung",
+            "title": "Wie bleiben wir dauerhaft handlungsfähig?",
+            "description": "Quartalsreviews, KPI-Monitoring, kontinuierliche Weiterentwicklung",
+            "result": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "12-was-sie-konkret-in-die-hand-bekommen",
+      "number": 12,
+      "title": "Was Sie konkret in die Hand bekommen",
+      "displayTitle": "Keine Folienfriedhöfe -- sondern Dokumente, mit denen Sie arbeiten können",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Unser Ansatz",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Keine Folienfriedhöfe -- sondern Dokumente, mit denen Sie arbeiten können\"\n- Ergebnistypen entlang der Module:\n\n  **KI-Standortbestimmung**\n  → Reifegrad-Profil mit Stärken, Lücken und konkreten Handlungsempfehlungen\n\n  **KI-Strategie & Use-Cases**\n  → Dokumentierte KI-Strategie mit Leitplanken, Nicht-Zielen und priorisierten Anwendungsfällen inkl. Regulatorik-Einordnung\n\n  **Governance & Umsetzungsvorbereitung**\n  → Governance-Struktur mit Rollen, Entscheidungswegen, verbindlichen Regeln und Regulatorik-Maßnahmen\n\n  **Einführungsbegleitung**\n  → Einführungsprotokoll pro Anwendungsfall: Testphase, Go-Live-Checkliste, Betriebsregeln, Lessons Learned\n\n  **KI-Führungsbegleitung**\n  → Quartals-Review-Protokolle mit Ampelbewertung, Entscheidungsdokumentation, lebendes KI-Anwendungsverzeichnis\n\n- Kernbotschaft: „Jedes Dokument gehört Ihnen und funktioniert auch ohne uns.\"",
+        "callout": {
+          "text": "Jedes Dokument gehört Ihnen und funktioniert auch ohne uns."
+        },
+        "deliverables": [
+          {
+            "title": "KI-Standortbestimmung",
+            "description": "Reifegrad-Profil mit Stärken, Lücken und konkreten Handlungsempfehlungen"
+          },
+          {
+            "title": "KI-Strategie & Use-Cases",
+            "description": "Dokumentierte KI-Strategie mit Leitplanken, Nicht-Zielen und priorisierten Anwendungsfällen inkl. Regulatorik-Einordnung"
+          },
+          {
+            "title": "Governance & Umsetzungsvorbereitung",
+            "description": "Governance-Struktur mit Rollen, Entscheidungswegen, verbindlichen Regeln und Regulatorik-Maßnahmen"
+          },
+          {
+            "title": "Einführungsbegleitung",
+            "description": "Einführungsprotokoll pro Anwendungsfall: Testphase, Go-Live-Checkliste, Betriebsregeln, Lessons Learned"
+          },
+          {
+            "title": "KI-Führungsbegleitung",
+            "description": "Quartals-Review-Protokolle mit Ampelbewertung, Entscheidungsdokumentation, lebendes KI-Anwendungsverzeichnis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "13-wo-stehen-sie-gemeinsame-einordnung",
+      "number": 13,
+      "title": "Wo stehen Sie? -- Gemeinsame Einordnung",
+      "displayTitle": "Wo sehen Sie sich -- und wo setzen wir an?",
+      "layout": "maturity",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Wo sehen Sie sich -- und wo setzen wir an?\"\n- Einleitungssatz: „Wir haben vorhin über Ihre Situation gesprochen. Lassen Sie uns das kurz gemeinsam einordnen -- nicht als Bewertung, sondern als Orientierung.\"\n\n- **Vereinfachte Reifegradmatrix** (4 Dimensionen × 3 Stufen):\n\n  | Dimension | Stufe 1: Am Anfang | Stufe 2: Erste Schritte | Stufe 3: Strukturiert unterwegs |\n  |-----------|-------------------|------------------------|-------------------------------|\n  | **Strategie** | KI ist kein explizites Thema in der Unternehmensführung | Interesse und erste Ideen vorhanden, aber kein klares Zielbild | Klare Vorstellung, was KI für das Unternehmen leisten soll |\n  | **Nutzung** | Keine bekannte KI-Nutzung (oder nur vereinzelt, informell) | Einzelne KI-Anwendungen im Einsatz, aber kein Gesamtüberblick | Mehrere KI-Anwendungen bewusst eingeführt und gesteuert |\n  | **Organisation** | Keine Zuständigkeiten oder Regeln für KI definiert | Einzelne Personen kümmern sich, aber keine festen Rollen | Klare Verantwortlichkeiten und Entscheidungswege vorhanden |\n  | **Wissen** | Wenig konkretes Wissen über KI-Möglichkeiten und -Grenzen | Grundverständnis vorhanden, aber Unsicherheit bei der Umsetzung | Team kann KI-Chancen und -Risiken realistisch einschätzen |\n\n- Moderationsanleitung (auf der Folie als kurzer Hinweis):\n  „Wo würden Sie sich in diesen vier Bereichen einordnen? Es gibt keine falsche Antwort -- jeder Startpunkt ist ein guter Startpunkt.\""
+      },
+      "notes": "- Der Berater hat sich in Block 1 bereits ein Bild gemacht. Jetzt geht es um den Abgleich: Wo sieht sich die GF selbst -- und deckt sich das mit dem Gehörten?\n- Typische Abweichung: GF schätzt sich höher ein als die Gesprächseindrücke nahelegen. Nicht korrigieren, sondern vermerken -- das ist ein wertvolles Signal für die spätere Standortbestimmung.\n- Falls GF sich durchgängig bei Stufe 1 einordnet: Positiv rahmen („Dann können Sie von Anfang an sauber aufbauen -- das ist ein Vorteil gegenüber Unternehmen, die nachträglich korrigieren müssen.\")\n- Falls GF sich bei Stufe 2-3 einordnet: Brücke zum Gap-Check bauen („Dann macht es Sinn, das Vorhandene einmal strukturiert zu sichten, damit wir gezielt ansetzen.\")\n- Ergebnis dieser Folie bestimmt die Empfehlung auf Folie 14 (Standortbestimmung vs. Gap-Check)\n- Die 4 Dimensionen sind bewusst vereinfacht gegenüber dem vollständigen 6-Dimensionen-Reifegradmodell aus M1 (Strategie, Organisation, Kompetenz, Technologie, Governance, Daten). Für den Ersttermin reichen 4 alltagsnahe Dimensionen. Die differenzierte Erhebung folgt in M1 bzw. im Gap-Check."
+    },
+    {
+      "id": "14-empfohlener-einstieg-naechste-schritte",
+      "number": 14,
+      "title": "Empfohlener Einstieg & Nächste Schritte",
+      "displayTitle": "Zwei Wege zum gleichen Ziel -- je nachdem, wo Sie starten",
+      "layout": "parallel-paths",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Zwei Wege zum gleichen Ziel -- je nachdem, wo Sie starten\"\n- Zwei Einstiegspfade nebeneinander:\n\n  **Pfad A: KI-Standortbestimmung**\n  *Für Unternehmen, die noch am Anfang stehen*\n  - Was passiert: Strukturierte Bestandsaufnahme in ca. 1-2 Wochen\n  - Wie: Gespräche mit Geschäftsführung, IT und Schlüsselpersonen\n  - Ergebnis: Reifegrad-Profil, Stärken/Lücken, klare Empfehlung für den nächsten Schritt\n  - Umfang: ca. 3-5 Beratertage\n  - Danach: Fundierte Entscheidung, ob und wie es weitergeht (KI-Strategie & Use-Cases)\n\n  **Pfad B: Gap-Check**\n  *Für Unternehmen, die KI bereits nutzen, aber nicht wissen, wo sie genau stehen*\n  - Was passiert: Systematische Lückenanalyse in ca. 1 Woche\n  - Wie: Abgleich Ihrer aktuellen KI-Praxis mit den zentralen Erfolgsfaktoren\n  - Ergebnis: Transparenz über Vorhandenes, identifizierte Lücken, Empfehlung wo Sie einsteigen\n  - Umfang: ca. 2-3 Beratertage\n  - der Gap-Check erkennt an, was bereits vorhanden ist, und zeigt gezielt, was fehlt. So können Sie direkt in die passende Phase einsteigen, ohne Doppelarbeit.\n\n- Gemeinsame Botschaft (unten, hervorgehoben):\n  „Beide Wege liefern Ihnen innerhalb von 1-2 Wochen ein konkretes Ergebnis und eine fundierte Entscheidungsgrundlage -- ohne langfristige Verpflichtung.\"\n\n- Nächster konkreter Schritt: „Auf Basis unseres heutigen Gesprächs erarbeiten wir ein konkretes Beratungsangebot für [Standortbestimmung / Gap-Check]. Sie erhalten es bis [Datum].\"",
+        "paths": [
+          {
+            "id": "A",
+            "title": "Pfad A: KI-Standortbestimmung",
+            "subtitle": "Für Unternehmen, die noch am Anfang stehen",
+            "items": [
+              "Was passiert: Strukturierte Bestandsaufnahme in ca. 1-2 Wochen",
+              "Wie: Gespräche mit Geschäftsführung, IT und Schlüsselpersonen",
+              "Ergebnis: Reifegrad-Profil, Stärken/Lücken, klare Empfehlung für den nächsten Schritt",
+              "Umfang: ca. 3-5 Beratertage",
+              "Danach: Fundierte Entscheidung, ob und wie es weitergeht (KI-Strategie & Use-Cases)"
+            ],
+            "icon": "📍"
+          },
+          {
+            "id": "B",
+            "title": "Pfad B: Gap-Check",
+            "subtitle": "Für Unternehmen, die KI bereits nutzen, aber nicht wissen, wo sie genau stehen",
+            "items": [
+              "Was passiert: Systematische Lückenanalyse in ca. 1 Woche",
+              "Wie: Abgleich Ihrer aktuellen KI-Praxis mit den zentralen Erfolgsfaktoren",
+              "Ergebnis: Transparenz über Vorhandenes, identifizierte Lücken, Empfehlung wo Sie einsteigen",
+              "Umfang: ca. 2-3 Beratertage",
+              "der Gap-Check erkennt an, was bereits vorhanden ist, und zeigt gezielt, was fehlt. So können Sie direkt in die passende Phase einsteigen, ohne Doppelarbeit.",
+              "Gemeinsame Botschaft (unten, hervorgehoben):",
+              "Nächster konkreter Schritt: „Auf Basis unseres heutigen Gesprächs erarbeiten wir ein konkretes Beratungsangebot für [Standortbestimmung / Gap-Check]. Sie erhalten es bis [Datum].\""
+            ],
+            "icon": "🔍"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15-ihre-offenen-fragen",
+      "number": 15,
+      "title": "Ihre offenen Fragen",
+      "displayTitle": "Was ist noch offen? -- Ihre Fragen",
+      "layout": "dialog",
+      "theme": "light",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Was ist noch offen? -- Ihre Fragen\"\n- Raum für echte Kundenfragen"
+      },
+      "notes": "- Aktiv Fragen einladen, nicht nur „Haben Sie noch Fragen?\"\n- Stattdessen: „Was beschäftigt Sie am meisten, wenn Sie an die nächsten Schritte denken?\"\n- Bedenken ernst nehmen, nicht wegargumentieren\n- Kosten-Fragen nicht ausweichen -- Größenordnung nennen, Detail kommt im Angebot\n- Falls keine Fragen: Kurz die vorbereiteten Impulse ansprechen, sie sind typische GF-Fragen"
+    },
+    {
+      "id": "16-kontakt-abschluss",
+      "number": 16,
+      "title": "Kontakt & Abschluss",
+      "displayTitle": "Wir freuen uns auf den gemeinsamen Weg.",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg & Nächste Schritte",
+      "content": {
+        "rawMarkdown": "- Überschrift: „Wir freuen uns auf den gemeinsamen Weg.\"\n- Zusammenfassung der vereinbarten nächsten Schritte (2-3 Zeilen, im Termin ergänzt):\n  - „Wir senden Ihnen ein Angebot für [Standortbestimmung / Gap-Check] bis [Datum].\"\n  - „Sie prüfen intern [ggf. Abstimmungsbedarf / Teilnehmer für Modul].\"\n  - „Geplanter Start: [Zeitraum].\"\n- Kontaktdaten:\n  - Name(n) der Berater\n  - E-Mail\n  - Telefon\n  - Firmenwebsite\n- Optional: „Für Ihre interne Abstimmung stellen wir Ihnen gerne eine Kurzübersicht unseres Ansatzes zur Verfügung.\""
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Einstieg",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Ihre Ausgangslage",
+      "startSlide": 3
+    },
+    {
+      "id": "block-2",
+      "title": "KI-Chancen und -Realität für KMU",
+      "startSlide": 4
+    },
+    {
+      "id": "block-3",
+      "title": "Unser Ansatz",
+      "startSlide": 9
+    },
+    {
+      "id": "block-4",
+      "title": "Einstieg & Nächste Schritte",
+      "startSlide": 13
+    }
+  ]
+}

@@ -5,14 +5,9 @@ import { useDeckStore } from '@/stores/deckStore'
 import { usePresenterStore, formatTime } from '@/stores/presenterStore'
 import { useNavigation } from '@/lib/hooks/useNavigation'
 import { LayoutRenderer } from '@/components/layouts/LayoutRenderer'
+import slidesData from '../../../content/decks/ki-beratung.json'
 import { DeckData } from '@/lib/content/schema'
 import Image from 'next/image'
-
-// ---------------------------------------------------------------------------
-// Import the deck to use for the standalone presenter route.
-// Replace with your own deck data.
-// ---------------------------------------------------------------------------
-import exampleData from '../../../content/decks/_example.json'
 
 export default function PresenterPage() {
   const {
@@ -48,7 +43,7 @@ export default function PresenterPage() {
 
   // Initialize deck data
   useEffect(() => {
-    setDeckData(exampleData as DeckData)
+    setDeckData(slidesData as DeckData)
   }, [setDeckData])
 
   // Set up keyboard navigation
@@ -65,7 +60,7 @@ export default function PresenterPage() {
       <div className="h-screen flex items-center justify-center bg-base-blue-dark">
         <div className="text-center text-white">
           <div className="w-16 h-16 border-4 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-white/60">Presenter Mode loading...</p>
+          <p className="text-white/60">Presenter Mode wird geladen...</p>
         </div>
       </div>
     )
@@ -85,7 +80,7 @@ export default function PresenterPage() {
           />
           <span className="font-semibold text-lg">Presenter Mode</span>
           <span className="text-gray-400 text-sm ml-2">
-            Slide {currentSlideIndex + 1} / {slides.length}
+            Folie {currentSlideIndex + 1} / {slides.length}
           </span>
         </div>
 
@@ -226,7 +221,7 @@ export default function PresenterPage() {
                 </div>
               ) : (
                 <p className="text-gray-500 italic">
-                  No notes for this slide.
+                  Keine Notizen für diese Folie.
                 </p>
               )}
             </div>

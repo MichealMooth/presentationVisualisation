@@ -12,32 +12,51 @@ import { PreziCanvas } from '@/components/prezi/PreziCanvas'
 import { usePreziStore } from '@/stores/preziStore'
 import { DeckData } from '@/lib/content/schema'
 
-// ---------------------------------------------------------------------------
-// Deck-Daten importieren
-// Importiere hier die generierten JSON-Dateien und ggf. Prezi-Layouts:
-//
-//   import myDeckData from '../../../../content/decks/my-deck.json'
-//   import myPreziLayout from '../../../../content/decks/my-deck-prezi.json'
-// ---------------------------------------------------------------------------
-import exampleData from '../../../../content/decks/_example.json'
+// Import all available decks statically
+import kiBeratungData from '../../../../content/decks/ki-beratung.json'
+import triceptAgData from '../../../../content/decks/tricept-ag.json'
+import angebotM1Data from '../../../../content/decks/angebotspraesentation-m1.json'
+import steuerungskreisData from '../../../../content/decks/steuerungskreis-cos-ki.json'
+import ergebnisM1Data from '../../../../content/decks/ergebnispraesentation-m1.json'
+import m1KompaktData from '../../../../content/decks/m1-kompakt.json'
+import kiChancenRisikenData from '../../../../content/decks/ki-chancen-risiken.json'
+
+// Import Prezi layouts
+import preziLayoutM1 from '../../../../content/decks/angebotspraesentation-m1-prezi.json'
+import preziLayoutSK from '../../../../content/decks/steuerungskreis-cos-ki-prezi.json'
+import preziLayoutErgebnis from '../../../../content/decks/ergebnispraesentation-m1-prezi.json'
+import preziLayoutChancenRisiken from '../../../../content/decks/ki-chancen-risiken-prezi.json'
 
 interface DeckEntry {
   data: DeckData
   navigation?: 'scroll' | 'prezi'
-  preziLayout?: { frames: { slideIndex: number; x: number; y: number; scale: number; topic: string; hidden?: boolean }[]; topics: { id: string; title: string; color: string; x: number; y: number }[]; overview: { x: number; y: number; scale: number }; links?: { from: number; to: number }[] }
+  preziLayout?: typeof preziLayoutM1
 }
 
-// ---------------------------------------------------------------------------
-// Deck-Registry
-// Trage hier alle Decks ein. Scroll-Decks brauchen nur data + navigation.
-// Prezi-Decks brauchen zusaetzlich ein preziLayout.
-//
-// Beispiel:
-//   'my-deck': { data: myDeckData as DeckData, navigation: 'scroll' },
-//   'my-prezi': { data: myPreziData as DeckData, navigation: 'prezi', preziLayout: myPreziLayout },
-// ---------------------------------------------------------------------------
 const deckRegistry: Record<string, DeckEntry> = {
-  '_example': { data: exampleData as DeckData, navigation: 'scroll' },
+  'ki-beratung': { data: kiBeratungData as DeckData, navigation: 'scroll' },
+  'tricept-ag': { data: triceptAgData as DeckData, navigation: 'scroll' },
+  'angebotspraesentation-m1': {
+    data: angebotM1Data as DeckData,
+    navigation: 'prezi',
+    preziLayout: preziLayoutM1,
+  },
+  'steuerungskreis-cos-ki': {
+    data: steuerungskreisData as DeckData,
+    navigation: 'prezi',
+    preziLayout: preziLayoutSK,
+  },
+  'ergebnispraesentation-m1': {
+    data: ergebnisM1Data as DeckData,
+    navigation: 'prezi',
+    preziLayout: preziLayoutErgebnis,
+  },
+  'm1-kompakt': { data: m1KompaktData as DeckData, navigation: 'scroll' },
+  'ki-chancen-risiken': {
+    data: kiChancenRisikenData as DeckData,
+    navigation: 'prezi',
+    preziLayout: preziLayoutChancenRisiken,
+  },
 }
 
 export default function DeckPage() {
@@ -88,7 +107,7 @@ export default function DeckPage() {
 
       setLoading(false)
     } else {
-      setError(`Presentation "${slug}" not found.`)
+      setError(`Präsentation "${slug}" nicht gefunden.`)
       setLoading(false)
     }
   }, [slug, setDeckData, reset, setPreziLayout])
@@ -109,7 +128,7 @@ export default function DeckPage() {
       <div className="h-screen flex items-center justify-center bg-[#000039]">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-[#17f0f0] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-white/60">Loading presentation...</p>
+          <p className="text-white/60">Präsentation wird geladen...</p>
         </div>
       </div>
     )
@@ -121,14 +140,14 @@ export default function DeckPage() {
       <div className="h-screen flex items-center justify-center bg-base-grey">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-base-blue-dark mb-2">
-            Not Found
+            Nicht gefunden
           </h2>
           <p className="text-gray-600 mb-6">{error}</p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-base-blue text-white rounded-xl font-medium hover:bg-base-blue-dark transition-colors"
           >
-            Back to Overview
+            Zurück zur Übersicht
           </Link>
         </div>
       </div>
@@ -141,7 +160,7 @@ export default function DeckPage() {
       <div className="h-screen flex items-center justify-center bg-[#000039]">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-[#17f0f0] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-white/60">Loading presentation...</p>
+          <p className="text-white/60">Präsentation wird geladen...</p>
         </div>
       </div>
     )
@@ -157,7 +176,7 @@ export default function DeckPage() {
           href="/"
           className="fixed top-4 left-4 z-[60] flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/10 backdrop-blur-md text-white/70 text-sm hover:bg-white/20 hover:text-white transition-all"
         >
-          Overview
+          Übersicht
         </Link>
       </main>
     )
@@ -176,7 +195,7 @@ export default function DeckPage() {
           href="/"
           className="fixed top-6 left-6 z-50 flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur rounded-xl shadow-md text-sm font-medium text-base-blue-dark hover:bg-white hover:shadow-lg transition-all"
         >
-          Overview
+          Übersicht
         </Link>
       )}
     </main>

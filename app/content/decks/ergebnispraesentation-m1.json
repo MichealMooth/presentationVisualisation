@@ -1,0 +1,1061 @@
+{
+  "title": "M1 Ergebnispräsentation – KI-Standortbestimmung",
+  "description": "Ergebnispräsentation der KI-Standortbestimmung für die Tricept AG (Modul M1)",
+  "slides": [
+    {
+      "id": "01-ki-standortbestimmung-ergebnisse-und-empfehlung",
+      "number": 1,
+      "title": "KI-Standortbestimmung – Ergebnisse und Empfehlung",
+      "displayTitle": "KI-Standortbestimmung – Ergebnisse und Empfehlung",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Eröffnung",
+      "content": {
+        "rawMarkdown": "KI-Standortbestimmung – Ergebnisse und Empfehlung\nTricept AG | 23.03.2026\nErgebnispräsentation Modul 1 | Michael Muth"
+      },
+      "notes": "Kurze Begrüßung, Dank für die Offenheit in den Interviews und der Umfrage. Framing: \"Wir präsentieren heute, was wir gemeinsam erhoben haben – als Ausgangspunkt, nicht als Bewertung.\""
+    },
+    {
+      "id": "02-agenda",
+      "number": 2,
+      "title": "Agenda",
+      "displayTitle": "Agenda",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Eröffnung",
+      "content": {
+        "rawMarkdown": "| # | Thema | Dauer |\n|---|-------|-------|\n| 1 | Eröffnung und Methodik | ~5 min |\n| 2 | Wo stehen wir? – Profil, Reifegrad, Potenziale | ~20 min |\n| 3 | Shadow AI und Regulatorik | ~15 min |\n| 4 | Was empfehlen wir? – Leitplanken und Maßnahmen | ~15 min |\n| 5 | Angebot und Investition – Drei Pakete | ~15 min |\n| 6 | Fazit und nächste Schritte | ~10 min |",
+        "timeline": [
+          {
+            "id": "1",
+            "title": "Eröffnung und Methodik",
+            "description": "~5 min",
+            "result": ""
+          },
+          {
+            "id": "2",
+            "title": "Wo stehen wir? – Profil, Reifegrad, Potenziale",
+            "description": "~20 min",
+            "result": ""
+          },
+          {
+            "id": "3",
+            "title": "Shadow AI und Regulatorik",
+            "description": "~15 min",
+            "result": ""
+          },
+          {
+            "id": "4",
+            "title": "Was empfehlen wir? – Leitplanken und Maßnahmen",
+            "description": "~15 min",
+            "result": ""
+          },
+          {
+            "id": "5",
+            "title": "Angebot und Investition – Drei Pakete",
+            "description": "~15 min",
+            "result": ""
+          },
+          {
+            "id": "6",
+            "title": "Fazit und nächste Schritte",
+            "description": "~10 min",
+            "result": ""
+          }
+        ]
+      },
+      "notes": "\"Wir folgen dem Prinzip: Erst Standort, dann Bedeutung, dann Empfehlung. Fragen und Reaktionen gerne jederzeit.\""
+    },
+    {
+      "id": "03-was-haben-wir-gemacht",
+      "number": 3,
+      "title": "Was haben wir gemacht?",
+      "displayTitle": "Was haben wir gemacht?",
+      "layout": "infographic",
+      "theme": "light",
+      "chapter": "Eröffnung",
+      "content": {
+        "rawMarkdown": "**10 Interviews (11 Personen):**\n- 2× Vorstand, 1× KI-Projektleitung, 1× IT-Leitung/Vorstand Technik, 5× Fachbereich, 1× Compliance (DSB + ISB) – 1 Doppelinterview\n\n**Anonyme MA-Umfrage:**\n- 59 Teilnehmer von ca. 80 MA (~74% Rücklauf) – via Microsoft Forms\n\n**Umfragezeit:**\n- Ø 10 Minuten pro Person, 11 Fragen\n\n**Erhebungszeitraum:**\n- März 2026\n\n**Methodik:**\n- Kombination aus qualitativer Tiefe (Interviews) und quantitativer Breite (Umfrage)\n\n**Vertraulichkeit:**\n- Alle Ergebnisse werden anonymisiert dargestellt. Wir zeigen konsolidierte Befunde, keine Einzelaussagen – was Sie sehen, ist der Konsens, nicht die Person.",
+        "pressurePoints": [
+          {
+            "title": "10 Interviews (11 Personen):",
+            "items": [
+              "2× Vorstand, 1× KI-Projektleitung, 1× IT-Leitung/Vorstand Technik, 5× Fachbereich, 1× Compliance (DSB + ISB) – 1 Doppelinterview"
+            ]
+          },
+          {
+            "title": "Anonyme MA-Umfrage:",
+            "items": [
+              "59 Teilnehmer von ca. 80 MA (~74% Rücklauf) – via Microsoft Forms"
+            ]
+          },
+          {
+            "title": "Umfragezeit:",
+            "items": [
+              "Ø 10 Minuten pro Person, 11 Fragen"
+            ]
+          },
+          {
+            "title": "Erhebungszeitraum:",
+            "items": [
+              "März 2026"
+            ]
+          },
+          {
+            "title": "Methodik:",
+            "items": [
+              "Kombination aus qualitativer Tiefe (Interviews) und quantitativer Breite (Umfrage)"
+            ]
+          },
+          {
+            "title": "Vertraulichkeit:",
+            "items": [
+              "Alle Ergebnisse werden anonymisiert dargestellt. Wir zeigen konsolidierte Befunde, keine Einzelaussagen – was Sie sehen, ist der Konsens, nicht die Person."
+            ]
+          }
+        ]
+      },
+      "notes": "\"Die Datenbasis ist breit und belastbar. Wir haben alle Ebenen gehört – von der Geschäftsführung bis zur Entwicklung.\""
+    },
+    {
+      "id": "04-unternehmensprofil-rueckspiegelung",
+      "number": 4,
+      "title": "Unternehmensprofil – Rückspiegelung",
+      "displayTitle": "Unternehmensprofil – Rückspiegelung",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Wo stehen wir?",
+      "content": {
+        "rawMarkdown": "Konsolidiertes Profil auf Basis der Erhebungen, März 2026\n\n**Branchenfokus:**\n- GRC-Standardsoftware für Finanzinstitute, IT Consulting, IT4Sport/GTS\n\n**Größe:**\n- ~80 Mitarbeitende an 3 Standorten (Detmold, Fellbach, Braunschweig)\n\n**Geschäftsmodell:**\n- Softwarelizenz + Wartung + Beratung (RIMAGO, Phoenix), IT Consulting (Migration, Test, PM), Verbandssoftware (IT4SPORT)\n\n**IT-Aufstellung:**\n- Hybrid (eigene Server + Cloud), Azure EU primär\n\n**KI-Erfahrung:**\n- Experimentell + erste produktive Nutzung (Tricept AI, Copilot, Rimago AI) – überwiegend explorativer Einsatz\n\n**Kunden:**\n- Finanzinstitute mit hohen Compliance-Anforderungen (DORA, EU AI Act direkt relevant)",
+        "matrix": [
+          {
+            "title": "Branchenfokus:",
+            "items": [
+              "GRC-Standardsoftware für Finanzinstitute, IT Consulting, IT4Sport/GTS"
+            ]
+          },
+          {
+            "title": "Größe:",
+            "items": [
+              "~80 Mitarbeitende an 3 Standorten (Detmold, Fellbach, Braunschweig)"
+            ]
+          },
+          {
+            "title": "Geschäftsmodell:",
+            "items": [
+              "Softwarelizenz + Wartung + Beratung (RIMAGO, Phoenix), IT Consulting (Migration, Test, PM), Verbandssoftware (IT4SPORT)"
+            ]
+          },
+          {
+            "title": "IT-Aufstellung:",
+            "items": [
+              "Hybrid (eigene Server + Cloud), Azure EU primär"
+            ]
+          },
+          {
+            "title": "KI-Erfahrung:",
+            "items": [
+              "Experimentell + erste produktive Nutzung (Tricept AI, Copilot, Rimago AI) – überwiegend explorativer Einsatz"
+            ]
+          },
+          {
+            "title": "Kunden:",
+            "items": [
+              "Finanzinstitute mit hohen Compliance-Anforderungen (DORA, EU AI Act direkt relevant)"
+            ]
+          }
+        ]
+      },
+      "notes": "\"Stimmt dieses Bild? Kurze Verifikation, dann gehen wir in die Befunde.\""
+    },
+    {
+      "id": "05-gesamtreifegrad-stufe-2-bewusst",
+      "number": 5,
+      "title": "Gesamtreifegrad: Stufe 2 – Bewusst",
+      "displayTitle": "Gesamtreifegrad: Stufe 2 – Bewusst",
+      "layout": "maturity",
+      "theme": "light",
+      "chapter": "Wo stehen wir?",
+      "content": {
+        "rawMarkdown": "- Stufe 1 – Initial\n- **Stufe 2 – Bewusst** ← Tricept gesamt\n- Stufe 3 – Strukturiert\n- Stufe 4 – Gesteuert\n- Stufe 5 – Optimierend\n\nKernbotschaft: „Die Basis steht – jetzt geht es um Steuerung.\"\n\nEinordnung: Stufe 2 ist der typische Startpunkt für KMU. Das ist kein Defizit, sondern ein klarer Ausgangspunkt.\nZum Vergleich: Die Mehrheit der KMU in Deutschland startet bei Stufe 1. Mit aktiver KI-Nutzung und bereitgestellter Infrastruktur ist Tricept bereits weiter als die meisten Unternehmen vergleichbarer Größe.",
+        "callout": {
+          "text": "Die Basis steht – jetzt geht es um Steuerung."
+        }
+      },
+      "notes": "\"Stufe 2 bedeutet: Sie haben erkannt, dass KI relevant ist, und erste Schritte gemacht. Was fehlt, ist die strukturelle Verankerung.\""
+    },
+    {
+      "id": "06-dimensionsprofil-die-6-dimensionen-im-detail",
+      "number": 6,
+      "title": "Dimensionsprofil – Die 6 Dimensionen im Detail",
+      "displayTitle": "Dimensionsprofil – Die 6 Dimensionen im Detail",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Wo stehen wir?",
+      "content": {
+        "rawMarkdown": "- **Strategie (Stufe 2):** KI erwähnt, aber nicht operationalisiert – keine KPIs, kein Budget, kein Zeitplan\n- **Organisation (Stufe 1-2):** Keine formale KI-Verantwortung – 10 Befragte, 10 verschiedene Antworten auf \"Wer treibt KI?\"\n- **Kompetenz (Stufe 2):** Massive Spreizung – vom ML-Experten bis zum Anfänger im selben Team\n- **Technologie (Stufe 2-3):** Einzige Dimension mit Ausreißer nach oben – Tools bereitgestellt, Nutzung nicht gesteuert\n- **Daten (Stufe 2):** Datenkatalog vorhanden, aber Silos und heterogene Qualität\n- **Governance (Stufe 1-2):** KI-Richtlinie existiert, wirkt aber nicht – 76% ohne klare Orientierung\n\nKernbotschaft: „Technologie liegt vorne, Governance und Organisation hinken hinterher – das erzeugt ein Steuerungsdefizit.\"",
+        "callout": {
+          "text": "Technologie liegt vorne, Governance und Organisation hinken hinterher – das erzeugt ein Steuerungsdefizit."
+        },
+        "deliverables": []
+      },
+      "notes": "\"Auffällig ist die Spreizung: Technologie liegt vorne, Governance und Organisation hinken hinterher.\""
+    },
+    {
+      "id": "07-erwartung-vs-realitaet-was-die-fuehrung-annimmt-und-was-wir-vorfinden",
+      "number": 7,
+      "title": "Erwartung vs. Realität – Was die Führung annimmt und was wir vorfinden",
+      "displayTitle": "Erwartung vs. Realität – Was die Führung annimmt und was wir vorfinden",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Wo stehen wir?",
+      "content": {
+        "rawMarkdown": "**❌ \"KI ist in der Strategie benannt\":**\n- Realität: Nicht operationalisiert – keine KPIs, kein Budget, kein Zeitplan\n→ Ergebnis: Strategische Absicht ohne operative Verankerung\n\n**❌ \"90% nutzen KI\":**\n- Realität: 59% über private Accounts, 33% mit internen Daten\n→ Ergebnis: Nutzung ja, Steuerung nein\n\n**❌ \"95% gehen verantwortungsvoll um\":**\n- Realität: Keine Orientierung – Schadensfälle bereits eingetreten\n→ Ergebnis: Verantwortungsbewusstsein ohne Rahmen\n\n**❌ \"KI-Richtlinie existiert\":**\n- Realität: 5/5 Fachbereich kennen Inhalt nicht, 76% ohne Orientierung\n→ Ergebnis: Dokument ohne Wirkung\n\n**❌ \"Wir kommunizieren über KI\":**\n- Realität: KI-Kommunikation kommt bei Fachbereich und Compliance nicht an – weder Inhalte noch Richtlinie sind bekannt\n→ Ergebnis: Die GF sendet – es kommt nicht an\n\n**❌ \"KI hat strategische Priorität\":**\n- Realität: Kein Budget, keine dedizierten Zeitanteile, KI \"nebenbei\"\n→ Ergebnis: Priorität ohne Ressourcen = keine Priorität",
+        "comparison": [
+          {
+            "title": "\"KI ist in der Strategie benannt\":",
+            "description": "Ergebnis: Strategische Absicht ohne operative Verankerung",
+            "type": "negative",
+            "items": [
+              "Realität: Nicht operationalisiert – keine KPIs, kein Budget, kein Zeitplan"
+            ]
+          },
+          {
+            "title": "\"90% nutzen KI\":",
+            "description": "Ergebnis: Nutzung ja, Steuerung nein",
+            "type": "negative",
+            "items": [
+              "Realität: 59% über private Accounts, 33% mit internen Daten"
+            ]
+          },
+          {
+            "title": "\"95% gehen verantwortungsvoll um\":",
+            "description": "Ergebnis: Verantwortungsbewusstsein ohne Rahmen",
+            "type": "negative",
+            "items": [
+              "Realität: Keine Orientierung – Schadensfälle bereits eingetreten"
+            ]
+          },
+          {
+            "title": "\"KI-Richtlinie existiert\":",
+            "description": "Ergebnis: Dokument ohne Wirkung",
+            "type": "negative",
+            "items": [
+              "Realität: 5/5 Fachbereich kennen Inhalt nicht, 76% ohne Orientierung"
+            ]
+          },
+          {
+            "title": "\"Wir kommunizieren über KI\":",
+            "description": "Ergebnis: Die GF sendet – es kommt nicht an",
+            "type": "negative",
+            "items": [
+              "Realität: KI-Kommunikation kommt bei Fachbereich und Compliance nicht an – weder Inhalte noch Richtlinie sind bekannt"
+            ]
+          },
+          {
+            "title": "\"KI hat strategische Priorität\":",
+            "description": "Ergebnis: Priorität ohne Ressourcen = keine Priorität",
+            "type": "negative",
+            "items": [
+              "Realität: Kein Budget, keine dedizierten Zeitanteile, KI \"nebenbei\""
+            ]
+          }
+        ]
+      },
+      "notes": "\"Wir zeigen keine Fehler auf, sondern eine Wahrnehmungslücke. Die Führungsebene sendet – es kommt nicht an. Das ist lösbar.\""
+    },
+    {
+      "id": "08-7-staerken-ihr-startkapital",
+      "number": 8,
+      "title": "7 Stärken – Ihr Startkapital",
+      "displayTitle": "7 Stärken – Ihr Startkapital",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Stärken und Handlungsfelder",
+      "content": {
+        "rawMarkdown": "- **Hohe KI-Affinität:** 91,5% aktive Nutzung – weit über KMU-Durchschnitt\n- **Technische Infrastruktur steht:** >5 KI-Dienste bereitgestellt, Hybrid-Cloud, API-fähig\n- **Bottom-up-Initiative:** Team-Workshops zu KI ohne Managementauftrag – zeigt Eigeninitiative, braucht aber klaren Rahmen\n- **Veränderungsbereitschaft:** 68% wollen mehr KI bei klarem Rahmen, kein struktureller Widerstand\n- **Compliance stellt die richtigen Fragen:** DSB und ISB erkennen Lücken schonungslos\n- **KI als Produkt-Differenzierung erkannt:** Rimago AI, KI-Vertragserfassung, Phoenix KI-Modul geplant\n- **Implizites Datenbewusstsein:** Einzelne stoppen aktiv Kundendaten-Eingabe, Sensitivitätsstufen definiert\n\nDiese Basis macht M2 deutlich schneller umsetzbar als bei Unternehmen ohne KI-Erfahrung.",
+        "deliverables": []
+      },
+      "notes": "\"Das sind echte Wettbewerbsvorteile. Die Aufgabe ist: Steuerung nachrüsten, ohne die Dynamik abzuwürgen.\""
+    },
+    {
+      "id": "09-6-handlungsfelder-wo-verbesserungspotenzial-liegt",
+      "number": 9,
+      "title": "6 Handlungsfelder – Wo Verbesserungspotenzial liegt",
+      "displayTitle": "6 Handlungsfelder – Wo Verbesserungspotenzial liegt",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Stärken und Handlungsfelder",
+      "content": {
+        "rawMarkdown": "- **Priorität 1: Shadow AI** mit akutem Datenschutzrisiko – 59% private Accounts, 33% interne Daten, 24% Regelkenntnis – lösbar durch klare Leitplanken und offizielle Zugänge\n- **Priorität 1: KI-Richtlinie ohne Wirkung** – Überarbeitung mit Compliance-Einbindung schafft sofort Orientierung\n- **Priorität 1: Schadensfälle eingetreten** – Produktiv-Container gelöscht, Code-Fehler in Produktion – zeigen den Handlungsbedarf, aber auch: alle waren beherrschbar\n- **Priorität 1: Keine formale KI-Verantwortung** – klare Rollen schaffen Verbindlichkeit und entlasten Einzelpersonen\n- **Priorität 2: Regulatorische Grundinfrastruktur fehlt** – kein ISMS, VV veraltet, keine DSFA, keine AVV für KI – aufbaubar im Rahmen von M3, kein Neustart nötig\n- **Priorität 2: Kein dediziertes KI-Budget** – Investitionsentscheidung ist Teil von M2",
+        "deliverables": []
+      },
+      "notes": "\"Drei der vier Hoch-Risiken haben sich bereits materialisiert. Keines ist unlösbar.\""
+    },
+    {
+      "id": "10-ki-nutzung-und-shadow-ai-was-unter-der-oberflaeche-passiert",
+      "number": 10,
+      "title": "KI-Nutzung und Shadow AI – Was unter der Oberfläche passiert",
+      "displayTitle": "KI-Nutzung und Shadow AI – Was unter der Oberfläche passiert",
+      "layout": "iceberg",
+      "theme": "light",
+      "chapter": "Shadow AI und Regulatorik",
+      "content": {
+        "rawMarkdown": "**Über der Oberfläche (sichtbar):**\n- 91,5% nutzen KI aktiv für berufliche Aufgaben\n- 71% nutzen KI regelmäßig (mehrmals pro Woche)\n- Technische Infrastruktur bereitgestellt (>5 KI-Dienste)\n\n**Unter der Oberfläche (Shadow AI):**\n- 59% nutzen private Accounts für Geschäftsdaten\n- 47% nutzen frei zugängliche Versionen ohne Account\n- 33% geben interne Texte, E-Mails oder Dokumente ein\n- 24% kennen klare Regeln zur KI-Nutzung\n- Quellcode in unkontrollierte KI-Dienste\n- Kein Freigabeprozess für KI-Tools\n- Mitarbeitende zahlen privat für KI-Lizenzen\n\nRandnotiz: Nur 1 von 59 Befragten nennt Tricept AI als genutztes Werkzeug.",
+        "iceberg": [
+          {
+            "title": "Über der Oberfläche (sichtbar):",
+            "position": "above",
+            "items": [
+              "91,5% nutzen KI aktiv für berufliche Aufgaben",
+              "71% nutzen KI regelmäßig (mehrmals pro Woche)",
+              "Technische Infrastruktur bereitgestellt (>5 KI-Dienste)"
+            ]
+          },
+          {
+            "title": "Unter der Oberfläche (Shadow AI):",
+            "position": "below",
+            "items": [
+              "59% nutzen private Accounts für Geschäftsdaten",
+              "47% nutzen frei zugängliche Versionen ohne Account",
+              "33% geben interne Texte, E-Mails oder Dokumente ein",
+              "24% kennen klare Regeln zur KI-Nutzung",
+              "Quellcode in unkontrollierte KI-Dienste",
+              "Kein Freigabeprozess für KI-Tools",
+              "Mitarbeitende zahlen privat für KI-Lizenzen",
+              "Randnotiz: Nur 1 von 59 Befragten nennt Tricept AI als genutztes Werkzeug."
+            ]
+          }
+        ]
+      },
+      "notes": "\"Shadow AI ist kein böser Wille – es ist die logische Konsequenz, wenn Mitarbeitende KI nutzen wollen, aber keinen klaren Rahmen haben.\""
+    },
+    {
+      "id": "11-konkrete-schadensfaelle-bereits-eingetreten",
+      "number": 11,
+      "title": "Konkrete Schadensfälle – Bereits eingetreten",
+      "displayTitle": "Konkrete Schadensfälle – Bereits eingetreten",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Shadow AI und Regulatorik",
+      "content": {
+        "rawMarkdown": "- **Vorfall 1:** KI-generierter Code löschte einen Produktiv-Container → Datenverlust in Produktivumgebung (mittlerer Schweregrad)\n- **Vorfall 2:** Mitarbeiter wollte Kundendaten-Excel in externe KI eingeben → von Kollege manuell gestoppt (potenziell DSGVO-relevant)\n- **Vorfall 3:** Kritische Code-Fehler in Produktion durch unkritisch übernommenen KI-Code → mehrere unabhängige Stimmen (DORA-relevant bei Kundensystemen)\n- **⚠ Muster:** Keine böse Absicht, sondern fehlende Prozesse + Kompetenz-Spreizung. Ohne Gegenmaßnahmen: Regulatorisches Risiko (DORA, EU AI Act).",
+        "deliverables": []
+      },
+      "notes": "\"Diese Vorfälle sind die vorhersagbare Folge von KI-Nutzung ohne Leitplanken.\""
+    },
+    {
+      "id": "12-kein-freigabeprozess-nicht-nur-fuer-ki",
+      "number": 12,
+      "title": "Kein Freigabeprozess – Nicht nur für KI",
+      "displayTitle": "Kein Freigabeprozess – Nicht nur für KI",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Shadow AI und Regulatorik",
+      "content": {
+        "rawMarkdown": "**Kein formaler Freigabeprozess:**\n- Neue Tools werden eingeführt, ohne dass ein standardisiertes Prüfverfahren durchlaufen wird – weder für KI noch für andere Software.\n\n**Compliance wird nicht eingebunden:**\n- Datenschutz- und Informationssicherheitsverantwortliche erfahren erst im Nachgang von neuen Anwendungen. Ihre Expertise fließt nicht in die Entscheidung ein.\n\n**Bewertung folgt Pragmatik, nicht Prozess:**\n- Die Einführung neuer Tools folgt primär dem Nutzen- und Kostenkriterium. Risikobewertung, Datenschutzprüfung und Sicherheitsfreigabe kommen – wenn überhaupt – erst nachgelagert.\n\n**Befund:**\n- Es gibt kein Anwendungseinsatzverfahren. Das Governance-Defizit ist nicht KI-spezifisch, sondern strukturell. KI macht es nur sichtbar.",
+        "deliverables": [
+          {
+            "title": "Kein formaler Freigabeprozess:",
+            "description": "Neue Tools werden eingeführt, ohne dass ein standardisiertes Prüfverfahren durchlaufen wird – weder für KI noch für andere Software."
+          },
+          {
+            "title": "Compliance wird nicht eingebunden:",
+            "description": "Datenschutz- und Informationssicherheitsverantwortliche erfahren erst im Nachgang von neuen Anwendungen. Ihre Expertise fließt nicht in die Entscheidung ein."
+          },
+          {
+            "title": "Bewertung folgt Pragmatik, nicht Prozess:",
+            "description": "Die Einführung neuer Tools folgt primär dem Nutzen- und Kostenkriterium. Risikobewertung, Datenschutzprüfung und Sicherheitsfreigabe kommen – wenn überhaupt – erst nachgelagert."
+          },
+          {
+            "title": "Befund:",
+            "description": "Es gibt kein Anwendungseinsatzverfahren. Das Governance-Defizit ist nicht KI-spezifisch, sondern strukturell. KI macht es nur sichtbar."
+          }
+        ]
+      },
+      "notes": "\"Ihre Compliance-Beauftragten stellen die richtigen Fragen – sie werden nur nicht in die Entscheidungen einbezogen.\""
+    },
+    {
+      "id": "13-regulatorik-doppelrolle-und-zeitdruck",
+      "number": 13,
+      "title": "Regulatorik – Doppelrolle und Zeitdruck",
+      "displayTitle": "Regulatorik – Doppelrolle und Zeitdruck",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "Shadow AI und Regulatorik",
+      "content": {
+        "rawMarkdown": "| Datum | Meilenstein | Bedeutung |\n|-------|-------------|-----------|\n| Januar 2025 | DORA in Kraft | Kunden müssen Tricept im Informationsregister führen |\n| Februar 2025 | EU AI Act Art. 4 | KI-Kompetenzpflicht in Kraft |\n| Dezember 2025 | BaFin-Orientierungshilfe | IKT-Risiken bei KI veröffentlicht |\n| August 2026 | EU AI Act Hochrisiko-Pflichten | Selbsteinstufung erforderlich für KI-Features in Kundenprodukten |\n\nTricept = Doppelrolle: Anwender von KI-Diensten (DSGVO, EU AI Act) und Anbieter von KI-Features für Finanzinstitute (DORA, BaFin).\n\n⚠ Ob Tricepts KI-Features (Rimago AI, KI-Vertragserfassung) unter die Hochrisiko-Kategorie fallen, muss per Selbsteinstufung geprüft werden – die Pflicht dazu greift ab August 2026.",
+        "timeline": [
+          {
+            "id": "Januar 2025",
+            "title": "DORA in Kraft",
+            "description": "Kunden müssen Tricept im Informationsregister führen",
+            "result": ""
+          },
+          {
+            "id": "Februar 2025",
+            "title": "EU AI Act Art. 4",
+            "description": "KI-Kompetenzpflicht in Kraft",
+            "result": ""
+          },
+          {
+            "id": "Dezember 2025",
+            "title": "BaFin-Orientierungshilfe",
+            "description": "IKT-Risiken bei KI veröffentlicht",
+            "result": ""
+          },
+          {
+            "id": "August 2026",
+            "title": "EU AI Act Hochrisiko-Pflichten",
+            "description": "Selbsteinstufung erforderlich für KI-Features in Kundenprodukten",
+            "result": ""
+          }
+        ]
+      },
+      "notes": "\"Die Hochrisiko-Einstufung ist nicht automatisch, aber die Prüfpflicht greift. Bei KI-Features in Finanzprodukten ist eine konservative Einstufung ratsam.\""
+    },
+    {
+      "id": "14-annahmen-und-leitplanken",
+      "number": 14,
+      "title": "Annahmen und Leitplanken",
+      "displayTitle": "Annahmen und Leitplanken",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**KI-Steuerung ist Chefsache:**\n- KI ist kein Technologiethema, das delegiert werden kann. Es ist ein strategisches Steuerungsthema des Vorstands – vergleichbar mit Digitalisierung vor 10 Jahren. Unternehmen, die KI nicht aktiv steuern, verlieren Wettbewerbsfähigkeit. Die gute Nachricht: Der Vorstand hat es in der Hand.\n\n**5 Annahmen – was wir voraussetzen:**\n- KI-Nutzung wird nicht zurückgefahren – die Frage ist nicht ob, sondern wie gesteuert\n- Zwei KI-Dimensionen: Intern (Produktivität) und extern (Produkt-Features) – unterschiedliche Steuerungslogik\n- Regulatorische Komplexität ist beherrschbar – erfordert aber konsequentes Handeln\n- Eigene Governance muss auf Kundenniveau liegen (Finanzbranche!)\n- Zeitfenster für positive Rahmung ist offen, aber nicht unbegrenzt\n\n**5 Leitplanken – was ab sofort gilt:**\n- Human in the Loop als Grundprinzip – KI schlägt vor, der Mensch entscheidet\n- Keine Kunden-/Personendaten in externe KI ohne Prüfung und Freigabe\n- Firma zahlt, nicht Mitarbeiter – private Accounts durch offizielle Zugänge ersetzen\n- Regulatorik als durchgängiger Faden – nicht Einmalthema, sondern Prüfkriterium\n- KMU-Pragmatismus – Maßnahmen müssen mit ~80 MA umsetzbar sein",
+        "deliverables": [
+          {
+            "title": "KI-Steuerung ist Chefsache:",
+            "description": "KI ist kein Technologiethema, das delegiert werden kann. Es ist ein strategisches Steuerungsthema des Vorstands – vergleichbar mit Digitalisierung vor 10 Jahren. Unternehmen, die KI nicht aktiv steuern, verlieren Wettbewerbsfähigkeit. Die gute Nachricht: Der Vorstand hat es in der Hand."
+          },
+          {
+            "title": "5 Annahmen – was wir voraussetzen:",
+            "description": "KI-Nutzung wird nicht zurückgefahren – die Frage ist nicht ob, sondern wie gesteuert"
+          },
+          {
+            "title": "5 Leitplanken – was ab sofort gilt:",
+            "description": "Human in the Loop als Grundprinzip – KI schlägt vor, der Mensch entscheidet"
+          }
+        ]
+      },
+      "notes": "\"Diese Leitplanken sind unser gemeinsamer Kompass. Zwei davon – Datenschutz-Leitplanke und Firma-zahlt-Prinzip – sollten wir sofort kommunizieren.\""
+    },
+    {
+      "id": "15-handlungsplan-gemeinsam-ins-handeln-kommen",
+      "number": 15,
+      "title": "Handlungsplan – Gemeinsam ins Handeln kommen",
+      "displayTitle": "Handlungsplan – Gemeinsam ins Handeln kommen",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Vorstandskommunikation – Signale setzen:**\n- KI-Position im nächsten Meeting kommunizieren: \"KI ist strategische Priorität, wir steuern sie aktiv\"\n- Change-Botschaft verankern: KI als Mehrwert für alle, nicht als Rationalisierungsinstrument\n- Compliance einbinden: DSB und ISB ab sofort Teil der KI-Entscheidungen\n\n**Sofortmaßnahmen – gemeinsam mit Tricept Consulting:**\n- Shadow-AI-Leitplanke formulieren und kommunizieren (Vorstand + Berater)\n- Code-Review-Pflicht für KI-generierten Code einführen (IT-Leitung + Berater)\n- Erste Orientierung für Mitarbeitende schaffen: Was ist erlaubt, was nicht?\n\n**In M2 gemeinsam klären – mit unserer Begleitung:**\n- KI-Budget und Lizenzpolitik als Teil der Strategiearbeit (nicht als Voraussetzung)\n- Regulatorische Einordnung vertiefen (EU AI Act, DORA)\n- KI-Richtlinie überarbeiten mit Freigabeprozess",
+        "deliverables": [
+          {
+            "title": "Vorstandskommunikation – Signale setzen:",
+            "description": "KI-Position im nächsten Meeting kommunizieren: \"KI ist strategische Priorität, wir steuern sie aktiv\""
+          },
+          {
+            "title": "Sofortmaßnahmen – gemeinsam mit Tricept Consulting:",
+            "description": "Shadow-AI-Leitplanke formulieren und kommunizieren (Vorstand + Berater)"
+          },
+          {
+            "title": "In M2 gemeinsam klären – mit unserer Begleitung:",
+            "description": "KI-Budget und Lizenzpolitik als Teil der Strategiearbeit (nicht als Voraussetzung)"
+          }
+        ]
+      },
+      "notes": "\"Die Sofortmaßnahmen kosten einen halben Tag Vorstandszeit. M2 liefert dann die strategische Grundlage.\""
+    },
+    {
+      "id": "16-unser-vorgehensmodell-5-module-fuer-den-weg-zur-ki-fuehrung",
+      "number": 16,
+      "title": "Unser Vorgehensmodell – 5 Module für den Weg zur KI-Führung",
+      "displayTitle": "Unser Vorgehensmodell – 5 Module für den Weg zur KI-Führung",
+      "layout": "process-flow",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**M1 KI-Standortbestimmung (abgeschlossen):**\n- Reifegrad-Erhebung, Interviews, MA-Umfrage, Ergebnispräsentation\n\n**M2 KI-Strategie und Use-Cases (empfohlener nächster Schritt):**\n- Strategie formulieren, Use Cases identifizieren und priorisieren, Budget-Entscheidung\n\n**M3 Governance und Umsetzungsvorbereitung:**\n- KI-Richtlinie, Freigabeprozess, Rollen, DORA-Vorbereitung, Schulungskonzept\n\n**M4 Einführungsbegleitung (pro Use Case wiederholbar):**\n- Use Cases bis zum produktiven Einsatz begleiten, Change-Management\n\n**M5 KI-Führungsbegleitung (dauerhaft, zyklisch):**\n- Quartals-Review, Reifegrad-Update, Regulatorik-Monitoring, Ad-hoc-Sparring\n\n**TS Technisches Sparring (optional, zuschaltbar ab M3):**\n- Architektur-Review, Vendor-Kriterien, Sicherheitsbewertung"
+      },
+      "notes": "\"Sie sehen hier den gesamten Weg. Wir empfehlen nicht alles auf einmal – sondern den nächsten logischen Schritt.\""
+    },
+    {
+      "id": "17-m1-ki-standortbestimmung",
+      "number": 17,
+      "title": "M1 KI-Standortbestimmung",
+      "displayTitle": "M1 KI-Standortbestimmung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** M1 Standortbestimmung | ✓ Abgeschlossen\n**Bausteine:**\n- **Reifegrad-Erhebung** (Kern) | Bewertung über 6 Dimensionen mit eigenem Reifegradmodell | ca. 1,5 BT\n- **Stakeholder-Interviews** (Kern) | 10 strukturierte Interviews mit allen Ebenen (Vorstand bis Fachbereich) | ca. 3 BT\n- **MA-Umfrage** (Kern) | Anonyme Breitenerhebung zu KI-Nutzung, Shadow AI, Erwartungen | ca. 1 BT\n- **Ergebnispräsentation** (Kern) | Konsolidierter Bericht mit Empfehlungen, Vorstellung beim Vorstand | ca. 1,5 BT\n**Ergebnisse:**\n- Reifegradprofil mit 6 Dimensionen und konkreter Stufeneinordnung\n- Konsolidierter Stärken-/Handlungsfelder-Bericht\n- Sofortmaßnahmen und Empfehlung für den Folgeschritt\n**Aufwand:** 7 BT × 1.200 € = 8.400 € (Festpreis), Zeitraum: 3–4 Wochen",
+        "moduleDetail": {
+          "badge": "M1 Standortbestimmung | ✓ Abgeschlossen",
+          "bausteine": [
+            {
+              "name": "Reifegrad-Erhebung",
+              "role": "Kern",
+              "description": "Bewertung über 6 Dimensionen mit eigenem Reifegradmodell",
+              "effort": "ca. 1,5 BT"
+            },
+            {
+              "name": "Stakeholder-Interviews",
+              "role": "Kern",
+              "description": "10 strukturierte Interviews mit allen Ebenen (Vorstand bis Fachbereich)",
+              "effort": "ca. 3 BT"
+            },
+            {
+              "name": "MA-Umfrage",
+              "role": "Kern",
+              "description": "Anonyme Breitenerhebung zu KI-Nutzung, Shadow AI, Erwartungen",
+              "effort": "ca. 1 BT"
+            },
+            {
+              "name": "Ergebnispräsentation",
+              "role": "Kern",
+              "description": "Konsolidierter Bericht mit Empfehlungen, Vorstellung beim Vorstand",
+              "effort": "ca. 1,5 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Reifegradprofil mit 6 Dimensionen und konkreter Stufeneinordnung",
+            "Konsolidierter Stärken-/Handlungsfelder-Bericht",
+            "Sofortmaßnahmen und Empfehlung für den Folgeschritt"
+          ],
+          "aufwand": "7 BT × 1.200 € = 8.400 € (Festpreis), Zeitraum: 3–4 Wochen"
+        }
+      },
+      "notes": "\"M1 ist abgeschlossen – diese Folie zeigt, was wir gemeinsam erarbeitet haben.\""
+    },
+    {
+      "id": "18-m2-ki-strategie-und-use-cases",
+      "number": 18,
+      "title": "M2 KI-Strategie und Use-Cases",
+      "displayTitle": "M2 KI-Strategie und Use-Cases",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** M2 Strategie | Empfohlener nächster Schritt\n**Bausteine:**\n- **Strategieworkshop** (Kern) | KI-Vision, Leitplanken, Priorisierungskriterien mit dem Vorstand erarbeiten | ca. 3 BT\n- **Use-Case-Identifikation** (Kern) | Systematische Erhebung und Bewertung von KI-Anwendungsfällen (intern + Produkt) | ca. 3 BT\n- **Regulatorische Ersteinordnung** (Kern) | DORA-Relevanz, EU AI Act Prüfpflichten, Handlungsbedarf für Kundensysteme | ca. 2 BT\n- **Budget-Empfehlung** (Kern) | Investitionsrahmen, Lizenzpolitik, Make-or-Buy-Einschätzung | ca. 1 BT\n**Ergebnisse:**\n- Dokumentierte KI-Strategie mit Leitplanken und Priorisierung\n- Bewertete Use-Case-Pipeline (intern + Produkt-Features)\n- Budget-Empfehlung und Lizenzstrategie\n**Aufwand:** 6–10 BT je nach Paket, Zeitraum: 4–6 Wochen",
+        "moduleDetail": {
+          "badge": "M2 Strategie | Empfohlener nächster Schritt",
+          "bausteine": [
+            {
+              "name": "Strategieworkshop",
+              "role": "Kern",
+              "description": "KI-Vision, Leitplanken, Priorisierungskriterien mit dem Vorstand erarbeiten",
+              "effort": "ca. 3 BT"
+            },
+            {
+              "name": "Use-Case-Identifikation",
+              "role": "Kern",
+              "description": "Systematische Erhebung und Bewertung von KI-Anwendungsfällen (intern + Produkt)",
+              "effort": "ca. 3 BT"
+            },
+            {
+              "name": "Regulatorische Ersteinordnung",
+              "role": "Kern",
+              "description": "DORA-Relevanz, EU AI Act Prüfpflichten, Handlungsbedarf für Kundensysteme",
+              "effort": "ca. 2 BT"
+            },
+            {
+              "name": "Budget-Empfehlung",
+              "role": "Kern",
+              "description": "Investitionsrahmen, Lizenzpolitik, Make-or-Buy-Einschätzung",
+              "effort": "ca. 1 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Dokumentierte KI-Strategie mit Leitplanken und Priorisierung",
+            "Bewertete Use-Case-Pipeline (intern + Produkt-Features)",
+            "Budget-Empfehlung und Lizenzstrategie"
+          ],
+          "aufwand": "6–10 BT je nach Paket, Zeitraum: 4–6 Wochen"
+        }
+      },
+      "notes": "\"M2 ist der Schritt, in dem wir gemeinsam die Richtung festlegen. Danach wissen Sie, wohin die Reise geht.\""
+    },
+    {
+      "id": "19-m3-governance-und-umsetzungsvorbereitung",
+      "number": 19,
+      "title": "M3 Governance und Umsetzungsvorbereitung",
+      "displayTitle": "M3 Governance und Umsetzungsvorbereitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** M3 Governance | Struktur schaffen\n**Bausteine:**\n- **KI-Richtlinie** (Kern) | Überarbeitung mit Compliance-Einbindung, Freigabeprozess, Nutzungsleitfaden | ca. 3 BT\n- **Rollen und Verantwortlichkeiten** (Kern) | KI-Verantwortung formal verankern, Entscheidungswege definieren | ca. 1 BT\n- **DORA-Vorbereitung** (Optional) | Dokumentation für Kundenanforderungen, KI-Steckbriefe, Informationsregister | ca. 2 BT\n- **Schulungskonzept** (Kern) | Zielgruppengerechte Schulung: Vorstand, IT, Fachbereich, Compliance | ca. 2 BT\n**Ergebnisse:**\n- Wirksame KI-Richtlinie mit Freigabeprozess\n- Definierte KI-Rollen und Governance-Struktur\n- Schulungskonzept und ggf. DORA-Dokumentation\n**Aufwand:** 5–8 BT je nach Paket, Zeitraum: 4–6 Wochen",
+        "moduleDetail": {
+          "badge": "M3 Governance | Struktur schaffen",
+          "bausteine": [
+            {
+              "name": "KI-Richtlinie",
+              "role": "Kern",
+              "description": "Überarbeitung mit Compliance-Einbindung, Freigabeprozess, Nutzungsleitfaden",
+              "effort": "ca. 3 BT"
+            },
+            {
+              "name": "Rollen und Verantwortlichkeiten",
+              "role": "Kern",
+              "description": "KI-Verantwortung formal verankern, Entscheidungswege definieren",
+              "effort": "ca. 1 BT"
+            },
+            {
+              "name": "DORA-Vorbereitung",
+              "role": "Optional",
+              "description": "Dokumentation für Kundenanforderungen, KI-Steckbriefe, Informationsregister",
+              "effort": "ca. 2 BT"
+            },
+            {
+              "name": "Schulungskonzept",
+              "role": "Kern",
+              "description": "Zielgruppengerechte Schulung: Vorstand, IT, Fachbereich, Compliance",
+              "effort": "ca. 2 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Wirksame KI-Richtlinie mit Freigabeprozess",
+            "Definierte KI-Rollen und Governance-Struktur",
+            "Schulungskonzept und ggf. DORA-Dokumentation"
+          ],
+          "aufwand": "5–8 BT je nach Paket, Zeitraum: 4–6 Wochen"
+        }
+      },
+      "notes": "\"M3 liefert die Leitplanken, damit KI-Nutzung nicht nur erlaubt, sondern gesteuert ist.\""
+    },
+    {
+      "id": "20-m4-einfuehrungsbegleitung",
+      "number": 20,
+      "title": "M4 Einführungsbegleitung",
+      "displayTitle": "M4 Einführungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** M4 Einführung | Vom Plan zur Praxis\n**Bausteine:**\n- **Use-Case-Umsetzung** (Kern) | Begleitung vom Konzept bis zum produktiven Einsatz, inkl. Erfolgsmessung | ca. 4–6 BT je UC\n- **Change-Management** (Kern) | Kommunikation, Schulung, Stakeholder-Einbindung für jeden Use Case | inkl.\n- **Pilotierung und Review** (Kern) | Testphase mit definierter Erfolgsmessung, Lessons Learned | inkl.\n**Ergebnisse:**\n- Produktiv eingeführte Use Cases mit messbarem Nutzen\n- Dokumentierte Erfahrungen als Grundlage für weitere Use Cases\n- Geschulte Anwender und etablierte Prozesse\n**Aufwand:** 4–18 BT je nach Paket und Anzahl Use Cases, M4 ist wiederholbar",
+        "moduleDetail": {
+          "badge": "M4 Einführung | Vom Plan zur Praxis",
+          "bausteine": [
+            {
+              "name": "Use-Case-Umsetzung",
+              "role": "Kern",
+              "description": "Begleitung vom Konzept bis zum produktiven Einsatz, inkl. Erfolgsmessung",
+              "effort": "ca. 4–6 BT je UC"
+            },
+            {
+              "name": "Change-Management",
+              "role": "Kern",
+              "description": "Kommunikation, Schulung, Stakeholder-Einbindung für jeden Use Case",
+              "effort": "inkl."
+            },
+            {
+              "name": "Pilotierung und Review",
+              "role": "Kern",
+              "description": "Testphase mit definierter Erfolgsmessung, Lessons Learned",
+              "effort": "inkl."
+            }
+          ],
+          "ergebnisse": [
+            "Produktiv eingeführte Use Cases mit messbarem Nutzen",
+            "Dokumentierte Erfahrungen als Grundlage für weitere Use Cases",
+            "Geschulte Anwender und etablierte Prozesse"
+          ],
+          "aufwand": "4–18 BT je nach Paket und Anzahl Use Cases, M4 ist wiederholbar"
+        }
+      },
+      "notes": "\"M4 ist der Schritt, in dem KI konkret wird. Hier entsteht der sichtbare Mehrwert.\""
+    },
+    {
+      "id": "21-m5-ki-fuehrungsbegleitung",
+      "number": 21,
+      "title": "M5 KI-Führungsbegleitung",
+      "displayTitle": "M5 KI-Führungsbegleitung",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** M5 Führungsbegleitung | Dauerhaft, zyklisch\n**Bausteine:**\n- **Quartals-Review** (Kern) | Reifegrad-Update, Fortschrittsmessung, Strategieabgleich | 1 BT/Quartal\n- **Regulatorik-Monitoring** (Kern) | EU AI Act, DORA, BaFin – laufende Einordnung neuer Anforderungen | im Retainer\n- **Ad-hoc-Sparring** (Kern) | Kurzfristige Beratung zu KI-Fragen, Vendor-Einschätzungen, Entscheidungsvorbereitung | im Retainer\n- **Strategie-Update** (Kern) | Jährliche Überprüfung und Anpassung der KI-Strategie | im Retainer\n**Ergebnisse:**\n- Kontinuierliche Steuerung statt einmaliges Projekt\n- Aktuelle regulatorische Einordnung\n- Strategische Weiterentwicklung mit externem Sparring\n**Aufwand:** 1 BT/Quartal (4.800 €/Jahr)",
+        "moduleDetail": {
+          "badge": "M5 Führungsbegleitung | Dauerhaft, zyklisch",
+          "bausteine": [
+            {
+              "name": "Quartals-Review",
+              "role": "Kern",
+              "description": "Reifegrad-Update, Fortschrittsmessung, Strategieabgleich",
+              "effort": "1 BT/Quartal"
+            },
+            {
+              "name": "Regulatorik-Monitoring",
+              "role": "Kern",
+              "description": "EU AI Act, DORA, BaFin – laufende Einordnung neuer Anforderungen",
+              "effort": "im Retainer"
+            },
+            {
+              "name": "Ad-hoc-Sparring",
+              "role": "Kern",
+              "description": "Kurzfristige Beratung zu KI-Fragen, Vendor-Einschätzungen, Entscheidungsvorbereitung",
+              "effort": "im Retainer"
+            },
+            {
+              "name": "Strategie-Update",
+              "role": "Kern",
+              "description": "Jährliche Überprüfung und Anpassung der KI-Strategie",
+              "effort": "im Retainer"
+            }
+          ],
+          "ergebnisse": [
+            "Kontinuierliche Steuerung statt einmaliges Projekt",
+            "Aktuelle regulatorische Einordnung",
+            "Strategische Weiterentwicklung mit externem Sparring"
+          ],
+          "aufwand": "1 BT/Quartal (4.800 €/Jahr)"
+        }
+      },
+      "notes": "\"M5 stellt sicher, dass KI-Führung kein einmaliges Projekt bleibt, sondern dauerhaft verankert ist.\""
+    },
+    {
+      "id": "22-technisches-sparring",
+      "number": 22,
+      "title": "Technisches Sparring",
+      "displayTitle": "Technisches Sparring",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Was empfehlen wir?",
+      "content": {
+        "rawMarkdown": "**Badge:** TS Sparring | Optional, ab M3 zuschaltbar\n**Bausteine:**\n- **Architektur-Review** (Kern) | Bewertung der KI-Integration in bestehende Systemlandschaft | ca. 1,5 BT\n- **Vendor-Kriterien** (Kern) | Bewertungsmatrix für KI-Dienstleister und -Tools, Make-or-Buy-Empfehlung | ca. 1 BT\n- **Sicherheitsbewertung** (Kern) | KI-spezifische Risiken in der IT-Architektur, Empfehlungen für Absicherung | ca. 1,5 BT\n**Ergebnisse:**\n- Technische Entscheidungsgrundlage für KI-Integration\n- Vendor-Bewertungsmatrix\n- Sicherheitsempfehlungen für KI-Einsatz\n**Aufwand:** ca. 4 BT, nur im Paket Umfassend inkludiert, sonst separat buchbar",
+        "moduleDetail": {
+          "badge": "TS Sparring | Optional, ab M3 zuschaltbar",
+          "bausteine": [
+            {
+              "name": "Architektur-Review",
+              "role": "Kern",
+              "description": "Bewertung der KI-Integration in bestehende Systemlandschaft",
+              "effort": "ca. 1,5 BT"
+            },
+            {
+              "name": "Vendor-Kriterien",
+              "role": "Kern",
+              "description": "Bewertungsmatrix für KI-Dienstleister und -Tools, Make-or-Buy-Empfehlung",
+              "effort": "ca. 1 BT"
+            },
+            {
+              "name": "Sicherheitsbewertung",
+              "role": "Kern",
+              "description": "KI-spezifische Risiken in der IT-Architektur, Empfehlungen für Absicherung",
+              "effort": "ca. 1,5 BT"
+            }
+          ],
+          "ergebnisse": [
+            "Technische Entscheidungsgrundlage für KI-Integration",
+            "Vendor-Bewertungsmatrix",
+            "Sicherheitsempfehlungen für KI-Einsatz"
+          ],
+          "aufwand": "ca. 4 BT, nur im Paket Umfassend inkludiert, sonst separat buchbar"
+        }
+      },
+      "notes": "\"TS ist besonders relevant für Softwarehäuser wie Tricept, die KI in eigene Produkte integrieren.\""
+    },
+    {
+      "id": "23-drei-pakete-ihr-weg-ihre-tiefe",
+      "number": 23,
+      "title": "Drei Pakete – Ihr Weg, Ihre Tiefe",
+      "displayTitle": "Drei Pakete – Ihr Weg, Ihre Tiefe",
+      "layout": "pricing",
+      "theme": "light",
+      "chapter": "Angebot und Investition",
+      "content": {
+        "rawMarkdown": "**✓ Fokus – 18.000 €:**\n- KI-Strategie mit Leitplanken und Budget-Empfehlung (M2)\n- Kern-Governance: Überarbeitete Richtlinie + Freigabeprozess (M3)\n- 1 Use Case bis zum produktiven Einsatz begleitet (M4)\n- Quartals-Review und Ad-hoc-Sparring (M5 Retainer)\n- 15 BT, 10–14 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)\n→ Ergebnis: Schneller Einstieg mit konkretem Ergebnis\n\n**✓ Professionell – 28.800 €:**\n- Differenzierte KI-Strategie für intern + Produkt, inkl. DORA-Ersteinordnung (M2)\n- Governance-Struktur + DORA-Vorbereitung + Schulungskonzept (M3)\n- 2 Use Cases produktiv eingeführt, z.B. intern + Produkt (M4)\n- Quartals-Review, Reifegrad-Update, Ad-hoc-Sparring (M5 Retainer)\n- 24 BT, 14–20 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)\n→ Ergebnis: Solide Breite für beide KI-Dimensionen\n\n**✓ Umfassend ★ empfohlen – 48.000 €:**\n- Vollständige KI-Strategie mit Marktpotenzial-Analyse (M2)\n- Umfassende Governance + DORA-Dokumentation + Schulungsprogramm (M3)\n- Use-Case-Programm: In der Regel 3+ Use Cases im Rahmen von 18 BT – welche genau, klären wir in M2 (M4)\n- Architektur-Review, Vendor-Kriterien, Sicherheitsbewertung (Technisches Sparring)\n- Erweiterter Retainer: Strategie-Update + Regulatorik-Monitoring (M5, 1 BT/Quartal)\n- 40 BT, 20–28 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)\n→ Ergebnis: Volle Tiefe, maximale Abdeckung, strategischer Hebel\n\nTagessatz: 1.200 €/BT (Fokus + Professionell) bzw. 1.150 €/BT (Umfassend, Staffelpreis ab 30 BT). Aufwandsbasierte Abrechnung. Weitere Use Cases jederzeit ergänzbar (4–6 BT je UC).",
+        "comparison": [
+          {
+            "title": "Fokus – 18.000 €:",
+            "description": "Ergebnis: Schneller Einstieg mit konkretem Ergebnis",
+            "type": "positive",
+            "items": [
+              "KI-Strategie mit Leitplanken und Budget-Empfehlung (M2)",
+              "Kern-Governance: Überarbeitete Richtlinie + Freigabeprozess (M3)",
+              "1 Use Case bis zum produktiven Einsatz begleitet (M4)",
+              "Quartals-Review und Ad-hoc-Sparring (M5 Retainer)",
+              "15 BT, 10–14 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)"
+            ]
+          },
+          {
+            "title": "Professionell – 28.800 €:",
+            "description": "Ergebnis: Solide Breite für beide KI-Dimensionen",
+            "type": "positive",
+            "items": [
+              "Differenzierte KI-Strategie für intern + Produkt, inkl. DORA-Ersteinordnung (M2)",
+              "Governance-Struktur + DORA-Vorbereitung + Schulungskonzept (M3)",
+              "2 Use Cases produktiv eingeführt, z.B. intern + Produkt (M4)",
+              "Quartals-Review, Reifegrad-Update, Ad-hoc-Sparring (M5 Retainer)",
+              "24 BT, 14–20 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)"
+            ]
+          },
+          {
+            "title": "Umfassend ★ empfohlen – 48.000 €:",
+            "description": "Ergebnis: Volle Tiefe, maximale Abdeckung, strategischer Hebel",
+            "type": "positive",
+            "items": [
+              "Vollständige KI-Strategie mit Marktpotenzial-Analyse (M2)",
+              "Umfassende Governance + DORA-Dokumentation + Schulungsprogramm (M3)",
+              "Use-Case-Programm: In der Regel 3+ Use Cases im Rahmen von 18 BT – welche genau, klären wir in M2 (M4)",
+              "Architektur-Review, Vendor-Kriterien, Sicherheitsbewertung (Technisches Sparring)",
+              "Erweiterter Retainer: Strategie-Update + Regulatorik-Monitoring (M5, 1 BT/Quartal)",
+              "40 BT, 20–28 Wochen, M5: 4.800 €/Jahr (1 BT/Quartal)",
+              "Tagessatz: 1.200 €/BT (Fokus + Professionell) bzw. 1.150 €/BT (Umfassend, Staffelpreis ab 30 BT). Aufwandsbasierte Abrechnung. Weitere Use Cases jederzeit ergänzbar (4–6 BT je UC)."
+            ]
+          }
+        ]
+      },
+      "notes": "\"Die Pakete sind keine starren Boxen – sie definieren den Startumfang. Nach M2 können wir den Scope gemeinsam präzisieren.\""
+    },
+    {
+      "id": "24-paket-fokus-schlanker-durchlauf",
+      "number": 24,
+      "title": "Paket Fokus – Schlanker Durchlauf",
+      "displayTitle": "Paket Fokus – Schlanker Durchlauf",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Angebot und Investition",
+      "content": {
+        "rawMarkdown": "**Badge:** Fokus | 15 BT | 18.000 €\n**Bausteine:**\n- **M2 Strategie** (Kern) | 3–4 Use Cases, ein Schwerpunkt, KI-Strategie mit Leitplanken | ca. 6 BT\n- **M3 Governance** (Kern) | Kern-Governance: Richtlinie mit Abnahme, Freigabeprozess, KI-Rollen | ca. 5 BT\n- **M4 Einführung** (Kern) | 1 priorisierter Use Case bis zum produktiven Einsatz | ca. 4 BT\n- **M5 Begleitung** (Retainer) | Quartals-Review, Ad-hoc-Sparring | 1 BT/Quartal\n**Ergebnisse:**\n- KI-Strategie mit Budget-Entscheidung und Lizenzpolitik\n- Kern-Governance mit überarbeiteter Richtlinie\n- 1 produktiv eingeführter Use Case\n**Aufwand:** 15 BT × 1.200 € = 18.000 € (M2–M4), M5 Retainer: 4.800 €/Jahr (1 BT/Quartal), Zeitraum: 10–14 Wochen",
+        "moduleDetail": {
+          "badge": "Fokus | 15 BT | 18.000 €",
+          "bausteine": [
+            {
+              "name": "M2 Strategie",
+              "role": "Kern",
+              "description": "3–4 Use Cases, ein Schwerpunkt, KI-Strategie mit Leitplanken",
+              "effort": "ca. 6 BT"
+            },
+            {
+              "name": "M3 Governance",
+              "role": "Kern",
+              "description": "Kern-Governance: Richtlinie mit Abnahme, Freigabeprozess, KI-Rollen",
+              "effort": "ca. 5 BT"
+            },
+            {
+              "name": "M4 Einführung",
+              "role": "Kern",
+              "description": "1 priorisierter Use Case bis zum produktiven Einsatz",
+              "effort": "ca. 4 BT"
+            },
+            {
+              "name": "M5 Begleitung",
+              "role": "Retainer",
+              "description": "Quartals-Review, Ad-hoc-Sparring",
+              "effort": "1 BT/Quartal"
+            }
+          ],
+          "ergebnisse": [
+            "KI-Strategie mit Budget-Entscheidung und Lizenzpolitik",
+            "Kern-Governance mit überarbeiteter Richtlinie",
+            "1 produktiv eingeführter Use Case"
+          ],
+          "aufwand": "15 BT × 1.200 € = 18.000 € (M2–M4), M5 Retainer: 4.800 €/Jahr (1 BT/Quartal), Zeitraum: 10–14 Wochen"
+        }
+      },
+      "notes": "\"Paket Fokus bringt Sie vom Ist-Stand bis zum ersten produktiv eingeführten Use Case.\""
+    },
+    {
+      "id": "25-paket-professionell-solide-breite",
+      "number": 25,
+      "title": "Paket Professionell – Solide Breite",
+      "displayTitle": "Paket Professionell – Solide Breite",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Angebot und Investition",
+      "content": {
+        "rawMarkdown": "**Badge:** Professionell | 24 BT | 28.800 €\n**Bausteine:**\n- **M2 Strategie** (Kern) | 5–6 Use Cases, intern + extern differenziert, DORA-Ersteinordnung | ca. 8 BT\n- **M3 Governance** (Kern) | Governance-Struktur + DORA-Vorbereitung + Schulungskonzept | ca. 6 BT\n- **M4 Einführung** (Kern) | 2 priorisierte Use Cases (z.B. 1× intern + 1× Produkt) | ca. 10 BT\n- **M5 Begleitung** (Retainer) | Quartals-Review, Reifegrad-Update, Ad-hoc-Sparring | 1 BT/Quartal\n**Ergebnisse:**\n- Differenzierte KI-Strategie mit DORA-Vorbereitung\n- Governance-Struktur mit Schulungskonzept\n- 2 produktiv eingeführte Use Cases als Referenz\n**Aufwand:** 24 BT × 1.200 € = 28.800 € (M2–M4), M5 Retainer: 4.800 €/Jahr (1 BT/Quartal), Zeitraum: 14–20 Wochen",
+        "moduleDetail": {
+          "badge": "Professionell | 24 BT | 28.800 €",
+          "bausteine": [
+            {
+              "name": "M2 Strategie",
+              "role": "Kern",
+              "description": "5–6 Use Cases, intern + extern differenziert, DORA-Ersteinordnung",
+              "effort": "ca. 8 BT"
+            },
+            {
+              "name": "M3 Governance",
+              "role": "Kern",
+              "description": "Governance-Struktur + DORA-Vorbereitung + Schulungskonzept",
+              "effort": "ca. 6 BT"
+            },
+            {
+              "name": "M4 Einführung",
+              "role": "Kern",
+              "description": "2 priorisierte Use Cases (z.B. 1× intern + 1× Produkt)",
+              "effort": "ca. 10 BT"
+            },
+            {
+              "name": "M5 Begleitung",
+              "role": "Retainer",
+              "description": "Quartals-Review, Reifegrad-Update, Ad-hoc-Sparring",
+              "effort": "1 BT/Quartal"
+            }
+          ],
+          "ergebnisse": [
+            "Differenzierte KI-Strategie mit DORA-Vorbereitung",
+            "Governance-Struktur mit Schulungskonzept",
+            "2 produktiv eingeführte Use Cases als Referenz"
+          ],
+          "aufwand": "24 BT × 1.200 € = 28.800 € (M2–M4), M5 Retainer: 4.800 €/Jahr (1 BT/Quartal), Zeitraum: 14–20 Wochen"
+        }
+      },
+      "notes": "\"Paket Professionell bildet beide KI-Dimensionen ab und bereitet auf DORA vor.\""
+    },
+    {
+      "id": "26-paket-umfassend-volle-tiefe",
+      "number": 26,
+      "title": "Paket Umfassend – Volle Tiefe ★",
+      "displayTitle": "Paket Umfassend – Volle Tiefe ★",
+      "layout": "module-detail",
+      "theme": "light",
+      "chapter": "Angebot und Investition",
+      "content": {
+        "rawMarkdown": "**Badge:** Umfassend ★ | 40 BT | 48.000 €\n**Bausteine:**\n- **M2 Strategie** (Kern) | 8+ Use Cases, volle Tiefe, Marktpotenzial-Analyse | ca. 10 BT\n- **M3 Governance** (Kern) | Umfassende Governance + DORA-Dokumentation + Schulungsprogramm | ca. 8 BT\n- **M4 Einführung** (Kern) | Use-Case-Programm: i.d.R. 3+ Use Cases – Auswahl und Priorisierung in M2 | ca. 18 BT\n- **TS Sparring** (Inkludiert) | Architektur-Review, Vendor-Kriterien, Sicherheitsbewertung | ca. 4 BT\n- **M5 Begleitung** (Retainer) | Erweiterter Retainer: Review + Strategie-Update + Regulatorik-Monitoring | 1 BT/Quartal\n**Ergebnisse:**\n- Vollständige KI-Strategie mit Marktpotenzial-Analyse\n- Umfassende Governance inkl. DORA-Dokumentation\n- 3 produktiv eingeführte Use Cases\n- Technisches Sparring für Architektur und Sicherheit\n**Aufwand:** 40 BT × 1.200 € = 48.000 € (M2–M4+TS), M5 Retainer: 4.800 €/Jahr, Zeitraum: 20–28 Wochen",
+        "moduleDetail": {
+          "badge": "Umfassend ★ | 40 BT | 48.000 €",
+          "bausteine": [
+            {
+              "name": "M2 Strategie",
+              "role": "Kern",
+              "description": "8+ Use Cases, volle Tiefe, Marktpotenzial-Analyse",
+              "effort": "ca. 10 BT"
+            },
+            {
+              "name": "M3 Governance",
+              "role": "Kern",
+              "description": "Umfassende Governance + DORA-Dokumentation + Schulungsprogramm",
+              "effort": "ca. 8 BT"
+            },
+            {
+              "name": "M4 Einführung",
+              "role": "Kern",
+              "description": "Use-Case-Programm: i.d.R. 3+ Use Cases – Auswahl und Priorisierung in M2",
+              "effort": "ca. 18 BT"
+            },
+            {
+              "name": "TS Sparring",
+              "role": "Inkludiert",
+              "description": "Architektur-Review, Vendor-Kriterien, Sicherheitsbewertung",
+              "effort": "ca. 4 BT"
+            },
+            {
+              "name": "M5 Begleitung",
+              "role": "Retainer",
+              "description": "Erweiterter Retainer: Review + Strategie-Update + Regulatorik-Monitoring",
+              "effort": "1 BT/Quartal"
+            }
+          ],
+          "ergebnisse": [
+            "Vollständige KI-Strategie mit Marktpotenzial-Analyse",
+            "Umfassende Governance inkl. DORA-Dokumentation",
+            "3 produktiv eingeführte Use Cases",
+            "Technisches Sparring für Architektur und Sicherheit"
+          ],
+          "aufwand": "40 BT × 1.200 € = 48.000 € (M2–M4+TS), M5 Retainer: 4.800 €/Jahr, Zeitraum: 20–28 Wochen"
+        }
+      },
+      "notes": "\"Paket Umfassend ist die volle Begleitung – inkl. Technischem Sparring und drei eingeführten Use Cases.\""
+    },
+    {
+      "id": "27-unsere-empfehlung-paket-umfassend",
+      "number": 27,
+      "title": "Unsere Empfehlung: Paket Umfassend",
+      "displayTitle": "Unsere Empfehlung: Paket Umfassend",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Angebot und Investition",
+      "content": {
+        "rawMarkdown": "- **Warum Umfassend?** Tricept ist nicht nur KI-Anwender, sondern auch KI-Anbieter. Diese Doppelrolle erfordert Tiefe in Strategie, Governance und Umsetzung – nicht nur einen ersten Schritt.\n- **Use-Case-Programm statt Einzelprojekt:** In der Regel mindestens 3 Use Cases über beide KI-Dimensionen (intern + Produkt). Welche genau, klären wir gemeinsam in M2 – auf Basis Ihrer Strategie, nicht unserer Annahmen.\n- **Technisches Sparring inkludiert:** Als Softwarehaus brauchen Sie architektonische Klarheit über KI-Integration, Vendor-Auswahl und Sicherheit – das liefert nur das Umfassend-Paket.\n- **DORA-Vorbereitung vollständig:** Ihre Kunden sind Finanzinstitute. Vollständige DORA-Dokumentation und Governance sind kein Nice-to-have, sondern Vertriebsvoraussetzung.\n- **Investition im Verhältnis:** 48.000 € für 40 Beratertage über 5–7 Monate – das sind ca. 8.000 €/Monat. Weniger als eine halbe Vollzeitstelle, aber mit dem Ergebnis einer vollständigen KI-Transformation.",
+        "deliverables": []
+      },
+      "notes": "\"Die Empfehlung Umfassend ist keine Upselling-Taktik. Die Doppelrolle Anwender+Anbieter macht die volle Tiefe sinnvoll. Wenn Budget ein Thema ist, ist Professionell ein guter Kompromiss.\""
+    },
+    {
+      "id": "28-unser-fazit",
+      "number": 28,
+      "title": "Unser Fazit",
+      "displayTitle": "Unser Fazit",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Abschluss",
+      "content": {
+        "rawMarkdown": "- **1. Die Basis ist stark.** 91,5% KI-Nutzung, technische Infrastruktur steht, Veränderungsbereitschaft ist hoch. Das ist ein Startkapital, das viele KMU nicht haben.\n- **2. Steuerung muss jetzt nachziehen.** Die Werkzeuge sind da, die Leitplanken fehlen. Ohne Struktur wird aus Dynamik Risiko – die Schadensfälle zeigen es bereits.\n- **3. Das Zeitfenster ist jetzt.** 68% wollen mehr KI bei klarem Rahmen. DORA und EU AI Act setzen den regulatorischen Rahmen. Wer jetzt handelt, nutzt beides – Wettbewerbsvorteil und Compliance.\n\n**Warum sich strukturierte KI-Einführung lohnt:**\n- **+55% schneller** entwickeln: Aufgaben mit KI-Tools in der Hälfte der Zeit (GitHub Research)\n- **2× Umsatzwachstum** bei Unternehmen mit strukturierter KI-Steuerung vs. Nachzügler (BCG 2025)\n- **40% Produktivität** verschenkt, wer KI unstrukturiert einführt statt mit Schulung und Governance (EY 2025)\n- **90% zufriedenere Entwickler** mit KI-Tools – Talent-Bindung und Arbeitgeberattraktivität steigen (GitHub/Accenture)\n- **DORA-Pflicht:** Finanzinstitute prüfen KI-Governance ihrer IT-Dienstleister – Compliance wird zum Vertriebsvorteil",
+        "deliverables": [
+          {
+            "title": "Warum sich strukturierte KI-Einführung lohnt:",
+            "description": "-"
+          }
+        ]
+      },
+      "notes": "\"Zahlen für Rückfragen: 55% schnellere Aufgabenerledigung mit KI-Coding-Tools (GitHub Research). KI-Leader: 1,7× Umsatzwachstum, 3,6× Aktionärsrendite (BCG Sept. 2025). 40% Produktivität geht verloren bei unstrukturierter KI-Einführung (EY 2025, 15.000 MA, 29 Länder). 90% der Entwickler zufriedener mit KI-Tools (GitHub/Accenture). 78% der MA nutzen unautorisierte KI-Tools – Shadow AI ist die Norm (WalkMe/SAP 2025). DORA: 22.000 Finanzunternehmen prüfen IT-Dienstleister auf KI-Governance. 84% aller Entwickler nutzen KI-Tools oder planen es (Stack Overflow 2025). 54% der Führungskräfte sehen ihr Unternehmen ohne skalierte KI bis 2030 als nicht wettbewerbsfähig.\""
+    },
+    {
+      "id": "29-naechste-schritte",
+      "number": 29,
+      "title": "Nächste Schritte",
+      "displayTitle": "Nächste Schritte",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Abschluss",
+      "content": {
+        "rawMarkdown": "- **Kurzfristig:** Shadow-AI-Leitplanke – Kommunikation im nächsten Meeting (mit unserer Unterstützung bei der Formulierung)\n- **Kurzfristig:** Code-Review-Pflicht für KI-Code – Abstimmung mit IT-Leitung\n- **Nach dem Termin:** Wir senden Ihnen das finale Angebot auf Basis des gewählten Pakets\n- **Nächster Schritt:** Start M2 – KI-Strategie und Use-Cases (Terminvorschlag folgt mit Angebot)\n- **Unterlagen:** Standortbestimmung wird nach heutigem Feedback finalisiert und zugestellt\n- **Kontakt:** Michael Muth | Tricept Consulting | michael.muth@tricept-consulting.de",
+        "deliverables": []
+      },
+      "notes": "\"Wir brauchen heute keine finale Entscheidung. Die Sofortmaßnahmen begleiten wir aktiv – Sie müssen das nicht alleine machen.\""
+    },
+    {
+      "id": "30-gemeinsam-struktur-schaffen-pragmatisch-nicht-buerokratisch",
+      "number": 30,
+      "title": "Gemeinsam Struktur schaffen – pragmatisch, nicht bürokratisch",
+      "displayTitle": "Gemeinsam Struktur schaffen – pragmatisch, nicht bürokratisch",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Abschluss",
+      "content": {
+        "rawMarkdown": "Gemeinsam Struktur schaffen – pragmatisch, nicht bürokratisch.\nVielen Dank für Ihr Vertrauen und die offenen Gespräche.\nMichael Muth | Tricept Consulting | michael.muth@tricept-consulting.de"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Eröffnung",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Wo stehen wir?",
+      "startSlide": 4
+    },
+    {
+      "id": "block-2",
+      "title": "Stärken und Handlungsfelder",
+      "startSlide": 8
+    },
+    {
+      "id": "block-3",
+      "title": "Shadow AI und Regulatorik",
+      "startSlide": 10
+    },
+    {
+      "id": "block-4",
+      "title": "Was empfehlen wir?",
+      "startSlide": 14
+    },
+    {
+      "id": "block-5",
+      "title": "Angebot und Investition",
+      "startSlide": 23
+    },
+    {
+      "id": "block-6",
+      "title": "Abschluss",
+      "startSlide": 28
+    }
+  ]
+}

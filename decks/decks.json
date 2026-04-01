@@ -4,125 +4,88 @@
       "slug": "ki-beratung",
       "title": "Strukturierte KI-Einführung für den Mittelstand",
       "description": "Praxisnahe KI-Strategie für KMU - Von der Vision zur Umsetzung",
-      "tags": [
-        "KI",
-        "KMU",
-        "Beratung",
-        "Sales"
-      ],
+      "tags": ["KI", "KMU", "Beratung", "Sales"],
       "customer": null,
       "type": "sales-pitch",
       "cover": null,
       "order": 1,
-      "slideCount": 16,
+      "contentFile": "content.md",
       "updatedAt": "2026-02-23"
     },
     {
       "slug": "tricept-ag",
       "title": "KI-Einführung für die Tricept AG",
       "description": "Strukturierte KI-Strategie für IT-Beratungen im deutschen Mittelstand",
-      "tags": [
-        "KI",
-        "IT-Beratung",
-        "Tricept",
-        "KMU"
-      ],
+      "tags": ["KI", "IT-Beratung", "Tricept", "KMU"],
       "customer": "Tricept AG",
       "type": "kundenspezifisch",
       "cover": null,
       "order": 2,
-      "slideCount": 16,
+      "contentFile": "content.md",
       "updatedAt": "2026-02-23"
     },
     {
       "slug": "angebotspraesentation-m1",
       "title": "Angebotspräsentation KI-Standortbestimmung",
       "description": "Angebotspräsentation für die Tricept AG - KI-Standortbestimmung (Modul 1)",
-      "tags": [
-        "KI",
-        "Angebot",
-        "Tricept",
-        "Standortbestimmung",
-        "M1"
-      ],
+      "tags": ["KI", "Angebot", "Tricept", "Standortbestimmung", "M1"],
       "customer": "Tricept AG",
       "type": "angebot",
       "cover": null,
       "order": 3,
-      "slideCount": 17,
+      "contentFile": "content.md",
+      "navigation": "prezi",
       "updatedAt": "2026-03-05"
-    },
-    {
-      "slug": "steuerungskreis-cos-ki",
-      "title": "Steuerungskreis COS-KI – Status & Zeitplan",
-      "description": "Status Beratungskonzept & aktualisierter Zeitplan für den Steuerungskreis COS-KI",
-      "tags": [
-        "KI",
-        "Steuerungskreis",
-        "Tricept",
-        "Status",
-        "Zeitplan"
-      ],
-      "customer": "Tricept AG",
-      "type": "kundenspezifisch",
-      "cover": null,
-      "order": 4,
-      "slideCount": 16,
-      "updatedAt": "2026-03-09"
     },
     {
       "slug": "ergebnispraesentation-m1",
       "title": "M1 Ergebnispräsentation – KI-Standortbestimmung",
       "description": "Ergebnispräsentation der KI-Standortbestimmung für die Tricept AG (Modul M1)",
-      "tags": [
-        "KI",
-        "Ergebnis",
-        "Tricept",
-        "Standortbestimmung",
-        "M1"
-      ],
+      "tags": ["KI", "Ergebnis", "Tricept", "Standortbestimmung", "M1"],
       "customer": "Tricept AG",
       "type": "kundenspezifisch",
       "cover": null,
       "order": 5,
-      "slideCount": 30,
+      "contentFile": "content.md",
+      "navigation": "prezi",
       "updatedAt": "2026-03-18"
+    },
+    {
+      "slug": "steuerungskreis-cos-ki",
+      "title": "Steuerungskreis COS-KI – Status & Zeitplan",
+      "description": "Status Beratungskonzept & aktualisierter Zeitplan für den Steuerungskreis COS-KI",
+      "tags": ["KI", "Steuerungskreis", "Tricept", "Status", "Zeitplan"],
+      "customer": "Tricept AG",
+      "type": "kundenspezifisch",
+      "cover": null,
+      "order": 4,
+      "contentFile": "content.md",
+      "navigation": "prezi",
+      "updatedAt": "2026-03-09"
     },
     {
       "slug": "m1-kompakt",
       "title": "KI-Standortbestimmung – Kompakt",
       "description": "Kompaktes Verkaufsformat für M1 – als Quick-Pitch oder Leave-Behind nach Erstgespräch",
-      "tags": [
-        "KI",
-        "M1",
-        "Sales",
-        "Kompakt",
-        "Leave-Behind"
-      ],
+      "tags": ["KI", "M1", "Sales", "Kompakt", "Leave-Behind"],
       "customer": null,
       "type": "sales-pitch",
       "cover": null,
       "order": 6,
-      "slideCount": 5,
+      "contentFile": "content.md",
       "updatedAt": "2026-03-24"
     },
     {
       "slug": "ki-chancen-risiken",
       "title": "KI im Mittelstand: Chancen, Risiken und strukturierte Einführung",
       "description": "Faktenbasierte Vertriebspräsentation -- Chancen, Risiken und Vorgehensmodell für KMU-Führungsebene",
-      "tags": [
-        "KI",
-        "KMU",
-        "Sales",
-        "Chancen",
-        "Risiken",
-        "Mittelstand"
-      ],
+      "tags": ["KI", "KMU", "Sales", "Chancen", "Risiken", "Mittelstand"],
       "customer": null,
       "type": "sales-pitch",
       "cover": null,
       "order": 7,
-      "slideCount": 24,
+      "contentFile": "content.md",
+      "navigation": "prezi",
       "updatedAt": "2026-03-31"
     }
   ]
