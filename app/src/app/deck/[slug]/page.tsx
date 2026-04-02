@@ -26,6 +26,8 @@ import preziLayoutM1 from '../../../../content/decks/angebotspraesentation-m1-pr
 import preziLayoutSK from '../../../../content/decks/steuerungskreis-cos-ki-prezi.json'
 import preziLayoutErgebnis from '../../../../content/decks/ergebnispraesentation-m1-prezi.json'
 import preziLayoutChancenRisiken from '../../../../content/decks/ki-chancen-risiken-prezi.json'
+import avaloqMigrationData from '../../../../content/decks/avaloq-migration.json'
+import preziLayoutAvaloq from '../../../../content/decks/avaloq-migration-prezi.json'
 
 interface DeckEntry {
   data: DeckData
@@ -56,6 +58,11 @@ const deckRegistry: Record<string, DeckEntry> = {
     data: kiChancenRisikenData as DeckData,
     navigation: 'prezi',
     preziLayout: preziLayoutChancenRisiken,
+  },
+  'avaloq-migration': {
+    data: avaloqMigrationData as DeckData,
+    navigation: 'prezi',
+    preziLayout: preziLayoutAvaloq,
   },
 }
 

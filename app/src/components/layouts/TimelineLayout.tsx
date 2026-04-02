@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Slide } from '@/lib/content/schema'
 import { IconByKey, IconGlühbirne, IconRefresh } from '../icons/SlideIcons'
+import { usePreziStore } from '@/stores/preziStore'
 
 interface TimelineLayoutProps {
   slide: Slide
@@ -189,7 +190,110 @@ const slideDataById: Record<string, typeof slideData[number]> = {
 
 const agendaColors = ['#001777', '#0078FE', '#059669']
 
+// ── Avaloq Migration: KI Process Flow ──
+function KiMigrationFlow({ isActive }: { isActive: boolean }) {
+  const goToFrame = usePreziStore((s) => s.goToFrame)
+  const phases = [
+    { num: '1', title: 'Schema-Analyse', desc: 'Avaloq-Schemas & Zielstrukturen analysieren', icon: 'search', ki: true, frame: 9 },
+    { num: '2', title: 'Mapping', desc: 'Quellfelder → Zielfelder automatisch zuordnen', icon: 'daten', ki: true, frame: 9 },
+    { num: '3', title: 'Tool-Generierung', desc: 'Migrationsskripte & Recon-Tools erzeugen', icon: 'zahnrad', ki: true, frame: 9 },
+    { num: '4', title: 'Migration', desc: 'Generierte Tools laufen auf Produktivdaten', icon: 'rakete', ki: false, frame: 10 },
+    { num: '5', title: 'Validierung', desc: 'Recon-Tools prüfen Vollständigkeit & Korrektheit', icon: 'schild', ki: false, frame: 10 },
+  ]
+
+  return (
+    <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000039] font-headline mb-4 text-center"
+      >KI-gestützte Migration</motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+        className="text-lg text-[#000039]/50 mb-8 text-center">
+        KI baut die Werkzeuge – die Migration läuft ohne KI
+      </motion.p>
+
+      {/* Phase flow */}
+      <div className="flex items-start gap-0 max-w-[1100px] w-full">
+        {phases.map((phase, i) => {
+          const bg = phase.ki ? 'from-[#001777] to-[#0078FE]' : 'from-emerald-600 to-emerald-700'
+          const badge = phase.ki ? { text: 'KI', bg: 'bg-[#17f0f0] text-[#000039]' } : { text: 'Tool', bg: 'bg-emerald-100 text-emerald-800' }
+          const isLast = i === phases.length - 1
+
+          return (
+            <React.Fragment key={i}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.2 + i * 0.12, duration: 0.45 }}
+                className="flex-1 flex flex-col items-center"
+              >
+                {/* Badge */}
+                <div className={`text-xs font-bold px-2.5 py-0.5 rounded-full mb-2 ${badge.bg}`}>{badge.text}</div>
+
+                {/* Circle with number (clickable) */}
+                <div
+                  className={`w-16 h-16 rounded-full bg-gradient-to-br ${bg} flex items-center justify-center shadow-lg mb-3 cursor-pointer hover:scale-110 transition-transform duration-200`}
+                  onClick={() => goToFrame(phase.frame)}
+                >
+                  <IconByKey icon={phase.icon} size={26} color="white" />
+                </div>
+
+                {/* Title */}
+                <h4 className="text-base font-bold text-[#000039] text-center mb-1">{phase.title}</h4>
+
+                {/* Description */}
+                <p className="text-sm text-[#000039]/50 text-center leading-snug max-w-[160px]">{phase.desc}</p>
+              </motion.div>
+
+              {/* Arrow connector */}
+              {!isLast && (
+                <motion.div
+                  initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}}
+                  transition={{ delay: 0.35 + i * 0.12 }}
+                  className="flex items-center mt-8 -mx-2"
+                >
+                  <svg width="40" height="20" viewBox="0 0 40 20">
+                    <path d="M2 10h30m0 0l-6-5m6 5l-6 5" stroke={i < 2 ? '#001777' : i === 2 ? '#059669' : '#059669'} strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </motion.div>
+              )}
+            </React.Fragment>
+          )
+        })}
+      </div>
+
+      {/* Divider line showing KI boundary */}
+      <motion.div initial={{ opacity: 0, scaleX: 0 }} animate={isActive ? { opacity: 1, scaleX: 1 } : {}} transition={{ delay: 0.9, duration: 0.5 }}
+        className="mt-8 max-w-[1100px] w-full flex items-center gap-4">
+        <div className="flex-1 flex items-center">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#001777]/30 to-[#001777]/30" />
+          <span className="text-xs font-bold text-[#001777]/60 px-3 whitespace-nowrap">KI arbeitet nur mit Schemas & anonymisierten Testdaten</span>
+          <div className="flex-1 h-px bg-gradient-to-r from-[#001777]/30 via-emerald-300/30 to-transparent" />
+        </div>
+      </motion.div>
+
+      {/* Bottom callout */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 1.0 }}
+        className="mt-4 bg-gradient-to-r from-[#000039] to-[#001777] rounded-xl px-6 py-3 shadow-lg max-w-[700px]"
+      >
+        <p className="text-white font-semibold text-base text-center flex items-center justify-center gap-2">
+          <IconGlühbirne size={18} color="white" />
+          Keine KI im Produktivbetrieb · Einweg-Tools · Nach Migration entsorgt
+        </p>
+      </motion.div>
+    </div>
+  )
+}
+
 export function TimelineLayout({ slide, isActive = false }: TimelineLayoutProps) {
+  // ── Custom renderer for avaloq-migration KI flow ──
+  if (slide.id === '09-ki-gestuetzte-migration') {
+    return <KiMigrationFlow isActive={isActive} />
+  }
+
   let data: typeof slideDataById[string] | undefined = slideDataById[slide.id]
 
   // Guard against cross-deck ID collisions (e.g., '02-agenda' exists in multiple decks)

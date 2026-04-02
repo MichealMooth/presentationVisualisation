@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Slide } from '@/lib/content/schema'
 import { IconKrone, IconServer, IconUser, IconSchild, IconByKey, IconGlühbirne } from '../icons/SlideIcons'
+import { usePreziStore } from '@/stores/preziStore'
 
 interface MatrixLayoutProps {
   slide: Slide
@@ -181,6 +182,60 @@ const perspektivenData = [
 ]
 
 export function MatrixLayout({ slide, isActive = false }: MatrixLayoutProps) {
+  const goToFrame = usePreziStore((s) => s.goToFrame)
+
+  // ─── Avaloq Migration: Datendomänen Detail ───
+  if (slide.id === '03-avaloq-datendomaenen') {
+    const domains = [
+      { title: 'Kundenstammdaten', prefix: 'bp_', items: ['Personen & Adressen', 'KYC & Steuer', 'Klassifizierung'], icon: 'users', color: '#0078FE' },
+      { title: 'Kontoführung', prefix: 'acct_', items: ['Kontostamm & Salden', 'Positionen & Limiten', 'Berechtigungen'], icon: 'daten', color: '#001777' },
+      { title: 'Zahlungsverkehr', prefix: 'pay_', items: ['SEPA & SWIFT', 'Daueraufträge', 'Sanktionsprüfung'], icon: 'zahnrad', color: '#059669' },
+      { title: 'Wertpapiere', prefix: 'asset_', items: ['Instrumente & Kurse', 'Depots', 'Corporate Actions'], icon: 'trend', color: '#e97316' },
+      { title: 'Transaktionen', prefix: 'trx_', items: ['Buchungen & Gebühren', 'Stornierungen', 'Tagesendverarbeitung'], icon: 'rakete', color: '#DC2626' },
+      { title: 'Konditionen & Reporting', prefix: 'cond_/rpt_', items: ['Zinsen & Gebühren', 'Aufsichtsmeldungen', 'Steuerreporting'], icon: 'waage', color: '#7c3aed' },
+    ]
+    return (
+      <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+        <motion.button initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+          onClick={() => goToFrame(1)}
+          className="absolute top-6 left-8 text-sm font-semibold text-[#000039]/50 hover:text-[#000039] flex items-center gap-1 transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+          Zurück
+        </motion.button>
+        <motion.h2 initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}
+          className="text-3xl md:text-4xl font-bold text-[#000039] font-headline mb-2 text-center">
+          Avaloq – Datendomänen
+        </motion.h2>
+        <motion.p initial={{ opacity: 0 }} animate={isActive ? { opacity: 0.5 } : {}} transition={{ delay: 0.1 }}
+          className="text-base text-[#000039]/50 mb-6">500–600 Tabellen, aufgeteilt in 6 Hauptdomänen</motion.p>
+        <div className="grid grid-cols-3 gap-4 max-w-[1050px] w-full">
+          {domains.map((d, i) => (
+            <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 + i * 0.07 }}
+              className="bg-white rounded-2xl border border-gray-100 shadow-md p-4">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: d.color + '15' }}>
+                  <IconByKey icon={d.icon} size={20} color={d.color} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#000039] text-sm">{d.title}</h4>
+                  <code className="text-xs text-[#000039]/40 font-mono">{d.prefix}</code>
+                </div>
+              </div>
+              <ul className="space-y-1">
+                {d.items.map((item, j) => (
+                  <li key={j} className="text-sm text-[#000039]/60 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: d.color + '50' }} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
   // ─── Folie 14/15: Vier Perspektiven (mit Interview-Details) ───
   if (slide.id === '14-vier-perspektiven' || slide.id === '15-vier-perspektiven') {
     return (

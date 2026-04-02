@@ -1,0 +1,388 @@
+{
+  "title": "KI-gestützte Systemmigration",
+  "description": "Von Avaloq zu einer modularen Bankenarchitektur – Migration mit KI-Tooling",
+  "slides": [
+    {
+      "id": "01-ki-gestuetzte-systemmigration",
+      "number": 1,
+      "title": "KI-gestützte Systemmigration",
+      "displayTitle": "KI-gestützte Systemmigration",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Einstieg",
+      "content": {
+        "rawMarkdown": "KI-gestützte Systemmigration\nVon Avaloq zu einer modularen Bankenarchitektur"
+      },
+      "notes": "Begrüßung. Wir zeigen heute unseren Ansatz, wie die Avaloq-Ablösung mithilfe von KI-Tooling effizient und sicher umgesetzt werden kann. Nicht ob, sondern wie."
+    },
+    {
+      "id": "02-heutige-systemlandschaft",
+      "number": 2,
+      "title": "Heutige Systemlandschaft",
+      "displayTitle": "Heutige Systemlandschaft",
+      "layout": "infographic",
+      "theme": "light",
+      "chapter": "Ist-Zustand",
+      "content": {
+        "rawMarkdown": "**Kundenkanäle**\n- Online Banking\n- Mobile App\n- Berater-Arbeitsplatz\n\n**Integrationsschicht**\n- API-Gateway / ESB\n- Batch-Schnittstellen\n\n**Avaloq – Kernbankensystem**\n- Kontoführung | Zahlungsverkehr | Wertpapiere\n- Stammdaten | Meldewesen | Compliance\n- 500–600 Tabellen, monolithisch\n\n**Umsysteme**\n- CRM | Data Warehouse | Treasury | Meldewesen | DMS",
+        "pressurePoints": [
+          {
+            "title": "Kundenkanäle",
+            "items": [
+              "Online Banking",
+              "Mobile App",
+              "Berater-Arbeitsplatz"
+            ]
+          },
+          {
+            "title": "Integrationsschicht",
+            "items": [
+              "API-Gateway / ESB",
+              "Batch-Schnittstellen"
+            ]
+          },
+          {
+            "title": "Avaloq – Kernbankensystem",
+            "items": [
+              "Kontoführung | Zahlungsverkehr | Wertpapiere",
+              "Stammdaten | Meldewesen | Compliance",
+              "500–600 Tabellen, monolithisch"
+            ]
+          },
+          {
+            "title": "Umsysteme",
+            "items": [
+              "CRM | Data Warehouse | Treasury | Meldewesen | DMS"
+            ]
+          }
+        ]
+      },
+      "notes": "Typische Bankenarchitektur. Avaloq sitzt als Herzstück in der Mitte – alles läuft darüber. Das funktioniert, aber alles ist gekoppelt. Änderung an einer Stelle betrifft potenziell das gesamte System."
+    },
+    {
+      "id": "03-avaloq-datendomaenen",
+      "number": 3,
+      "title": "Avaloq – Datendomänen",
+      "displayTitle": "Avaloq – Datendomänen",
+      "layout": "matrix",
+      "theme": "light",
+      "chapter": "Ist-Zustand",
+      "content": {
+        "rawMarkdown": "- **Kundenstammdaten** -- Personen, Adressen, KYC, Steuer, Klassifizierung\n- **Kontoführung** -- Kontostamm, Salden, Positionen, Limiten\n- **Zahlungsverkehr** -- SEPA, SWIFT, Daueraufträge, Sanktionsprüfung\n- **Wertpapiere** -- Instrumente, Kurse, Depots, Corporate Actions\n- **Transaktionen** -- Buchungen, Gebühren, Tagesendverarbeitung\n- **Konditionen & Reporting** -- Zinsen, Gebührenmodelle, Aufsichtsmeldungen",
+        "matrix": []
+      },
+      "notes": "Das steckt alles in Avaloq. Jede Domäne hat dutzende bis hunderte Tabellen. Zusammen 500–600 Tabellen, die sauber aufgeteilt und überführt werden müssen – mit allen Abhängigkeiten und Geschäftsregeln."
+    },
+    {
+      "id": "04-migrationsumfang",
+      "number": 4,
+      "title": "Migrationsumfang",
+      "displayTitle": "Migrationsumfang",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "Ist-Zustand",
+      "content": {
+        "rawMarkdown": "- **500–600 Tabellen** -- Über Jahrzehnte gewachsen, komplex vernetzt\n- **Dutzende Domänen** -- Konten, Zahlungen, Wertpapiere, Stammdaten, Reporting\n- **3 Zielsysteme** -- Jede Tabelle muss zugeordnet werden\n- **Tausende Feld-Mappings** -- Quellfelder → Zielfelder mit Transformationsregeln",
+        "deliverables": []
+      },
+      "notes": "Das ist die Kernherausforderung: Die schiere Menge. Klassisch sitzt ein großes Team monatelang an Mapping-Tabellen. Unser Ansatz: KI übernimmt diese Routinearbeit."
+    },
+    {
+      "id": "05-modulare-zielarchitektur",
+      "number": 5,
+      "title": "Modulare Zielarchitektur",
+      "displayTitle": "Modulare Zielarchitektur",
+      "layout": "infographic",
+      "theme": "light",
+      "chapter": "Soll-Zustand",
+      "content": {
+        "rawMarkdown": "**Kundenkanäle**\n- Online Banking\n- Mobile App\n- Berater-Arbeitsplatz\n\n**Integrationsschicht**\n- API-Gateway\n- Event-Streaming\n\n**INUS**\n- Kontoführung\n- Zahlungsverkehr\n\n**Stammdatensystem**\n- Kundenstammdaten\n- Referenzdaten\n\n**Upquest**\n- Wertpapiere\n- Depotführung\n\n**Umsysteme**\n- CRM | Data Warehouse | Treasury | Meldewesen | DMS",
+        "pressurePoints": [
+          {
+            "title": "Kundenkanäle",
+            "items": [
+              "Online Banking",
+              "Mobile App",
+              "Berater-Arbeitsplatz"
+            ]
+          },
+          {
+            "title": "Integrationsschicht",
+            "items": [
+              "API-Gateway",
+              "Event-Streaming"
+            ]
+          },
+          {
+            "title": "INUS",
+            "items": [
+              "Kontoführung",
+              "Zahlungsverkehr"
+            ]
+          },
+          {
+            "title": "Stammdatensystem",
+            "items": [
+              "Kundenstammdaten",
+              "Referenzdaten"
+            ]
+          },
+          {
+            "title": "Upquest",
+            "items": [
+              "Wertpapiere",
+              "Depotführung"
+            ]
+          },
+          {
+            "title": "Umsysteme",
+            "items": [
+              "CRM | Data Warehouse | Treasury | Meldewesen | DMS"
+            ]
+          }
+        ]
+      },
+      "notes": "Gleiche Architektur, aber statt einem Monolithen drei spezialisierte Systeme. Jedes macht eine Sache richtig gut. Integration über APIs und Event-Streaming statt über eine gemeinsame Datenbank. Dazwischen: KI-generierte Migrations-Tools als Brücke."
+    },
+    {
+      "id": "06-inus-konten-zahlungsverkehr",
+      "number": 6,
+      "title": "INUS – Konten & Zahlungsverkehr",
+      "displayTitle": "INUS – Konten & Zahlungsverkehr",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Soll-Zustand",
+      "content": {
+        "rawMarkdown": "**Vorher:**\n- Kontoführung (acct_)\n- Zahlungsverkehr (pay_)\n- Transaktionen (trx_)\n- Konditionen (cond_)\n\n**Jetzt:**\n- Kontomanagement\n- Payment Processing\n- Buchungsmaschine\n- Produktkonfiguration",
+        "comparison": [
+          {
+            "title": "Vorher:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Kontoführung (acct_)",
+              "Zahlungsverkehr (pay_)",
+              "Transaktionen (trx_)",
+              "Konditionen (cond_)"
+            ]
+          },
+          {
+            "title": "Jetzt:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Kontomanagement",
+              "Payment Processing",
+              "Buchungsmaschine",
+              "Produktkonfiguration"
+            ]
+          }
+        ]
+      },
+      "notes": "INUS übernimmt den größten Tabellenanteil – alles rund um Konten und Zahlungen. KI analysiert die Avaloq-Quellstrukturen und generiert die Mapping-Skripte automatisch."
+    },
+    {
+      "id": "07-stammdatensystem",
+      "number": 7,
+      "title": "Stammdatensystem",
+      "displayTitle": "Stammdatensystem",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Soll-Zustand",
+      "content": {
+        "rawMarkdown": "**Vorher:**\n- Kundenstammdaten (bp_)\n- Referenzdaten\n- Klassifizierungen\n- KYC / Compliance-Daten\n\n**Jetzt:**\n- Kundenmanagement\n- Referenzdatenbank\n- Taxonomie-Service\n- Compliance-Datenhaltung",
+        "comparison": [
+          {
+            "title": "Vorher:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Kundenstammdaten (bp_)",
+              "Referenzdaten",
+              "Klassifizierungen",
+              "KYC / Compliance-Daten"
+            ]
+          },
+          {
+            "title": "Jetzt:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Kundenmanagement",
+              "Referenzdatenbank",
+              "Taxonomie-Service",
+              "Compliance-Datenhaltung"
+            ]
+          }
+        ]
+      },
+      "notes": "Stammdaten sind oft die schwierigste Domäne – Datenqualität, Dubletten, historisch gewachsene Strukturen. Genau hier spielt KI ihre Stärke aus: Muster erkennen, Regeln ableiten, Qualitätschecks generieren."
+    },
+    {
+      "id": "08-upquest-wertpapiere",
+      "number": 8,
+      "title": "Upquest – Wertpapiere",
+      "displayTitle": "Upquest – Wertpapiere",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "Soll-Zustand",
+      "content": {
+        "rawMarkdown": "**Vorher:**\n- Wertpapiere (asset_)\n- Depotführung\n- Orders (ord_)\n- Corporate Actions\n\n**Jetzt:**\n- Instrumentenverwaltung\n- Depotmanagement\n- Order Management\n- Event Processing",
+        "comparison": [
+          {
+            "title": "Vorher:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Wertpapiere (asset_)",
+              "Depotführung",
+              "Orders (ord_)",
+              "Corporate Actions"
+            ]
+          },
+          {
+            "title": "Jetzt:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Instrumentenverwaltung",
+              "Depotmanagement",
+              "Order Management",
+              "Event Processing"
+            ]
+          }
+        ]
+      },
+      "notes": "Upquest übernimmt alles rund um Wertpapiere. Besonders komplex: Corporate Actions und historische Bestände. Auch hier generiert KI die Überführungslogik."
+    },
+    {
+      "id": "09-ki-gestuetzte-migration",
+      "number": 9,
+      "title": "KI-gestützte Migration",
+      "displayTitle": "KI-gestützte Migration",
+      "layout": "timeline",
+      "theme": "light",
+      "chapter": "KI-Ansatz",
+      "content": {
+        "rawMarkdown": "| Phase | Schritt | Beschreibung |\n| 1 | Schema-Analyse | KI analysiert Avaloq-Schemas und Zielstrukturen |\n| 2 | Mapping | Automatische Zuordnung Quellfelder → Zielfelder |\n| 3 | Tool-Generierung | Migrationsskripte und Recon-Tools werden erzeugt |\n| 4 | Migration | Generierte Tools laufen ohne KI auf Produktivdaten |\n| 5 | Validierung | Recon-Tools prüfen Vollständigkeit und Korrektheit |",
+        "timeline": [
+          {
+            "id": "2",
+            "title": "Mapping",
+            "description": "Automatische Zuordnung Quellfelder → Zielfelder",
+            "result": ""
+          },
+          {
+            "id": "3",
+            "title": "Tool-Generierung",
+            "description": "Migrationsskripte und Recon-Tools werden erzeugt",
+            "result": ""
+          },
+          {
+            "id": "4",
+            "title": "Migration",
+            "description": "Generierte Tools laufen ohne KI auf Produktivdaten",
+            "result": ""
+          },
+          {
+            "id": "5",
+            "title": "Validierung",
+            "description": "Recon-Tools prüfen Vollständigkeit und Korrektheit",
+            "result": ""
+          }
+        ]
+      },
+      "notes": "KI arbeitet nur in Phase 1–3, ausschließlich mit Schemas und anonymisierten Testdaten. Ab Phase 4 laufen nur die generierten Tools – ohne KI, ohne Zugriff auf echte Daten. Nach erfolgreicher Migration werden die Tools entsorgt."
+    },
+    {
+      "id": "10-was-die-ki-bekommt-und-was-sie-liefert",
+      "number": 10,
+      "title": "Was die KI bekommt – und was sie liefert",
+      "displayTitle": "Was die KI bekommt – und was sie liefert",
+      "layout": "comparison",
+      "theme": "light",
+      "chapter": "KI-Ansatz",
+      "content": {
+        "rawMarkdown": "**Vorher:**\n- Avaloq-Datenbankschemas (DDL, Metadaten)\n- Zielstrukturen der neuen Systeme\n- Geschäftsregeln und Transformationslogik\n- Anonymisierte Testdatensätze\n\n**Jetzt:**\n- Feld-für-Feld-Mapping-Dokumentation\n- SQL/ETL-Migrationsskripte\n- Transformationsfunktionen\n- Testfälle und Validierungsregeln",
+        "comparison": [
+          {
+            "title": "Vorher:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Avaloq-Datenbankschemas (DDL, Metadaten)",
+              "Zielstrukturen der neuen Systeme",
+              "Geschäftsregeln und Transformationslogik",
+              "Anonymisierte Testdatensätze"
+            ]
+          },
+          {
+            "title": "Jetzt:",
+            "description": "",
+            "type": "neutral",
+            "items": [
+              "Feld-für-Feld-Mapping-Dokumentation",
+              "SQL/ETL-Migrationsskripte",
+              "Transformationsfunktionen",
+              "Testfälle und Validierungsregeln"
+            ]
+          }
+        ]
+      },
+      "notes": "Die KI bekommt nie echte Kundendaten. Sie arbeitet auf Strukturebene: Tabellendefinitionen, Spaltentypen, Beziehungen, Geschäftsregeln. Daraus generiert sie die Skripte, die dann auf den echten Daten laufen."
+    },
+    {
+      "id": "11-recon-tools-qualitaetssicherung",
+      "number": 11,
+      "title": "Recon-Tools – Qualitätssicherung",
+      "displayTitle": "Recon-Tools – Qualitätssicherung",
+      "layout": "bullets",
+      "theme": "light",
+      "chapter": "KI-Ansatz",
+      "content": {
+        "rawMarkdown": "- **Vollständigkeit** -- Alle Datensätze migriert? Zählung Quelle vs. Ziel\n- **Wertabgleich** -- Salden, Bestände, Referenzdaten identisch?\n- **Beziehungen** -- Verknüpfungen zwischen Entitäten korrekt übernommen?\n- **Geschäftslogik** -- Regeln in den neuen Systemen konsistent?\n- **Differenzreport** -- Automatische Abweichungsberichte",
+        "deliverables": []
+      },
+      "notes": "Recon-Tools sind genauso wichtig wie die Migrationsskripte. Auch diese generiert die KI – basierend auf Schemas und Geschäftsregeln. Sie liefern nach jeder Migration einen klaren Report: Was passt, was weicht ab, wo muss nachgebessert werden."
+    },
+    {
+      "id": "12-naechste-schritte",
+      "number": 12,
+      "title": "Nächste Schritte",
+      "displayTitle": "Nächste Schritte",
+      "layout": "hero",
+      "theme": "dark",
+      "chapter": "Abschluss",
+      "content": {
+        "rawMarkdown": "Nächste Schritte\nGemeinsam die Migration gestalten"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "block-0",
+      "title": "Einstieg",
+      "startSlide": 1
+    },
+    {
+      "id": "block-1",
+      "title": "Ist-Zustand",
+      "startSlide": 2
+    },
+    {
+      "id": "block-2",
+      "title": "Soll-Zustand",
+      "startSlide": 5
+    },
+    {
+      "id": "block-3",
+      "title": "KI-Ansatz",
+      "startSlide": 9
+    },
+    {
+      "id": "block-4",
+      "title": "Abschluss",
+      "startSlide": 12
+    }
+  ]
+}

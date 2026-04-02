@@ -15,6 +15,7 @@ import steuerungskreisData from '../../../../../content/decks/steuerungskreis-co
 import ergebnisM1Data from '../../../../../content/decks/ergebnispraesentation-m1.json'
 import m1KompaktData from '../../../../../content/decks/m1-kompakt.json'
 import kiChancenRisikenData from '../../../../../content/decks/ki-chancen-risiken.json'
+import avaloqMigrationData from '../../../../../content/decks/avaloq-migration.json'
 
 const deckRegistry: Record<string, DeckData> = {
   'ki-beratung': kiBeratungData as DeckData,
@@ -24,6 +25,7 @@ const deckRegistry: Record<string, DeckData> = {
   'ergebnispraesentation-m1': ergebnisM1Data as DeckData,
   'm1-kompakt': m1KompaktData as DeckData,
   'ki-chancen-risiken': kiChancenRisikenData as DeckData,
+  'avaloq-migration': avaloqMigrationData as DeckData,
 }
 
 const VIRTUAL_W = 1920

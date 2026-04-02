@@ -1,0 +1,44 @@
+{
+  "navigation": "prezi",
+  "baseWidth": 1920,
+  "baseHeight": 1080,
+  "topics": [
+    { "id": "einstieg",      "title": "Einstieg",        "color": "#001777", "x": 0,     "y": 400 },
+    { "id": "ist-zustand",   "title": "Ist-Zustand",     "color": "#001777", "x": -1400, "y": 2800 },
+    { "id": "soll-zustand",  "title": "Soll-Zustand",    "color": "#0078FE", "x": 1400,  "y": 6200 },
+    { "id": "ki-ansatz",     "title": "KI-Ansatz",       "color": "#059669", "x": -1400, "y": 9400 },
+    { "id": "abschluss",     "title": "Abschluss",       "color": "#001777", "x": 0,     "y": 12200 }
+  ],
+  "frames": [
+    { "slideIndex": 0,  "x": 0,     "y": 0,      "scale": 1,    "topic": "einstieg" },
+
+    { "slideIndex": 1,  "x": 0,     "y": 2800,   "scale": 1.1,  "topic": "ist-zustand" },
+    { "slideIndex": 2,  "x": -2800, "y": 2200,   "scale": 0.85, "topic": "ist-zustand", "hidden": true },
+    { "slideIndex": 3,  "x": -2800, "y": 3400,   "scale": 0.85, "topic": "ist-zustand", "hidden": true },
+
+    { "slideIndex": 4,  "x": 0,     "y": 5800,   "scale": 1.1,  "topic": "soll-zustand" },
+    { "slideIndex": 5,  "x": 2800,  "y": 5000,   "scale": 0.85, "topic": "soll-zustand", "hidden": true },
+    { "slideIndex": 6,  "x": 2800,  "y": 6200,   "scale": 0.85, "topic": "soll-zustand", "hidden": true },
+    { "slideIndex": 7,  "x": 2800,  "y": 7400,   "scale": 0.85, "topic": "soll-zustand", "hidden": true },
+
+    { "slideIndex": 8,  "x": 0,     "y": 9400,   "scale": 1.1,  "topic": "ki-ansatz" },
+    { "slideIndex": 9,  "x": -2800, "y": 8800,   "scale": 0.85, "topic": "ki-ansatz", "hidden": true },
+    { "slideIndex": 10, "x": -2800, "y": 10000,  "scale": 0.85, "topic": "ki-ansatz", "hidden": true },
+
+    { "slideIndex": 11, "x": 0,     "y": 12200,  "scale": 1,    "topic": "abschluss" }
+  ],
+  "links": [
+    { "from": 1, "to": 2 },
+    { "from": 1, "to": 3 },
+    { "from": 4, "to": 5 },
+    { "from": 4, "to": 6 },
+    { "from": 4, "to": 7 },
+    { "from": 8, "to": 9 },
+    { "from": 8, "to": 10 }
+  ],
+  "overview": {
+    "x": 0,
+    "y": 6100,
+    "scale": 9
+  }
+}

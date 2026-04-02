@@ -14,9 +14,22 @@ import { DeckData } from '@/lib/content/schema'
 import kiBeratungData from '../../../../../content/decks/ki-beratung.json'
 import triceptAgData from '../../../../../content/decks/tricept-ag.json'
 
+import angebotM1Data from '../../../../../content/decks/angebotspraesentation-m1.json'
+import steuerungskreisData from '../../../../../content/decks/steuerungskreis-cos-ki.json'
+import ergebnisM1Data from '../../../../../content/decks/ergebnispraesentation-m1.json'
+import m1KompaktData from '../../../../../content/decks/m1-kompakt.json'
+import kiChancenRisikenData from '../../../../../content/decks/ki-chancen-risiken.json'
+import avaloqMigrationData from '../../../../../content/decks/avaloq-migration.json'
+
 const deckRegistry: Record<string, DeckData> = {
   'ki-beratung': kiBeratungData as DeckData,
   'tricept-ag': triceptAgData as DeckData,
+  'angebotspraesentation-m1': angebotM1Data as DeckData,
+  'steuerungskreis-cos-ki': steuerungskreisData as DeckData,
+  'ergebnispraesentation-m1': ergebnisM1Data as DeckData,
+  'm1-kompakt': m1KompaktData as DeckData,
+  'ki-chancen-risiken': kiChancenRisikenData as DeckData,
+  'avaloq-migration': avaloqMigrationData as DeckData,
 }
 
 export default function PresenterPage() {

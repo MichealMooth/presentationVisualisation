@@ -119,6 +119,91 @@ export function BulletsLayout({ slide, isActive = false }: BulletsLayoutProps) {
   const goToFrame = usePreziStore((s) => s.goToFrame)
   const slideId = slide.id
 
+  // ─── Avaloq Migration: Migrationsumfang ───
+  if (slideId === '04-migrationsumfang') {
+    const stats = [
+      { value: '500–600', label: 'Tabellen', desc: 'Über Jahrzehnte gewachsen, komplex vernetzt', icon: 'daten', color: '#001777' },
+      { value: '6+', label: 'Domänen', desc: 'Konten, Zahlungen, Wertpapiere, Stammdaten, Reporting', icon: 'strategie', color: '#0078FE' },
+      { value: '3', label: 'Zielsysteme', desc: 'Jede Tabelle muss dem richtigen System zugeordnet werden', icon: 'kompass', color: '#059669' },
+      { value: '1000+', label: 'Feld-Mappings', desc: 'Quellfelder → Zielfelder mit Transformationsregeln', icon: 'zahnrad', color: '#e97316' },
+    ]
+    return (
+      <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+        <motion.button initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+          onClick={() => goToFrame(1)}
+          className="absolute top-6 left-8 text-sm font-semibold text-[#000039]/50 hover:text-[#000039] flex items-center gap-1 transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+          Zurück
+        </motion.button>
+        <motion.h2 initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000039] font-headline mb-8 text-center">
+          Migrationsumfang
+        </motion.h2>
+        <div className="grid grid-cols-2 gap-5 max-w-[900px] w-full">
+          {stats.map((s, i) => (
+            <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 + i * 0.1 }}
+              className="bg-white rounded-2xl border border-gray-100 shadow-lg p-6 flex items-start gap-4">
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: s.color + '15' }}>
+                <IconByKey icon={s.icon} size={26} color={s.color} />
+              </div>
+              <div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-extrabold" style={{ color: s.color }}>{s.value}</span>
+                  <span className="text-lg font-bold text-[#000039]/70">{s.label}</span>
+                </div>
+                <p className="text-sm text-[#000039]/50 mt-1">{s.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // ─── Avaloq Migration: Recon-Tools ───
+  if (slideId === '11-recon-tools-qualitaetssicherung') {
+    const checks = [
+      { title: 'Vollständigkeit', desc: 'Alle Datensätze migriert? Zählung Quelle vs. Ziel', icon: 'check', color: '#059669' },
+      { title: 'Wertabgleich', desc: 'Salden, Bestände, Referenzdaten identisch?', icon: 'daten', color: '#0078FE' },
+      { title: 'Beziehungen', desc: 'Verknüpfungen zwischen Entitäten korrekt übernommen?', icon: 'users', color: '#001777' },
+      { title: 'Geschäftslogik', desc: 'Regeln in den neuen Systemen konsistent?', icon: 'waage', color: '#e97316' },
+      { title: 'Differenzreport', desc: 'Automatische Abweichungsberichte mit Drill-Down', icon: 'diagramm', color: '#DC2626' },
+    ]
+    return (
+      <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+        <motion.button initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+          onClick={() => goToFrame(8)}
+          className="absolute top-6 left-8 text-sm font-semibold text-[#000039]/50 hover:text-[#000039] flex items-center gap-1 transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+          Zurück
+        </motion.button>
+        <motion.h2 initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000039] font-headline mb-2 text-center">
+          Recon-Tools – Qualitätssicherung
+        </motion.h2>
+        <motion.p initial={{ opacity: 0 }} animate={isActive ? { opacity: 0.5 } : {}} transition={{ delay: 0.1 }}
+          className="text-base text-[#000039]/50 mb-6">KI-generierte Prüfwerkzeuge für jede Migrationsphase</motion.p>
+        <div className="space-y-3 max-w-[800px] w-full">
+          {checks.map((c, i) => (
+            <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }}
+              className="flex items-center gap-4 bg-white rounded-xl border border-gray-100 shadow-md px-5 py-4">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.color + '15' }}>
+                <IconByKey icon={c.icon} size={22} color={c.color} />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-bold text-[#000039] text-base">{c.title}</h4>
+                <p className="text-sm text-[#000039]/50">{c.desc}</p>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                <IconCheck size={16} color="#059669" />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
   // ─── Folie 3: Rückblick ───
   if (slideId === '03-rueckblick-ersttermin') {
     return (

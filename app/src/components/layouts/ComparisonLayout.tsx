@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { Slide } from '@/lib/content/schema'
-import { IconWarnung, IconCheck, IconSchild, IconRakete } from '../icons/SlideIcons'
+import { IconWarnung, IconCheck, IconSchild, IconRakete, IconByKey } from '../icons/SlideIcons'
+import { usePreziStore } from '@/stores/preziStore'
 
 interface ComparisonLayoutProps {
   slide: Slide
@@ -115,7 +116,206 @@ function parseRawComparison(raw: string): { columns: Array<{ title: string; item
   return { columns, intro }
 }
 
+// ── Avaloq Migration: System Mapping Sub-Slides ──
+const systemMappings: Record<string, {
+  name: string; color: string; icon: string; backFrame: number
+  mappings: Array<{ source: string; sourcePrefix: string; target: string }>
+  kiTools: string[]
+}> = {
+  '06-inus-konten-zahlungsverkehr': {
+    name: 'INUS', color: '#0078FE', icon: 'daten', backFrame: 4,
+    mappings: [
+      { source: 'Kontoführung', sourcePrefix: 'acct_', target: 'Kontomanagement' },
+      { source: 'Zahlungsverkehr', sourcePrefix: 'pay_', target: 'Payment Processing' },
+      { source: 'Transaktionen', sourcePrefix: 'trx_', target: 'Buchungsmaschine' },
+      { source: 'Konditionen', sourcePrefix: 'cond_', target: 'Produktkonfiguration' },
+    ],
+    kiTools: ['Feld-Mapping-Skripte', 'Transformationsregeln', 'Validierungsroutinen'],
+  },
+  '07-stammdatensystem': {
+    name: 'Stammdatensystem', color: '#059669', icon: 'users', backFrame: 4,
+    mappings: [
+      { source: 'Kundenstammdaten', sourcePrefix: 'bp_', target: 'Kundenmanagement' },
+      { source: 'Referenzdaten', sourcePrefix: 'ref_', target: 'Referenzdatenbank' },
+      { source: 'Klassifizierungen', sourcePrefix: 'classif_', target: 'Taxonomie-Service' },
+      { source: 'KYC / Compliance', sourcePrefix: 'kyc_', target: 'Compliance-Datenhaltung' },
+    ],
+    kiTools: ['Deduplizierungsregeln', 'Datenqualitäts-Checks', 'Mapping-Skripte'],
+  },
+  '08-upquest-wertpapiere': {
+    name: 'Upquest', color: '#e97316', icon: 'trend', backFrame: 4,
+    mappings: [
+      { source: 'Wertpapiere', sourcePrefix: 'asset_', target: 'Instrumentenverwaltung' },
+      { source: 'Depotführung', sourcePrefix: 'depot_', target: 'Depotmanagement' },
+      { source: 'Orders', sourcePrefix: 'ord_', target: 'Order Management' },
+      { source: 'Corporate Actions', sourcePrefix: 'ca_', target: 'Event Processing' },
+    ],
+    kiTools: ['Mapping-Skripte', 'Corporate-Actions-Überleitung', 'Bestandsabgleich'],
+  },
+}
+
+function SystemMappingSlide({ config, isActive }: { config: typeof systemMappings[string]; isActive: boolean }) {
+  const goToFrame = usePreziStore((s) => s.goToFrame)
+  return (
+    <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+      {/* Back button */}
+      <motion.button
+        initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+        onClick={() => goToFrame(config.backFrame)}
+        className="absolute top-6 left-8 text-sm font-semibold text-[#000039]/50 hover:text-[#000039] flex items-center gap-1 transition-colors"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+        Zurück zur Übersicht
+      </motion.button>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+        className="text-3xl md:text-4xl font-bold text-[#000039] font-headline mb-2 text-center"
+      >{config.name}</motion.h2>
+      <motion.p initial={{ opacity: 0 }} animate={isActive ? { opacity: 0.5 } : {}} transition={{ delay: 0.1 }}
+        className="text-base text-[#000039]/50 mb-6">Avaloq → {config.name} Mapping</motion.p>
+
+      {/* Mapping table */}
+      <div className="max-w-[900px] w-full space-y-2.5">
+        {/* Header */}
+        <motion.div initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.15 }}
+          className="grid grid-cols-[1fr_40px_1fr] gap-3 px-4 text-xs font-bold uppercase tracking-wider text-[#000039]/40">
+          <span>Avaloq Quelle</span><span /><span>{config.name} Ziel</span>
+        </motion.div>
+
+        {config.mappings.map((m, i) => (
+          <motion.div key={i}
+            initial={{ opacity: 0, x: -20 }} animate={isActive ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.2 + i * 0.08 }}
+            className="grid grid-cols-[1fr_40px_1fr] gap-3 items-center"
+          >
+            {/* Source */}
+            <div className="bg-[#000039]/5 border border-[#000039]/10 rounded-xl px-4 py-3 flex items-center gap-3">
+              <code className="text-xs text-[#001777]/60 bg-[#001777]/8 px-2 py-0.5 rounded font-mono">{m.sourcePrefix}</code>
+              <span className="font-semibold text-[#000039] text-sm">{m.source}</span>
+            </div>
+            {/* Arrow */}
+            <div className="flex justify-center">
+              <svg width="28" height="16" viewBox="0 0 28 16"><path d="M2 8h20m0 0l-5-4m5 4l-5 4" stroke={config.color} strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            {/* Target */}
+            <div className="rounded-xl px-4 py-3 flex items-center gap-3 border-2" style={{ borderColor: config.color + '40', backgroundColor: config.color + '08' }}>
+              <div className="w-7 h-7 rounded-md flex items-center justify-center" style={{ backgroundColor: config.color + '20' }}>
+                <IconByKey icon={config.icon} size={14} color={config.color} />
+              </div>
+              <span className="font-semibold text-[#000039] text-sm">{m.target}</span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* KI Tools badge row */}
+      <motion.div initial={{ opacity: 0, y: 15 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}
+        className="mt-6 flex items-center gap-2">
+        <span className="text-xs font-bold text-[#000039]/40 uppercase tracking-wider mr-2">KI-generiert:</span>
+        {config.kiTools.map((tool, i) => (
+          <span key={i} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#17f0f0]/15 text-[#001777] border border-[#17f0f0]/30">
+            {tool}
+          </span>
+        ))}
+      </motion.div>
+    </div>
+  )
+}
+
+// ── Avaloq Migration: KI Input/Output Sub-Slide ──
+function KiInputOutputSlide({ isActive }: { isActive: boolean }) {
+  const goToFrame = usePreziStore((s) => s.goToFrame)
+  const inputs = [
+    { label: 'Avaloq-Datenbankschemas', detail: 'DDL, Metadaten', icon: 'daten' },
+    { label: 'Zielstrukturen', detail: 'INUS, Stammdaten, Upquest', icon: 'strategie' },
+    { label: 'Geschäftsregeln', detail: 'Transformationslogik', icon: 'waage' },
+    { label: 'Testdatensätze', detail: 'Anonymisiert', icon: 'schild' },
+  ]
+  const outputs = [
+    { label: 'Mapping-Dokumentation', detail: 'Feld-für-Feld', icon: 'daten' },
+    { label: 'Migrationsskripte', detail: 'SQL / ETL', icon: 'zahnrad' },
+    { label: 'Transformationsfunktionen', detail: 'Typ-Konvertierung, Logik', icon: 'rakete' },
+    { label: 'Testfälle', detail: 'Validierungsregeln', icon: 'check' },
+  ]
+
+  return (
+    <div className="flex flex-col h-full w-full px-10 py-6 justify-center items-center">
+      <motion.button
+        initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
+        onClick={() => goToFrame(8)}
+        className="absolute top-6 left-8 text-sm font-semibold text-[#000039]/50 hover:text-[#000039] flex items-center gap-1 transition-colors"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+        Zurück
+      </motion.button>
+
+      <motion.h2 initial={{ opacity: 0, y: 20 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}
+        className="text-3xl md:text-4xl font-bold text-[#000039] font-headline mb-1 text-center">
+        Was die KI bekommt – und was sie liefert
+      </motion.h2>
+      <motion.p initial={{ opacity: 0 }} animate={isActive ? { opacity: 0.5 } : {}} transition={{ delay: 0.1 }}
+        className="text-base text-[#000039]/50 mb-6">Keine echten Kundendaten · Nur Struktur und Regeln</motion.p>
+
+      <div className="max-w-[1000px] w-full grid grid-cols-[1fr_80px_1fr] gap-4 items-start">
+        {/* Input column */}
+        <div className="space-y-3">
+          <div className="text-center text-sm font-bold uppercase tracking-wider text-[#001777]/50 mb-2">Input</div>
+          {inputs.map((item, i) => (
+            <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }}
+              className="bg-[#001777]/5 border border-[#001777]/15 rounded-xl px-4 py-3 flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-[#001777]/10 flex items-center justify-center shrink-0">
+                <IconByKey icon={item.icon} size={18} color="#001777" />
+              </div>
+              <div>
+                <div className="font-semibold text-[#000039] text-sm">{item.label}</div>
+                <div className="text-xs text-[#000039]/50">{item.detail}</div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* KI Center */}
+        <motion.div initial={{ opacity: 0, scale: 0 }} animate={isActive ? { opacity: 1, scale: 1 } : {}} transition={{ delay: 0.4, type: 'spring' }}
+          className="flex flex-col items-center justify-center h-full">
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#001777] to-[#0078FE] flex items-center justify-center shadow-lg">
+            <IconByKey icon="gluehbirne" size={28} color="#17f0f0" />
+          </div>
+          <span className="text-xs font-bold text-[#001777] mt-2">KI</span>
+          <div className="flex flex-col items-center gap-1 mt-2">
+            <svg width="20" height="30" viewBox="0 0 20 30"><path d="M10 2v10M4 8l6-6 6 6" stroke="#001777" strokeWidth="1.5" fill="none" strokeLinecap="round"/></svg>
+            <svg width="20" height="30" viewBox="0 0 20 30"><path d="M10 2v10M4 6l6 6 6-6" stroke="#059669" strokeWidth="1.5" fill="none" strokeLinecap="round"/></svg>
+          </div>
+        </motion.div>
+
+        {/* Output column */}
+        <div className="space-y-3">
+          <div className="text-center text-sm font-bold uppercase tracking-wider text-emerald-600/50 mb-2">Output</div>
+          {outputs.map((item, i) => (
+            <motion.div key={i} initial={{ opacity: 0, x: 20 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.25 + i * 0.08 }}
+              className="bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3 flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center shrink-0">
+                <IconByKey icon={item.icon} size={18} color="#059669" />
+              </div>
+              <div>
+                <div className="font-semibold text-[#000039] text-sm">{item.label}</div>
+                <div className="text-xs text-[#000039]/50">{item.detail}</div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function ComparisonLayout({ slide, isActive = false }: ComparisonLayoutProps) {
+  // ── Custom renderers for avaloq-migration sub-slides ──
+  const sysMapping = systemMappings[slide.id]
+  if (sysMapping) return <SystemMappingSlide config={sysMapping} isActive={isActive} />
+  if (slide.id === '10-was-die-ki-bekommt-und-was-sie-liefert') return <KiInputOutputSlide isActive={isActive} />
+
   const data = slideData[slide.id]
   const title = data?.title || slide.displayTitle || slide.title
   // Use parsed comparison data from JSON before falling back to rawMarkdown
