@@ -387,7 +387,7 @@ body {
 /* Print styles */
 @media print {
   @page {
-    size: A4 landscape;
+    size: 338mm 190mm;  /* 16:9 aspect ratio – content fills full page */
     margin: 0;
   }
 

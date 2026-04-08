@@ -143,17 +143,17 @@ function BankArchitectureIst({ isActive }: { isActive: boolean }) {
   const externalsData = ['WM Daten', 'SIX FI', 'ZEK / CRIF', 'S&P / Moody\'s']
 
   return (
-    <div className="flex flex-col h-full w-full px-6 pt-12 pb-3 items-center">
+    <div className="flex flex-col h-full w-full px-6 print:px-1 pt-12 print:pt-7 pb-3 print:pb-1 items-center">
       <motion.h2 initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ duration: 0.4 }}
-        className="text-3xl font-bold text-[#000039] font-headline mb-3 text-center">
+        className="text-3xl font-bold text-[#000039] font-headline mb-3 print:mb-1.5 text-center">
         Heutige Systemlandschaft
       </motion.h2>
 
-      <div className="w-full flex-1 flex flex-col gap-2">
+      <div className="w-full flex-1 flex flex-col gap-2 print:gap-1.5">
 
         {/* ZONE 1: Geschäftsbereiche */}
         <motion.div initial={{ opacity: 0, y: -8 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.05 }}
-          className="relative bg-gray-50/80 border border-gray-200 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative bg-gray-50/80 border border-gray-200 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-[#000039]/40 text-xs font-bold px-2.5 py-0.5 rounded-full border border-gray-200 uppercase tracking-wider">Geschäftsbereiche</span>
           <div className="flex gap-2">
             {bizUnits.map((bu, i) => (
@@ -167,9 +167,9 @@ function BankArchitectureIst({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 2: Kanäle & Integration */}
         <motion.div initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
-          className="relative bg-[#001777]/4 border border-[#001777]/10 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative bg-[#001777]/4 border border-[#001777]/10 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-[#001777]/50 text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#001777]/15 uppercase tracking-wider">Kanäle & Integration</span>
-          <div className="flex gap-2 mb-1.5">
+          <div className="flex gap-2 print:gap-1 mb-1.5">
             {channels.map((ch, i) => (
               <div key={i} className="flex-1 bg-white border border-gray-200 rounded-lg py-1.5 text-center text-sm font-semibold text-[#000039]/60">{ch}</div>
             ))}
@@ -184,12 +184,12 @@ function BankArchitectureIst({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 3: Applikationslandschaft – Satellites + Avaloq */}
         <motion.div initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.15 }}
-          className="relative bg-[#000039]/3 border border-[#000039]/10 rounded-xl px-4 pt-5 pb-3 flex-1 flex flex-col">
+          className="relative bg-[#000039]/3 border border-[#000039]/10 rounded-xl px-4 print:px-2 pt-5 pb-3 print:pb-2 flex-1 flex flex-col">
           <span className="absolute -top-2.5 left-4 bg-white text-[#000039]/50 text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#000039]/15 uppercase tracking-wider">Applikationslandschaft</span>
 
-          <div className="flex gap-3 flex-1 items-stretch">
+          <div className="flex gap-3 print:gap-1.5 flex-1 items-stretch">
             {/* Left satellites */}
-            <div className="w-[190px] flex flex-col gap-2 shrink-0 justify-center">
+            <div className="w-[190px] print:w-[140px] flex flex-col gap-2 print:gap-1 shrink-0 justify-center">
               <div className="text-xs font-bold text-[#000039]/30 uppercase tracking-wider text-center">Satelliten</div>
               {satellitesLeft.map((s, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.25 + i * 0.04 }}
@@ -241,7 +241,7 @@ function BankArchitectureIst({ isActive }: { isActive: boolean }) {
             </motion.div>
 
             {/* Right satellites */}
-            <div className="w-[190px] flex flex-col gap-2 shrink-0 justify-center">
+            <div className="w-[190px] print:w-[140px] flex flex-col gap-2 print:gap-1 shrink-0 justify-center">
               <div className="text-xs font-bold text-[#000039]/30 uppercase tracking-wider text-center">Ergänzung</div>
               {satellitesRight.map((s, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: 10 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.25 + i * 0.04 }}
@@ -256,16 +256,16 @@ function BankArchitectureIst({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 4: Externe Schnittstellen */}
         <motion.div initial={{ opacity: 0, y: 8 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}
-          className="relative border border-red-200/30 bg-red-50/30 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative border border-red-200/30 bg-red-50/30 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-red-400/70 text-xs font-bold px-2.5 py-0.5 rounded-full border border-red-200/40 uppercase tracking-wider">Externe Schnittstellen</span>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2 print:gap-1">
             {[
               { label: 'Zahlungsnetzwerke', items: externalsPayment, color: '#0078FE' },
               { label: 'Wertschriften', items: externalsSecurities, color: '#059669' },
               { label: 'Regulatoren', items: externalsRegulators, color: '#DC2626' },
               { label: 'Daten & Rating', items: externalsData, color: '#e97316' },
             ].map((cat, ci) => (
-              <div key={ci} className="bg-white border rounded-lg px-3 py-2" style={{ borderColor: cat.color + '20' }}>
+              <div key={ci} className="bg-white border rounded-lg px-3 print:px-2 py-2" style={{ borderColor: cat.color + '20' }}>
                 <div className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: cat.color }}>{cat.label}</div>
                 <div className="text-sm text-[#000039]/50">{cat.items.join(' · ')}</div>
               </div>
@@ -337,17 +337,17 @@ function BankArchitectureSoll({ isActive }: { isActive: boolean }) {
   const externalsData = ['WM Daten', 'SIX FI', 'ZEK / CRIF', 'S&P']
 
   return (
-    <div className="flex flex-col h-full w-full px-6 pt-12 pb-3 items-center">
+    <div className="flex flex-col h-full w-full px-6 print:px-1 pt-12 print:pt-7 pb-3 print:pb-1 items-center">
       <motion.h2 initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ duration: 0.4 }}
-        className="text-3xl font-bold text-[#000039] font-headline mb-3 text-center">
+        className="text-3xl font-bold text-[#000039] font-headline mb-3 print:mb-1.5 text-center">
         Modulare Zielarchitektur
       </motion.h2>
 
-      <div className="w-full flex-1 flex flex-col gap-2">
+      <div className="w-full flex-1 flex flex-col gap-2 print:gap-1.5">
 
         {/* ZONE 1: Geschäftsbereiche */}
         <motion.div initial={{ opacity: 0, y: -8 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.05 }}
-          className="relative bg-gray-50/80 border border-gray-200 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative bg-gray-50/80 border border-gray-200 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-[#000039]/40 text-xs font-bold px-2.5 py-0.5 rounded-full border border-gray-200 uppercase tracking-wider">Geschäftsbereiche</span>
           <div className="flex gap-2">
             {bizUnits.map((bu, i) => (
@@ -360,9 +360,9 @@ function BankArchitectureSoll({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 2: Kanäle & Integration */}
         <motion.div initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.1 }}
-          className="relative bg-[#001777]/4 border border-[#001777]/10 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative bg-[#001777]/4 border border-[#001777]/10 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-[#001777]/50 text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#001777]/15 uppercase tracking-wider">Kanäle & Integration</span>
-          <div className="flex gap-2 mb-1.5">
+          <div className="flex gap-2 print:gap-1 mb-1.5">
             {channels.map((ch, i) => (
               <div key={i} className="flex-1 bg-white border border-gray-200 rounded-lg py-1.5 text-center text-sm font-semibold text-[#000039]/60">{ch}</div>
             ))}
@@ -377,12 +377,12 @@ function BankArchitectureSoll({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 3: Applikationslandschaft – Satellites + 3 neue Systeme */}
         <motion.div initial={{ opacity: 0 }} animate={isActive ? { opacity: 1 } : {}} transition={{ delay: 0.15 }}
-          className="relative bg-[#000039]/3 border border-[#000039]/10 rounded-xl px-4 pt-5 pb-3 flex-1 flex flex-col">
+          className="relative bg-[#000039]/3 border border-[#000039]/10 rounded-xl px-4 print:px-2 pt-5 pb-3 print:pb-2 flex-1 flex flex-col">
           <span className="absolute -top-2.5 left-4 bg-white text-[#000039]/50 text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#000039]/15 uppercase tracking-wider">Applikationslandschaft · Modular</span>
 
-          <div className="flex gap-3 flex-1 items-stretch">
+          <div className="flex gap-3 print:gap-1.5 flex-1 items-stretch">
             {/* Left satellites */}
-            <div className="w-[175px] flex flex-col gap-2 shrink-0 justify-center">
+            <div className="w-[175px] print:w-[130px] flex flex-col gap-2 print:gap-1 shrink-0 justify-center">
               <div className="text-xs font-bold text-[#000039]/30 uppercase tracking-wider text-center">Satelliten</div>
               {satellitesLeft.map((s, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.25 + i * 0.04 }}
@@ -429,7 +429,7 @@ function BankArchitectureSoll({ isActive }: { isActive: boolean }) {
             </div>
 
             {/* Right satellites */}
-            <div className="w-[175px] flex flex-col gap-2 shrink-0 justify-center">
+            <div className="w-[175px] print:w-[130px] flex flex-col gap-2 print:gap-1 shrink-0 justify-center">
               <div className="text-xs font-bold text-[#000039]/30 uppercase tracking-wider text-center">Ergänzung</div>
               {satellitesRight.map((s, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: 10 }} animate={isActive ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.25 + i * 0.04 }}
@@ -452,16 +452,16 @@ function BankArchitectureSoll({ isActive }: { isActive: boolean }) {
 
         {/* ZONE 4: Externe Schnittstellen */}
         <motion.div initial={{ opacity: 0, y: 8 }} animate={isActive ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}
-          className="relative border border-red-200/30 bg-red-50/30 rounded-xl px-4 pt-5 pb-2.5">
+          className="relative border border-red-200/30 bg-red-50/30 rounded-xl px-4 print:px-2 pt-5 pb-2.5">
           <span className="absolute -top-2.5 left-4 bg-white text-red-400/70 text-xs font-bold px-2.5 py-0.5 rounded-full border border-red-200/40 uppercase tracking-wider">Externe Schnittstellen</span>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2 print:gap-1">
             {[
               { label: 'Zahlungsnetzwerke', items: externalsPayment, color: '#0078FE' },
               { label: 'Wertschriften', items: externalsSecurities, color: '#059669' },
               { label: 'Regulatoren', items: externalsRegulators, color: '#DC2626' },
               { label: 'Daten & Rating', items: externalsData, color: '#e97316' },
             ].map((cat, ci) => (
-              <div key={ci} className="bg-white border rounded-lg px-3 py-2" style={{ borderColor: cat.color + '20' }}>
+              <div key={ci} className="bg-white border rounded-lg px-3 print:px-2 py-2" style={{ borderColor: cat.color + '20' }}>
                 <div className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: cat.color }}>{cat.label}</div>
                 <div className="text-sm text-[#000039]/50">{cat.items.join(' · ')}</div>
               </div>
